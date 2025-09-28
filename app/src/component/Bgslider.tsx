@@ -62,7 +62,7 @@ export default function BackgroundSlider() {
         </h1>
         <h1 className=" text-4xl font-bold">Dental Clinic In Lagos</h1>
         <p className="text-2xl font-normal">
-          "Bring Smiles To Life, Your Fvourite Dentist Is Here"
+          "Bring Smiles To Life, Your Favourite Dentist Is Here"
         </p>
 
         <button className="bg-blue-600 px-10 py-4 font-bold hover:drop-shadow-lg transform transition duration-300 ease-in-out rounded-md hover:text-black flex flex-row justify-center items-center space-x-2">
