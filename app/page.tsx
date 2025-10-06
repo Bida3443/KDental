@@ -4,6 +4,8 @@ import BackgroundSlider from "./src/component/Bgslider";
 import NavBar from "./src/component/Nav";
 import SectionTwo from "./src/component/section2";
 import SectionThree from "./src/component/Section3";
+import SectionFour from "./src/component/section4";
+
 
 
 export default function Home() {
@@ -36,6 +38,10 @@ export default function Home() {
 
 <div className="flex justify-center items-center">
   <SectionThree/>
+</div>
+
+<div className="flex flex-col bg-white">
+  <SectionFour/>
 </div>
 </div>
 
