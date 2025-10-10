@@ -5,6 +5,7 @@ import NavBar from "./src/component/Nav";
 import SectionTwo from "./src/component/section2";
 import SectionThree from "./src/component/Section3";
 import SectionFour from "./src/component/section4";
+import SectionFive from "./src/component/section5";
 
 
 
@@ -42,6 +43,10 @@ export default function Home() {
 
 <div className="flex flex-col bg-white">
   <SectionFour/>
+</div>
+
+<div className="bg-white">
+  <SectionFive/>
 </div>
 </div>
 
