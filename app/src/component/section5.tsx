@@ -4,8 +4,21 @@ import Doctor1 from "../../../public/Doctor1.png"
 import Doctor2 from "../../../public/Doctor2.jpg"
 
 export default function SectionFive () {
-
+const Doctor = [
+  {doctor:Doctor1},
+  {doctor:Doctor2},
+];
     return(
+
+          // <div>
+          //   {Doctor.map((img,index) => (
+
+          //     <div></div>
+
+          //   ))};
+
+          // </div>
+
         <div className="flex flex-col justify-center items-center font-bold">
             <h1 className="text-black text-[40px] m-10">Meet The Dentist In Lagos</h1>
             
@@ -25,7 +38,7 @@ export default function SectionFive () {
                       
                       <a className="hover:underline text-center" href="#" >Dr.Kehinde Bamise<br/>CEO</a>
                       
-                    </div>
+                    </div> 
             </div>
             <div className="relative group overflow-hidden rounded-xl">
                 
@@ -38,8 +51,8 @@ export default function SectionFive () {
                       objectFit="cover"
                     />
                     <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-bold text-[20px]">
-                      <a href="#">Dr.Kehinde Bamise</a>
-                      <a href="#">CEO</a>
+                      <a className="hover:underline text-center" href="#">Dr.Kehinde Bamise <br />CEO</a>
+                      
                     </div>
             </div>
             

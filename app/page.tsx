@@ -6,6 +6,7 @@ import SectionTwo from "./src/component/section2";
 import SectionThree from "./src/component/Section3";
 import SectionFour from "./src/component/section4";
 import SectionFive from "./src/component/section5";
+import SectionSix from "./src/component/secyion6";
 
 
 
@@ -45,8 +46,12 @@ export default function Home() {
   <SectionFour/>
 </div>
 
-<div className="bg-white">
+<div className="bg-white ">
   <SectionFive/>
+</div>
+
+<div className="bg-white ">
+  <SectionSix/>
 </div>
 </div>
 
