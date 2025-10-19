@@ -7,6 +7,8 @@ import SectionThree from "./src/component/Section3";
 import SectionFour from "./src/component/section4";
 import SectionFive from "./src/component/section5";
 import SectionSix from "./src/component/secyion6";
+import SectionSeven from "./src/component/section7";
+import FooterSection from "./src/component/footer";
 
 
 
@@ -53,6 +55,13 @@ export default function Home() {
 <div className="bg-white ">
   <SectionSix/>
 </div>
+    <div className="bg-blue-600">
+      <SectionSeven />
+    </div>
+
+    <footer>
+      <FooterSection />
+    </footer>
 </div>
 
   );
