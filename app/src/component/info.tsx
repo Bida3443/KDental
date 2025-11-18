@@ -94,7 +94,8 @@ export default function ImageTextRow() {
   ];
 
   return (
-    <div className="flex w-full p-2">
+    <div className="flex flex-row justify-center items-center text-white-500 p-3 space-x-50 bg-blue-600 border-b-2 border-white">
+      <div className="flex w-full p-2">
       {items.map((item, index) => (
         <div
           key={index}
@@ -109,6 +110,7 @@ export default function ImageTextRow() {
           </a>
         </div>
       ))}
+    </div>
     </div>
   );
 }

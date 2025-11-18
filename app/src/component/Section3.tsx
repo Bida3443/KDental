@@ -76,7 +76,7 @@ export default function SectionThree() {
             At K Dental Clinic, we believe a healthy smile is more than just
             teeth, it is about confidence, comfort, and care. Choosing the right
             dentist is an important decision, and here is why patients in Ikeja
-            and Ogba Lagos trust us
+            and Ogba Lagos trust us.
           </h1>
           <h2 className="leading-10">
             Backed by years of professional experience, we deliver every service

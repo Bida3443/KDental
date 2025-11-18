@@ -26,7 +26,7 @@ export default function NavBar() {
         </svg>
       ),
       text: "About Us",
-      link: "#",
+      link: "/about",
     },
     {
       svg: (
@@ -39,7 +39,7 @@ export default function NavBar() {
         </svg>
       ),
       text: "Gallery",
-      link: "#",
+      link: "/gallery",
     },
     {
       svg: (
@@ -65,7 +65,7 @@ export default function NavBar() {
             className="flex flex-row items-center hover:text-gray-900 hover:scale-110"
           >
             {nav.svg}
-            <a className="text-2xl" href={nav.link}>
+            <a className="text-2xl" href={nav.link} target="_blank">
               {nav.text}
             </a>
           </div>
