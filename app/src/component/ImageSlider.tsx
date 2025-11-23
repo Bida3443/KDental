@@ -1,0 +1,14 @@
+import { useEffect, useState } from 'react'
+
+const ImageSlider = () => {
+  return (
+    <div>ImageSlider</div>
+  )
+}
+
+export default ImageSlider
+
+
+
+
+

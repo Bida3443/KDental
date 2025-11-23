@@ -58,7 +58,7 @@ export default function BackgroundSlider() {
       {/* Content overlay (optional) */}
       <div className="absolute inset-0 bg-black/40 flex items-center justify-center flex-col space-y-6">
         <h1 className="text-white text-5xl font-medium">
-          Prime Smile Dental Clinic
+          Premium Smile Dental Clinic
         </h1>
         <h1 className=" text-4xl font-bold">Dental Clinic In Lagos</h1>
         <p className="text-2xl font-normal">

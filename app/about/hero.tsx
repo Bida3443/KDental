@@ -12,15 +12,16 @@ export default function Hero () {
                 
                   </div>
                 
-                  <div className="w-full h-[80vh]">
+                  <div className="w-full h-[70vh]">
                     <Image
                                         src={erfan}
                                         alt="Background"
                                         fill
                                         className="w-full h-full"
-                                        objectFit="cover"
+                                        style={{objectFit:"cover"}}
+                                        // objectFit="cover"
                                       />
-             <div className="absolute w-full h-full bg-black opacity-50 z-20" />
+             <div className="absolute w-full h-full bg-black opacity-40 z-20" />
         
                   </div>
                 </div>
