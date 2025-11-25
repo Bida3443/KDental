@@ -1,6 +1,6 @@
 export default function SectionTwo () {
     return (
-        <div>
+        <div className="flex flex-col p-5 bg-white">
 
             <div className="flex flex-row gap-10 justify-center">
           <div className="flex flex-col border-2 rounded-r-lg w-100 p-2">
@@ -23,15 +23,16 @@ export default function SectionTwo () {
       </div>
       </div>
 
-      <div className="flex flex-row gap-10 justify-center">
+      <div className="flex flex-row gap-10 mt-10 justify-center">
           <div className="flex flex-col border-2 rounded-r-lg w-100 p-2">
-        <h1 className="font-bold text-[170%] justify-between text-center text-blue-700">Our Promise</h1>
+        <h1 className="font-bold text-[170%] justify-between text-center text-blue-700">Our Promise</h1>        
         <p className="text-black leading-7 text-justify">
           At Premium Smile Dental Clinic, you are more than a patient, you are part of our smile family. We take the time to understand your needs, explain your options, and deliver care that fits your lifestyle. <br />Your smile is our priority. Your satisfaction is our pride.</p>
       </div>
       <div className="flex flex-col justify-center items-center border-2 rounded-l-lg w-100 p-2">
         <h1 className="font-bold text-[170%] text-blue-700">What We Do</h1>
         <h2 className="text-black"> <strong>We provide comprehensive dental services, including:</strong> 
+
           <ul>
             <li>1. Teeth alignment and correction</li>
             <li>2. Replacement of missing teeth</li>
