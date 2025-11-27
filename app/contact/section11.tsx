@@ -1,0 +1,123 @@
+
+"use client";
+import { useState } from "react";
+
+export default function SectionEleven() {
+
+
+const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    time: "As Soon As Possible",
+    notes: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("Form Submitted:", form);
+  };
+
+
+  return (
+
+    <div className="bg-white p-10">
+      <div className="w-3/5 max-w-4xl mx-auto bg-blue-700 text-white rounded-2xl p-10">
+      <h1 className="text-center text-3xl font-bold mb-8">Send us a Message</h1>
+
+      <form onSubmit={handleSubmit} className="space-y-6">
+        {/* Grid for 2-column fields */}
+        <div className="flex flex-col-1 md:flex-cols-2 gap-6">
+          {/* Name */}
+          <div>
+            <label className="block mb-2 text-sm font-medium">Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              className="w-full p-3  bg-white rounded-lg text-black outline-none"
+              onChange={handleChange}
+              value={form.name}
+            />
+          </div>
+
+          {/* Phone */}
+          <div>
+            <label className="block mb-2 text-sm font-medium">Phone Number</label>
+            <input
+              type="text"
+              name="phone"
+              placeholder="Phone Number"
+              className="w-full p-3 bg-white rounded-lg text-black outline-none"
+              onChange={handleChange}
+              value={form.phone}
+            />
+          </div>
+        </div>
+
+        {/* Email + Call Time */}
+        <div className="flex flex-cols-1 md:flex-cols-2 gap-6">
+          {/* Email */}
+          <div>
+            <label className="block mb-2 text-sm font-medium">Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              className="w-full p-3 bg-white rounded-lg text-black outline-none"
+              onChange={handleChange}
+              value={form.email}
+            />
+          </div>
+
+          {/* Time */}
+          <div>
+            <label className="block mb-2 text-sm font-medium">
+              What Is The Best Time To Call You?
+            </label>
+            <select
+              name="time"
+              className="w-full p-3 bg-white rounded-lg text-black outline-none"
+              onChange={handleChange}
+              value={form.time}
+            >
+              <option>As Soon As Possible</option>
+              <option>Morning</option>
+              <option>Afternoon</option>
+              <option>Evening</option>
+            </select>
+          </div>
+        </div>
+
+        {/* Notes */}
+        <div>
+          <label className="block mb-2 text-sm font-medium">
+            Notes/ Other Enquiries
+          </label>
+          <textarea
+            name="notes"
+            placeholder="Notes/ Other Enquiries"
+            className="w-full p-3 bg-white rounded-lg text-black outline-none h-32"
+            onChange={handleChange}
+            value={form.notes}
+          ></textarea>
+        </div>
+
+        {/* Submit */}
+        <button
+          type="submit"
+          className="bg-black px-8 py-3 rounded-full text-white text-lg"
+        >
+          Send
+        </button>
+      </form>
+    </div>
+    </div>
+  );
+  }
