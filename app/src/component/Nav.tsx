@@ -39,7 +39,7 @@ export default function NavBar() {
         </svg>
       ),
       text: "Gallery",
-      link: "#",
+      link: "gallery",
     },
     {
       svg: (

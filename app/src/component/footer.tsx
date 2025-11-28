@@ -62,7 +62,7 @@ export default function FooterSection (){
 
     return (
           
-      <div className="flex flex-col relative h-screen w-full">
+      <div className="flex flex-col relative  w-full">
         <Image
         src={pic6}
         alt="background"
@@ -70,7 +70,7 @@ export default function FooterSection (){
         className="w-full h-full"
         objectFit="cover"
         />
-         <div className="absolute w-full h-full bg-black opacity-90 z-20" />
+         <div className="absolute w-full h-full bg-black opacity-85 z-20" />
 
          <div className="relative z-20 flex flex-row justify-center space-x-35 m-20">
             <div className="w-[20%] space-y-2 leading-10">
