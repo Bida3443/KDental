@@ -1,0 +1,233 @@
+"use client"
+import {useState} from "react"
+
+
+export default function SectionnOne () {
+        const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    treatment: "Routine Dental Checkup",
+    date: "",
+    time: "9:00 AM",
+    bestTime: "As Soon As Possible",
+    patients: "1",
+    hearAbout: "Google Search",
+    notes: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >
+  ) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("Form Submitted:", form);
+  };
+
+    return(
+        <div>
+
+             <section className="py-16 bg-white">
+      {/* Page Title */}
+      <div className="text-center mb-10">
+        <h2 className="text-3xl font-semibold text-[#d38a1d]">
+          Premium Smile Dental Clinic in Lagos
+        </h2>
+        <p className="max-w-4xl mx-auto mt-3 text-gray-700">
+          Premium Smile Dental Clinic is a leading dental practice in Lagos, Nigeria, dedicated to delivering exceptional oral care and beautiful smiles. We pride ourselves on creating happy, healthy, and confident smiles using advanced, cutting-edge dental technologies.
+        Your comfort, safety, and satisfaction remain our top priority as we provide world-class dental solutions right here in Lagos, Nigeria.
+        </p>
+      </div>
+
+      {/* FORM CARD */}
+      <div className="w-[80%] max-w-5xl mx-auto bg-blue-700 text-white rounded-2xl p-10 shadow-lg">
+        <h1 className="text-center text-3xl font-bold mb-8">Send us a Message</h1>
+
+        <form onSubmit={handleSubmit} className="space-y-8">
+          {/* GRID START */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            {/* Name */}
+            <div>
+              <label className="block mb-2 text-sm font-medium">Name</label>
+              <input
+                name="name"
+                type="text"
+                placeholder="Name"
+                className="w-full p-3 bg-white rounded-lg text-black"
+                value={form.name}
+                onChange={handleChange}
+              />
+            </div>
+
+            {/* Phone */}
+            <div>
+              <label className="block mb-2 text-sm font-medium">Phone Number</label>
+              <input
+                name="phone"
+                type="text"
+                placeholder="Phone Number"
+                className="w-full p-3 bg-white rounded-lg text-black"
+                value={form.phone}
+                onChange={handleChange}
+              />
+            </div>
+
+            {/* Email */}
+            <div>
+              <label className="block mb-2 text-sm font-medium">Email</label>
+              <input
+                name="email"
+                type="email"
+                placeholder="Email"
+                className="w-full p-3 bg-white rounded-lg text-black"
+                value={form.email}
+                onChange={handleChange}
+              />
+            </div>
+
+            {/* Treatment */}
+            <div>
+              <label className="block mb-2 text-sm font-medium">
+                Treatment Expected
+              </label>
+              <select
+                name="treatment"
+                className="w-full p-3 bg-white rounded-lg text-black"
+                value={form.treatment}
+                onChange={handleChange}
+              >
+                <option>Routine Dental Checkup</option>
+                <option>Teeth Whitening</option>
+                <option>Scaling and polishing</option>
+                <option>Braces</option>
+                <option>Venners</option>
+                <option>Dental Implants</option>
+                <option>Extraction</option>
+                <option>Dental Bridge</option>
+                <option>Crown</option>
+                <option>Root Canal Therapy</option>
+                <option>Replacement Of missing Teeth</option>
+              </select>
+            </div>
+
+            {/* Date */}
+            <div>
+              <label className="block mb-2 text-sm font-medium">Preferred Date</label>
+              <input
+                name="date"
+                type="date"
+                className="w-full p-3 bg-white rounded-lg text-black"
+                value={form.date}
+                onChange={handleChange}
+              />
+            </div>
+
+            {/* Time */}
+            <div>
+              <label className="block mb-2 text-sm font-medium">Preferred Time</label>
+              <select
+                name="time"
+                className="w-full p-3 bg-white rounded-lg text-black"
+                value={form.time}
+                onChange={handleChange}
+              >
+                <option>9:00 AM</option>
+                <option>10:00 AM</option>
+                <option>12:00 PM</option>
+                <option>3:00 PM</option>
+              </select>
+            </div>
+
+            {/* Best Time */}
+            <div>
+              <label className="block mb-2 text-sm font-medium">
+                What Is The Best Time To Call You?
+              </label>
+              <select
+                name="bestTime"
+                className="w-full p-3 bg-white rounded-lg text-black"
+                value={form.bestTime}
+                onChange={handleChange}
+              >
+                <option>As Soon As Possible</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+              </select>
+            </div>
+
+            {/* Patients */}
+            <div>
+              <label className="block mb-2 text-sm font-medium">
+                Number Of Patient(s)
+              </label>
+              <select
+                name="patients"
+                className="w-full p-3 bg-white rounded-lg text-black"
+                value={form.patients}
+                onChange={handleChange}
+              >
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                
+              </select>
+            </div>
+
+            {/* How Did You Hear About Us */}
+            <div className="md:col-span-2">
+              <label className="block mb-2 text-sm font-medium">
+                How Did You Hear About Us?
+              </label>
+              <select
+                name="hearAbout"
+                className="w-full p-3 bg-white rounded-lg text-black"
+                value={form.hearAbout}
+                onChange={handleChange}
+              >
+                <option>Google Search</option>
+                <option>Instagram</option>
+                <option>Referral</option>
+                <option>Walk-In</option>
+              </select>
+            </div>
+
+            {/* Notes */}
+            <div className="md:col-span-2">
+              <label className="block mb-2 text-sm font-medium">
+                Notes / Other Enquiries
+              </label>
+              <textarea
+                name="notes"
+                placeholder="Notes / Other Enquiries"
+                className="w-full p-3 bg-white rounded-lg text-black h-32"
+                value={form.notes}
+                onChange={handleChange}
+              ></textarea>
+            </div>
+
+          </div>
+
+          {/* BUTTON */}
+          <button
+            type="submit"
+            className="bg-black px-10 py-3 rounded-full text-white text-lg hover:bg-gray-900"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+        </div>
+    );
+}
+
+

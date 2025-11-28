@@ -41,7 +41,7 @@ const [form, setForm] = useState({
               type="text"
               name="name"
               placeholder="Name"
-              className="w-full p-3  bg-white rounded-lg text-black outline-none"
+              className="w-full p-3  bg-white rounded-lg  text-black outline-none"
               onChange={handleChange}
               value={form.name}
             />

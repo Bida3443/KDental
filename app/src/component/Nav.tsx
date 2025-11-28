@@ -52,7 +52,7 @@ export default function NavBar() {
         </svg>
       ),
       text: "Services",
-      link: "#",
+      link: "/service",
     },
   ];
 
@@ -72,8 +72,8 @@ export default function NavBar() {
         ))}
       </div>
       <a
-        className="bg-white p-3 px-15 rounded-md text-blue-700 text-[20px] font-bold items-center"
-        href="#"
+        className="bg-white p-3 px-15 rounded-md text-blue-700 text-[20px] target: font-bold items-center"
+        href="/book "
       >
         BOOK NOW
       </a>
