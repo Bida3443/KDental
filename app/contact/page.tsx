@@ -12,8 +12,6 @@ export default function Contact () {
      <SectionTwelve />
      <SectionThirteen />
 
-    </>
-            
-            
+    </> 
     
 }

@@ -36,7 +36,7 @@ export default function SectionnOne () {
              <section className="py-16 bg-white">
       {/* Page Title */}
       <div className="text-center mb-10">
-        <h2 className="text-3xl font-semibold text-[#d38a1d]">
+        <h2 className="text-3xl font-semibold text-blue-700">
           Premium Smile Dental Clinic in Lagos
         </h2>
         <p className="max-w-4xl mx-auto mt-3 text-gray-700">

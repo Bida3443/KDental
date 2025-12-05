@@ -53,7 +53,7 @@ export default function ImageTextRow() {
         </svg>
       ),
 
-      link: "#",
+      link: "https://www.instagram.com/premiumsdentalclinic?igsh=MTl5NmMxOXJqZ2lyZg==",
     },
     {
       svg: (
@@ -65,7 +65,7 @@ export default function ImageTextRow() {
           <path d="M240 363.3L240 576L356 576L356 363.3L442.5 363.3L460.5 265.5L356 265.5L356 230.9C356 179.2 376.3 159.4 428.7 159.4C445 159.4 458.1 159.8 465.7 160.6L465.7 71.9C451.4 68 416.4 64 396.2 64C289.3 64 240 114.5 240 223.4L240 265.5L174 265.5L174 363.3L240 363.3z" />
         </svg>
       ),
-      link: "#",
+      link: "https://www.facebook.com/share/1B7uGSto2k/",
     },
     {
       svg: (
@@ -94,23 +94,62 @@ export default function ImageTextRow() {
   ];
 
   return (
-    <div className="flex flex-row justify-center items-center text-white-500 p-3 space-x-50 bg-blue-600 border-b-2 border-white">
-      <div className="flex w-full p-2">
+ <div className="flex w-full bg-blue-700 p-2">
       {items.map((item, index) => (
         <div
           key={index}
           className="flex flex-row items-center justify-center w-fit border-r-1 gap-3 p-1 px-6"
         >
-          {item.svg}
-          <a
-            href={item.link}
-            className=" text-white hover:text-black  font-medium "
-          >
-            {item.text}
-          </a>
+          {/* CLICKABLE if link exists */}
+          {item.link ? (
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80"
+            >
+              {item.svg}
+            </a>
+          ) : (
+            item.svg
+          )}
+
+          {/* Show text only for first 3 */}
+          {item.text && <span className="text-white hover:text-black font-medium">{item.text}</span>}
         </div>
+
+
+    // <div className="flex w-full bg-blue-700 p-2">
+    //   {items.map((item, index) => (
+    //     <div
+        
+    //       key={index}
+    //       className="flex flex-row items-center justify-center w-fit border-r-1 gap-3 p-1 px-6"
+    //     >
+    //        {item.link ? (
+    //         <a
+    //           href={item.link}
+    //           target="_blank"
+    //           rel="noopener noreferrer"
+    //           className="hover:opacity-80"
+    //         >
+    //           {item.svg?
+    //         </a>
+      
+
+    //      ):(
+    //        item.svg
+    //      )}
+
+    //      {item.text && <span className="text-white font-medium">{item.text}</span>}
+    //       <a
+    //         href={item.link}
+    //         className=" text-white hover:text-black  font-medium"
+    //       >
+    //         {item.text}
+    //       </a>
+    //     </div>
       ))}
-    </div>
     </div>
   );
 }

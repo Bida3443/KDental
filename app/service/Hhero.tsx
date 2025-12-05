@@ -21,7 +21,7 @@ export default function Hhero () {
                                                           />
                                  <div className="absolute w-full h-full bg-black opacity-40 z-20" />
                                    <div className="absolute inset-0 z-30 flex flex-col justify-center items-center text-white px-4">
-                            <h1 className="text-3xl font-bold mb-3">Services</h1>
+                            <h1 className="text-4xl font-bold mb-3">Services</h1>
                             
                           </div>
                             

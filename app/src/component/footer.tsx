@@ -16,7 +16,7 @@ export default function FooterSection (){
         </svg>
       ),
 
-      link: "#",
+      link: "https://www.instagram.com/premiumsdentalclinic?igsh=MTl5NmMxOXJqZ2lyZg==",
            },
            {
               svg: (
@@ -28,7 +28,7 @@ export default function FooterSection (){
           <path d="M240 363.3L240 576L356 576L356 363.3L442.5 363.3L460.5 265.5L356 265.5L356 230.9C356 179.2 376.3 159.4 428.7 159.4C445 159.4 458.1 159.8 465.7 160.6L465.7 71.9C451.4 68 416.4 64 396.2 64C289.3 64 240 114.5 240 223.4L240 265.5L174 265.5L174 363.3L240 363.3z" />
         </svg>
       ),
-      link: "#",
+      link: "https://www.facebook.com/share/1B7uGSto2k/",
     },
     {
       svg: (
@@ -81,15 +81,16 @@ export default function FooterSection (){
             <div className="w-[20%] space-y-14">
                 <a href="#" className="text-blue-700 hover:text-white boder border-b-2 space-y-6 font-bold text-2xl">Services</a>
                 <ul className="space-y-5 mt-4">
-                    <li>dental Implant</li>
-                    <li>Root Canal tretment</li>
-                    <li>Braces And Alignment</li>
-                    <li>General And Family Dentistry</li>
-                    <li>Dental Crown and Bridges</li>
+                    <li>Braces</li>
+                    <li>Crown</li>
+                    <li>Veneers</li>
+                    <li>Extraction</li>
+                    <li>Dental Bridges</li>
+                    <li>Dental Implant</li>
                     <li>Teeth Whitening</li>
-                    <li>Emergency Dentistry</li>
-                    <li>Dental X-Ray</li>
-                    <li>Cosmetics Dentistry</li>
+                    <li>Root Canal Therapy</li>
+                    <li>Scaling and Polishing</li>
+                    <li>Replacement Of Missing Teeth</li>
                 </ul>
             </div>
             <div className="space-y-4">
@@ -107,7 +108,10 @@ export default function FooterSection (){
                     {foot.map((items, index) => (
                     <div key= {index}
                     >
-                        <a href="#">
+                        <a href={items.link} 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
                             {items.svg}
 
                         </a>
