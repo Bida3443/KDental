@@ -38,7 +38,7 @@ export default function SectionSeven() {
   ];
 
   return (
-    <div className="flex flex-row p-15">
+    <div className="flex flex-row p-15 bg-blue-700">
       <div className="w-fit h-fit overflow-hidden shadow-lg">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31705.545586696113!2d3.3180001755887063!3d6.622907402157796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPrime%20Smile%20Dental%20Clinic%2C%2055%20Oyemekun%20St%2C%20off%20College%20Road%2C%20Ogba%2C%20Lagos%20101232%2C%20Lagos.!5e0!3m2!1sen!2sng!4v1760633830352!5m2!1sen!2sng"

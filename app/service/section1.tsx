@@ -15,7 +15,7 @@ export default function SecttionOnne() {
         </svg>
       ),
       text: "Braces",
-      link: "#",
+      link: "/braces",
     },
     {
       svg: (

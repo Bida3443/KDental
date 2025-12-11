@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 
+import { motion } from "framer-motion";
+
 import { useState, useEffect } from "react";
 import Pic1 from "../../../public/Pic 1.jpg";
 import Pic3 from "../../../public/Pic 3.jpg";
@@ -8,6 +10,22 @@ import Pic2 from "../../../public/Pic 2.jpg";
 import Pic6 from "../../../public/Pic 6.jpg";
 
 export default function BackgroundSlider() {
+ const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3, // Delay between each element
+      },
+    },
+  };
+
+  // Each child animation (slide up)
+  const item = {
+    hidden: { y: 40, opacity: 0 },
+    show: { y: 0, opacity: 1, transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1], } },
+  };
+
   const images = [
     { item: Pic1 },
     { item: Pic2 },
@@ -56,7 +74,13 @@ export default function BackgroundSlider() {
       ))}
 
       {/* Content overlay (optional) */}
-      <div className="absolute inset-0 bg-black/40 flex items-center justify-center flex-col space-y-6">
+      <motion.div 
+  
+      initial={{ y: 80, opacity: 0 }}       // Start lower
+      animate={{ y: 0, opacity: 1 }}        // Slide up + fade in
+      transition={{ duration: 0.7, ease: "easeOut" }}
+
+      className="absolute inset-0 bg-black/40 flex items-center justify-center flex-col space-y-6">
         <h1 className="text-white text-5xl font-medium">
           Premium Smile Dental Clinic
         </h1>
@@ -79,7 +103,7 @@ export default function BackgroundSlider() {
           Book An Appointment
         </a>
 
-      </div>
+      </motion.div>
     </div>
   );
 }

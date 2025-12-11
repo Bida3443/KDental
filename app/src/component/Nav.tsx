@@ -1,4 +1,7 @@
+"use client"
+
 import { link } from "fs";
+import { motion } from "framer-motion";
 
 import Image from "next/image";
 import Premium from "../../../public/Premium.png"
@@ -60,7 +63,11 @@ export default function NavBar() {
   ];
 
   return (
-    <div className="flex flex-row justify-between items-center w-full">
+    <motion.div 
+    initial={{ x: 200, opacity: 0 }}      // starts from left
+      animate={{ x: 0, opacity: 1 }}         // slides into position
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    className="flex flex-row justify-between items-center w-full">
 
       <a href="/" className="flex items-center">
         <Image 
@@ -86,11 +93,11 @@ export default function NavBar() {
         ))}  
       </div>
       <a
-        className="bg-white p-3 px-15 rounded-md text-blue-700 text-[20px] target: font-bold items-center"
+        className="bg-white p-3 px-15 rounded-md text-blue-700 text-[20px] target: font-bold items-center transition-transform duration-300 hover:scale-105 hover:bg-blue-700 hover:text-white"
         href="/book"
       >
         BOOK NOW
       </a>
-    </div>
+    </motion.div>
   );
 }

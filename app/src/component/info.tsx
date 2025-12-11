@@ -1,5 +1,9 @@
+"use client";
+
 import { link } from "fs";
 import image from "next/image";
+
+import { motion } from "framer-motion";
 
 export default function ImageTextRow() {
   const items = [
@@ -94,7 +98,11 @@ export default function ImageTextRow() {
   ];
 
   return (
- <div className="flex w-full bg-blue-700 p-2">
+ <motion.div 
+      initial={{ x: -150, opacity: 0 }}      // starts from left
+      animate={{ x: 0, opacity: 1 }}         // slides into position
+      transition={{ duration: 0.6, ease: "easeOut" }}
+ className="flex w-full bg-blue-700 p-2">
       {items.map((item, index) => (
         <div
           key={index}
@@ -119,37 +127,7 @@ export default function ImageTextRow() {
         </div>
 
 
-    // <div className="flex w-full bg-blue-700 p-2">
-    //   {items.map((item, index) => (
-    //     <div
-        
-    //       key={index}
-    //       className="flex flex-row items-center justify-center w-fit border-r-1 gap-3 p-1 px-6"
-    //     >
-    //        {item.link ? (
-    //         <a
-    //           href={item.link}
-    //           target="_blank"
-    //           rel="noopener noreferrer"
-    //           className="hover:opacity-80"
-    //         >
-    //           {item.svg?
-    //         </a>
-      
-
-    //      ):(
-    //        item.svg
-    //      )}
-
-    //      {item.text && <span className="text-white font-medium">{item.text}</span>}
-    //       <a
-    //         href={item.link}
-    //         className=" text-white hover:text-black  font-medium"
-    //       >
-    //         {item.text}
-    //       </a>
-    //     </div>
       ))}
-    </div>
+    </motion.div>
   );
 }

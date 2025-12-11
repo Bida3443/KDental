@@ -115,9 +115,7 @@ export default function FooterSection (){
                             {items.svg}
 
                         </a>
-                        
                     </div>
-                    
                 ))}
                 </div>
 
