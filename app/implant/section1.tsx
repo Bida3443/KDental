@@ -1,10 +1,18 @@
+"use client"
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import implant from "../../public/implant.jpg";
 
 export default function SsectionOnnee() {
   return (
     <div className="flex flex-row gap-10 bg-white p-6 justify-center items-center pt-15 text-black">
-      <div className=" flex flex-col w-150 gap-6">
+      <motion.div className=" flex flex-col w-150 gap-6"
+      initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        >
         <h1 className="text-4xl text-blue-700 font-bold border-b-2 border-b-blue-700">
           Premium Dental Implants
         </h1>
@@ -35,8 +43,13 @@ export default function SsectionOnnee() {
           teeth—giving you the confidence to eat, speak, and smile freely every
           day.
         </p>
-      </div>
-      <div>
+      </motion.div>
+      <motion.div
+      initial={{ x: 100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        >
         <Image
           alt=""
           src={implant}
@@ -44,7 +57,7 @@ export default function SsectionOnnee() {
           height={900}
           style={{ objectFit: "cover" }}
         />
-      </div>
+      </motion.div>
     </div>
   );
 }

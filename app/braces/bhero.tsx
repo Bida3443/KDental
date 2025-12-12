@@ -1,3 +1,7 @@
+"use client"
+
+import { motion } from "framer-motion";
+
 import Image from "next/image";
 import Braces from "../../public/braces.jpg";
 import NavBar from "../src/component/Nav";
@@ -22,7 +26,10 @@ export default function Bhero() {
                                                                 // objectFit="cover"
                                                               />
                                      <div className="absolute w-full h-full bg-black opacity-70 z-20" />
-                                       <div className="absolute inset-0 z-30 flex flex-col justify-center items-start text-white mt-10 px-4">
+                                       <motion.div  initial={{ y: 80, opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  transition={{ duration: 0.9, ease: "easeOut" }}
+                                       className="absolute inset-0 z-30 flex flex-col justify-center items-start text-white mt-10 px-4">
                                 <h1 className="text-3xl font-bold mb-3 flex justify-center">Transform your smile with <br/> professional dental braces</h1>
                                  <a
                                  className="bg-blue-700 p-3 px-7 rounded-md text-white text-[20px] target: font-bold items-center transition-all duration-300 ease-in-out
@@ -32,7 +39,7 @@ export default function Bhero() {
                                       BOOK A CONSULTATION
                                       </a>
                                 
-                              </div>
+                              </motion.div>
                                           </div>
                         </div>
         </div>

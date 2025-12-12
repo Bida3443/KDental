@@ -1,3 +1,5 @@
+import {motion} from "framer-motion";
+
 import Image from "next/image";
 import Braces from "../../public/braces2.jpg";
 
@@ -5,8 +7,13 @@ import Braces from "../../public/braces2.jpg";
 
 export default function SectionOnnee() {
   return (
-    <div className="flex flex-row gap-10 bg-white p-6 justify-center items-center pt-15 text-black">
-      <div className=" flex flex-col w-150 gap-6">
+    <div
+    className="flex flex-row gap-10 bg-white p-6 justify-center items-center pt-15 text-black">
+      <motion.div  initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      className=" flex flex-col w-150 gap-6">
         <h1 className="text-4xl text-blue-700 font-bold border-b-2 border-b-blue-700">Premium Braces</h1>
         <p className="flex leading-7 text-justify">
           At our dental clinic, we understand how much a confident smile can
@@ -31,8 +38,12 @@ export default function SectionOnnee() {
           help you achieve a healthier, more balanced, and more attractive
           smile one that you wll be proud to share every day.
         </p>
-      </div>
-      <div>
+      </motion.div>
+      <motion.div 
+       initial={{ x: 100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}>
         <Image
         alt=""
         src={Braces}
@@ -40,7 +51,7 @@ export default function SectionOnnee() {
         height={700} 
         style={{objectFit:"cover"}}
                  />
-      </div>
+      </motion.div>
     </div>
   );
 }
