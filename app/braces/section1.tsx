@@ -1,7 +1,9 @@
+"use client"
+
 import {motion} from "framer-motion";
 
 import Image from "next/image";
-import Braces from "../../public/braces2.jpg";
+import Braces2 from "../../public/braces2.jpg";
 
 
 
@@ -46,9 +48,9 @@ export default function SectionOnnee() {
         viewport={{ once: true }}>
         <Image
         alt=""
-        src={Braces}
+        src={Braces2}
         width={600}
-        height={700} 
+        height={700}   
         style={{objectFit:"cover"}}
                  />
       </motion.div>
