@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 :root {
   --background: #171717;
@@ -26,6 +26,67 @@ body {
 }
 
 
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-white text-black dark:bg-black dark:text-white;
+}
+
+
+@tailwind preFlight;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body {
+  background-color: white;
+  color: black;
+}
+
+.dark html,
+.dark body {
+  background-color: black;
+  color: white;
+} */
+
+@import "tailwindcss";
+
+/* Base colors (light mode) */
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+/* Dark mode (controlled by .dark class from next-themes) */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+html,
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+
+/* Optional: embla styles */
 .embla {
   overflow: hidden;
 }

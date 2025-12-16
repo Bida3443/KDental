@@ -4,6 +4,8 @@ import "./globals.css";
 
 // import WhatsappButton from "../public/whatsapp.png";
 import WhatsappButton from "../components/whatsapp";
+import ThemeProvider from "../components/themeprovider";
+import Theme from "../components/theme";
 
 
 const geistSans = Geist({
@@ -41,14 +43,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en  suppressHydrationWarning">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider>
+          <div className="bg-white text-black dark:bg-black dark:text-white min-h-screen">
+    {children}
+  </div>
+        {/* {children} */}
 
         {/* WhatsApp Floating Button */}
+        <Theme/>
         <WhatsappButton />
+        </ThemeProvider>
       </body>
     </html>
 
