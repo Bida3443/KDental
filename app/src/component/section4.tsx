@@ -59,8 +59,8 @@ export default function SectionFour() {
             key={index}
             className="flex flex-col bg-white border-1 border-blue-200 shadow-lg shadow-blue-300 rounded-lg m-10 p-20 w-70 justify-center items-center text-black"
           >
-            
-            {svig.svg}
+          
+            {svig.svg}            
             <a className="text-2xl" href={svig.link}></a>
             {svig.text}
             

@@ -74,7 +74,7 @@ export default function SectionTwo() {
         </p>
       </>
     ),
-
+              
     what: (
       <>
         <h1 className="font-bold text-2xl mb-4 text-blue-700">

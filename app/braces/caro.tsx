@@ -91,7 +91,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-// import { div } from "framer-motion/client"
+
 
 export default function Caro() {
    const plugin = React.useRef(

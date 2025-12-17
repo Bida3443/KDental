@@ -5,3 +5,10 @@ const config = {
 };
 // @preline/carousel
 export default config;
+
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
