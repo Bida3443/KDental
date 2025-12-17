@@ -26,7 +26,7 @@ export default function SectionFive () {
                 <div className="relative group overflow-hidden rounded-xl">
                 
                 <Image
-                      src="/Doctor1.png"
+                      src={Doctor1}
                       alt="Dentist attending to patient"
                       className="rounded-xl m-5 transition-transform duration-500 group-hover:scale-110"
                       width={500} 
@@ -43,7 +43,7 @@ export default function SectionFive () {
             <div className="relative group overflow-hidden rounded-xl">
                 
                 <Image
-                      src="/Doctor2.jpg"
+                      src={Doctor2}
                       alt="Dentist attending to patient"
                       className="rounded-xl m-5 transition-transform duration-500 group-hover:scale-110"
                       width={500} 
