@@ -1,4 +1,4 @@
-import { text } from "stream/consumers";
+// import { text } from "stream/consumers";
 
 export default function SectionSeven() {
   const plane = [

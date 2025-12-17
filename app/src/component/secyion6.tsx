@@ -43,7 +43,7 @@ export default function ImageSlider() {
   useEffect(() => {
     const interval = setInterval(nextSlide, 6000);
     return () => clearInterval(interval);
-  }, []);
+  }, [nextSlide]);
 
   // Determine visible slides (3 at a time)
   const visibleSlides = [

@@ -1,7 +1,7 @@
 "use client";
 
-import { link } from "fs";
-import image from "next/image";
+// import { link } from "fs";
+// import image from "next/image";
 
 import { motion } from "framer-motion";
 

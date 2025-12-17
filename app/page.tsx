@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import ImageTextRow from "./src/component/info";
 import BackgroundSlider from "./src/component/Bgslider";
 import NavBar from "./src/component/Nav";

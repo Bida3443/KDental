@@ -80,8 +80,8 @@
 
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
-import Image from "next/image"
-import pic from "../../public/Pic 1.jpg"
+// import Image from "next/image"
+// import pic from "../../public/Pic 1.jpg"
 
 import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -91,7 +91,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import { div } from "framer-motion/client"
+// import { div } from "framer-motion/client"
 
 export default function Caro() {
    const plugin = React.useRef(

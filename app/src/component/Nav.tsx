@@ -1,6 +1,8 @@
 "use client"
 
-import { link } from "fs";
+// import { link } from "fs";
+import Link from "next/link";
+
 import { motion } from "framer-motion";
 
 import Image from "next/image";
@@ -69,7 +71,7 @@ export default function NavBar() {
       transition={{ duration: 0.6, ease: "easeOut" }}
     className="flex flex-row justify-between items-center w-full">
 
-      <a href="/" className="flex items-center">
+      <Link href="/" className="flex items-center">
         <Image 
           src={Premium} 
           alt="Logo" 
@@ -77,7 +79,7 @@ export default function NavBar() {
           height={60} 
           className="hover:scale-105 bg-white rounded-lg p-1 transition-transform cursor-pointer"
         />
-      </a>
+      </Link>
 
       <div className="flex flex-row justify-center items-center w-fit space-x-6">
         {nav.map((nav, index) => (
@@ -101,3 +103,4 @@ export default function NavBar() {
     </motion.div>
   );
 }
+

@@ -1,24 +1,8 @@
-// "use client";
-
-// export default function WhatsappButton() {
-//   return (
-//     <a
-//       href="https://wa.me/2348102813443" // replace with the dentist's WhatsApp number
-//       target="_blank"
-//       rel="noopener noreferrer"
-//       className="fixed bottom-6 right-6 z-50"
-//     >
-//       <div className="bg-green-500 w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all">
-//         <img src="/whatsapp.svg" alt="WhatsApp" className="w-8 h-8" />
-//       </div>
-//     </a>
-//   );
-// }
-
 
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function WhatsappChat() {
   const [open, setOpen] = useState(false);
@@ -30,7 +14,13 @@ export default function WhatsappChat() {
         onClick={() => setOpen(!open)}
         className="fixed bottom-6 right-6 z-50 bg-green-500 w-14 h-14 rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-all"
       >
-        <img src="/whatsapp.png" alt="WhatsApp" className=" cursor-pointer w-8 h-8" />
+        <Image 
+        src="/whatsapp.png" 
+        alt="WhatsApp"
+        width={40}
+        height={40}
+        className=" cursor-pointer" />
+        
       </a>
 
       {/* Popup Chat Window */}

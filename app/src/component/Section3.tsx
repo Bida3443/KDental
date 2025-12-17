@@ -4,16 +4,16 @@ import carolina from "../../../public/caroline.jpg";
 
 export default function SectionThree() {
 
-  const text = [
-  "Holistic Approach",
-  "Modern Equipment",
-  "Experienced Dentists",
-  "Affordable Care",        
-  "Comfortable Environment",
-  "Personalized Treatment",
-  "Emergency Services",
-  "Patient Satisfaction",
-];
+//   const text = [
+//   "Holistic Approach",
+//   "Modern Equipment",
+//   "Experienced Dentists",
+//   "Affordable Care",        
+//   "Comfortable Environment",
+//   "Personalized Treatment",
+//   "Emergency Services",
+//   "Patient Satisfaction",
+// ];
 
   const mark = [
     {

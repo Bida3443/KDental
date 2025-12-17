@@ -1,6 +1,6 @@
-import Image from "next/image";
+// import Image from "next/image";
 
-import Link from "next/link";
+// import Link from "next/link";
 
 export default function SecttionOnne() {
   const card = [
@@ -176,3 +176,4 @@ export default function SecttionOnne() {
     </div>
   );
 }
+

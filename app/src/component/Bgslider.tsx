@@ -10,21 +10,25 @@ import Pic2 from "../../../public/Pic 2.jpg";
 import Pic6 from "../../../public/Pic 6.jpg";
 
 export default function BackgroundSlider() {
- const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.3, // Delay between each element
-      },
-    },
-  };
+
+//  const container = {
+//     hidden: { opacity: 0 },
+//     show: {
+//       opacity: 1,
+//       transition: {
+//         staggerChildren: 0.3, // Delay between each element
+//       },
+//     },
+//   };
+
+
 
   // Each child animation (slide up)
-  const item = {
-    hidden: { y: 40, opacity: 0 },
-    show: { y: 0, opacity: 1, transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1], } },
-  };
+
+  // const item = {
+  //   hidden: { y: 40, opacity: 0 },
+  //   show: { y: 0, opacity: 1, transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1], } },
+  // };
 
   const images = [
     { item: Pic1 },
@@ -86,7 +90,7 @@ export default function BackgroundSlider() {
         </h1>
         <h1 className=" text-4xl font-bold">Dental Clinic In Lagos</h1>
         <p className="text-2xl font-normal">
-          "Bring Smiles To Life, Your Favourite Dentist Is Here"
+          &quot;Bring Smiles To Life, Your Favourite Dentist Is Here&quot;
         </p>
 
         <a className="bg-blue-600 px-10 py-4 font-bold hover:drop-shadow-lg transform transition duration-300 ease-in-out rounded-md hover:text-black flex flex-row justify-center items-center space-x-2" href="/book">

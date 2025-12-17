@@ -4,10 +4,10 @@ import Doctor1 from "../../../public/Doctor1.png"
 import Doctor2 from "../../../public/Doctor2.jpg"
 
 export default function SectionFive () {
-const Doctor = [
-  {doctor:Doctor1},
-  {doctor:Doctor2},
-];
+// const Doctor = [
+//   {doctor:Doctor1},
+//   {doctor:Doctor2},
+// ];
     return(
 
           // <div>
