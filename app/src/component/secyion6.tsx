@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useCallback, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import slider1 from "../../../public/slider1.jpg";
@@ -31,13 +31,13 @@ export default function ImageSlider() {
 
   const [index, setIndex] = useState(0);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setIndex((prev) => (prev + 1) % images.length);
-  };
+  }, [images.length]);
 
-  const prevSlide = () => {
+  const prevSlide = useCallback (() => {
     setIndex((prev) => (prev - 1 + images.length) % images.length);
-  };
+  }, [images.length]);
 
   // Auto-slide every 3 seconds
   useEffect(() => {
