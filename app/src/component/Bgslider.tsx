@@ -53,7 +53,7 @@ export default function BackgroundSlider() {
   }, [images.length]);
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-[70vh] md:h-[85vh] lg:h-screen w-full overflow-hidden">
       {images.map((img, index) => (
         <Image
           key={index}
@@ -85,12 +85,12 @@ export default function BackgroundSlider() {
       transition={{ duration: 0.7, ease: "easeOut" }}
 
       className="absolute inset-0 bg-black/40 flex items-center justify-center flex-col space-y-6">
-        <h1 className="text-white text-5xl font-medium">
+        <h1 className="text-white lg:text-5xl text-4xl font-medium">
           Premium Smile Dental Clinic
         </h1>
-        <h1 className=" text-4xl font-bold">Dental Clinic In Lagos</h1>
-        <p className="text-2xl font-normal">
-          &quot;Bring Smiles To Life, Your Favourite Dentist Is Here&quot;
+        <h1 className=" lg:text-4xl text-3xl font-bold">Dental Clinic In Lagos</h1>
+        <p className="lg:text-2xl text-[20px] font-normal">
+          Bring Smiles To Life, Your Favourite Dentist Is Here
         </p>
 
         <a className="bg-blue-600 px-10 py-4 font-bold hover:drop-shadow-lg transform transition duration-300 ease-in-out rounded-md hover:text-black flex flex-row justify-center items-center space-x-2" href="/book">

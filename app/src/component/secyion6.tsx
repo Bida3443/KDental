@@ -58,7 +58,7 @@ export default function ImageSlider() {
         <h1 className="m-10">Explore the Elegance Of Our Dental Clinic</h1>
       </div>
 
-      <div className="relative w-full overflow-hidden py-6">
+      <div className="relative w-full overflow-hidden pb-15 py-6">
         {/* Slider container */}
         <div className="flex justify-center gap-4 transition-transform duration-700 ease-in-out">
           {visibleSlides.map((img, i) => (
@@ -91,7 +91,7 @@ export default function ImageSlider() {
         </button>
 
         {/* Dots */}
-        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex pt-10 gap-2">
           {images.map((_, i) => (
             <div
               key={i}

@@ -102,7 +102,7 @@ export default function ImageTextRow() {
       initial={{ x: -150, opacity: 0 }}      // starts from left
       animate={{ x: 0, opacity: 1 }}         // slides into position
       transition={{ duration: 0.6, ease: "easeOut" }}
- className="flex w-full bg-blue-700 p-2">
+ className="hidden md:flex lg:flex w-full bg-blue-700 p-2">
       {items.map((item, index) => (
         <div
           key={index}
