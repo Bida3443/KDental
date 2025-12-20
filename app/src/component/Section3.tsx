@@ -54,24 +54,24 @@ export default function SectionThree() {
   ];
 
   return (
-    <div className="relative flex flex-col justify-center h-screen w-full">
+    <div className="relative flex flex-col justify-center overflow-hidden min-h-screen w-full p-16 md:p-24">
       <Image
         src={carolina}
         alt="Background"
         fill
-        className="w-full h-full"
+        className="object-cover"
         objectFit="cover"
       />
 
       <div className="absolute w-full h-full bg-black opacity-90 z-20" />
 
-      <div className="relative z-30">
-        <h1 className="text-white text-4xl items-center text-center mt-5 mb-5 justify-center font-bold">
+      <div className="relative z-30    max-w-7xl mx-auto px-4 py-16 md:py-24">
+        <h1 className="text-white md:text-4xl text-2xl items-center text-center mt-5 mb-5 justify-center font-bold">
           Why Choose Us
         </h1>
       </div>
-      <div className="flex flex-row z-40 justify-center space-x-70">
-        <div className="flex flex-col justify-around text-justify items-start w-150">
+      <div className="flex lg:flex-row flex-col z-40 justify-center gap-10 lg:gap-20">
+        <div className="flex flex-col lg:justify-around lg:text-justify lg:items-start text-center justify-center w-full max-w-xl">
           <h1 className="flex text-2xl mb-7 leading-10">
             At K Dental Clinic, we believe a healthy smile is more than just
             teeth, it is about confidence, comfort, and care. Choosing the right

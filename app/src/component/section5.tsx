@@ -20,9 +20,9 @@ export default function SectionFive () {
           // </div>
 
         <div className="flex flex-col justify-center items-center font-bold">
-            <h1 className="text-black text-[40px] m-10">Meet The Dentist In Lagos</h1>
+            <h1 className="text-black lg:text-[40px] text-[30px] m-10">Meet The Dentist In Lagos</h1>
             
-            <div className="flex flex-row space-x-3">
+            <div className="flex lg:flex-row flex-col space-x-3">
                 <div className="relative group overflow-hidden rounded-xl">
                 
                 <Image

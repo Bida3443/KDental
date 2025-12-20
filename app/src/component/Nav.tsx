@@ -166,7 +166,7 @@ export default function NavBar() {
           initial={{ y: -40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.3 }}
-          className="lg:hidden fixed top-0 left-0 w-full h-screen bg-blue-400 z-40 flex flex-col items-center justify-center space-y-6 text-white"
+          className="lg:hidden fixed top-0 left-0 w-full lg:1/4 md:1/2 h-[70vh] md:h-[85vh] lg:h-screen bg-blue-400 z-40 flex flex-col items-center justify-center space-y-6 text-white"
         >
           {/* <Link href="/" onClick={() => setIsOpen(false)}>
             <Image

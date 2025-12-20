@@ -42,18 +42,18 @@ export default function SectionFour() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center m-10 ">
-      <div className="text-black font-bold text-[35px]">
+    <div className="flex flex-col lg:items-center items-center justify-center m-10 ">
+      <div className="text-black font-bold lg:text-[35px] text-[20px]">
         <h1>Comprehensive Care for Every Smile Services</h1>
       </div>
-      <div className="text-black text-[20px]">
+      <div className="text-black justify-center text-center lg:text-[20px] text-[15px]">
         <h1>
           Providing personalized and advanced dental care designed to restore,
           enhance, and maintain your perfect smile.
         </h1>
       </div>
 
-      <div className="flex flex-row">
+      <div className="flex lg:flex-row flex-col">
         {svig.map((svig, index) => (
           <div
             key={index}

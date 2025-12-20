@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import pic6 from "../../../public/Pic 6.jpg";
+import Logo from "../../../public/Premium 2.jpeg"
 
 export default function FooterSection (){
 
@@ -72,13 +73,14 @@ export default function FooterSection (){
         />
          <div className="absolute w-full h-full bg-black opacity-85 z-20" />
 
-         <div className="relative z-20 flex flex-row justify-center space-x-35 m-20">
-            <div className="w-[20%] space-y-2 leading-10">
-                <h1 className="font-bold text-2xl text-blue-700">KDental Clinic</h1>
+         <div className="relative z-20 flex  lg:flex-row flex-col justify-center space-x-35 m-20">
+            <div className="lg:w-[30%] w-[100%] space-y-2 ju text-justify leading-10">
+                <h1 className="font-bold text-2xl text-blue-700">Premium Dental Clinic</h1>
                 <p>Dedicated to providing exceptional dental care.</p>
                 <p>We offer a wide range of dental services including general dentistry, orthodontics, cosmetic dentistry, and emergency dental care. Our services are available at our locations in Ogba, Ikeja, and throughout Lagos.</p>
             </div>
-            <div className="w-[20%] space-y-14">
+           <div className="flex flex-col">
+             <div className="w-[100%] md:justify-center space-y-14">
                 <a href="#" className="text-blue-700 hover:text-white boder border-b-2 space-y-6 font-bold text-2xl">Services</a>
                 <ul className="space-y-5 mt-4">
                     <li>Braces</li>
@@ -93,8 +95,10 @@ export default function FooterSection (){
                     <li>Replacement Of Missing Teeth</li>
                 </ul>
             </div>
-            <div className="space-y-4">
-                <h1 className="text-blue-700 hover:text-white border-b-blue-700 border-b-2 space-y-6 font-bold text-2xl">Socials</h1>
+            
+           </div>
+            <div className="space-y-4 lg:justify-center md:justify-center lg:items-center md:items-center">
+                <h1 className="text-blue-700 hover:text-white border-b-blue-700 space-y-6 font-bold text-2xl">Socials</h1>
 
                 <div className="flex flex-col space-x-7">
                     <div className=" flex flex-row gap-3 space-y-4">
@@ -120,6 +124,15 @@ export default function FooterSection (){
                 </div>
 
 
+            </div>
+
+            <div>
+              <Image
+              src={Logo}
+              alt=""
+              width={300}
+              height={400}
+              className="rounded-xl"/>
             </div>
             </div>
             

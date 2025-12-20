@@ -54,17 +54,17 @@ export default function ImageSlider() {
 
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col text-[30px] justify-center items-center text-black font-bold">
+      <div className="flex flex-col lg:text-[30px] text-[25px] justify-center items-center text-black font-bold">
         <h1 className="m-10">Explore the Elegance Of Our Dental Clinic</h1>
       </div>
 
-      <div className="relative w-full overflow-hidden pb-15 py-6">
+      <div className="relative w-full overflow-hidden pb-16 py-6">
         {/* Slider container */}
-        <div className="flex justify-center gap-4 transition-transform duration-700 ease-in-out">
+        <div className="flex justify-center gap-4 transition-transform duration-700 ease-in-out flex-nowrap">
           {visibleSlides.map((img, i) => (
             <div
               key={i}
-              className="w-[30%] h-[350px] rounded-2xl overflow-hidden shadow-lg flex-shrink-0"
+              className="w-1/2 md:w-1/3 h-[260px] md:h-[350px] rounded-2xl overflow-hidden shadow-lg flex-shrink-0"
             >
               <Image
                 src={img.item}
