@@ -56,7 +56,7 @@ export default function SectionSeven() {
         ></iframe>
       </div>
       <div className=" flex flex-col  space-y-6 lg:space-y-10  lg:ml-7 justify-center w-full lg:w-1/2">
-        <h1 className="font-bold text-[40px]">Our Clinic Location</h1>
+        <h1 className="font-bold text-2xl sm:text-3xl lg:text-[40px]">Our Clinic Location</h1>
         {plane.map((items, index) => (
           <div key={index} className="flex flex-col border-b-2">
             <div className="flex flex-row gap-2 space-y-7">
