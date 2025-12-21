@@ -98,7 +98,7 @@ export default function FooterSection (){
             
            </div>
             <div className="space-y-4 lg:justify-center md:justify-center lg:items-center md:items-center">
-                <h1 className="text-blue-700 hover:text-white border-b-blue-700 space-y-6 font-bold text-2xl">Socials</h1>
+                <h1 className="text-blue-700 hover:text-white border-b-2 border-b-blue-700 space-y-6 font-bold text-2xl">Socials</h1>
 
                 <div className="flex flex-col space-x-7">
                     <div className=" flex flex-row gap-3 space-y-4">
