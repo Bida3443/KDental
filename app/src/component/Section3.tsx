@@ -65,7 +65,7 @@ export default function SectionThree() {
 
       <div className="absolute inset-0 bg-black opacity-90 z-10" />
 
-      <div className="relative z-20 max-w-7xl mx-auto px-10 py-5 md:py-20">
+      <div className="relative z-20 max-w-7xl mx-auto px-10 py-12 md:py-20">
         <h1 className="text-white text-2xl md:text-4xl text-center font-bold">
           Why Choose Us
         </h1>

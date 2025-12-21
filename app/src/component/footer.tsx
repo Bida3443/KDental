@@ -61,85 +61,187 @@ export default function FooterSection (){
            
         ];
 
-    return (
-          
-      <div className="flex flex-col relative  w-full">
-        <Image
-        src={pic6}
-        alt="background"
-        fill
-        className="w-full h-full"
-        objectFit="cover"
-        />
-         <div className="absolute w-full h-full bg-black opacity-85 z-20" />
+return (
+  <div className="relative w-full overflow-hidden">
 
-         <div className="relative z-20 flex  lg:flex-row flex-col justify-center space-x-35 m-20">
-            <div className="lg:w-[30%] w-[100%] space-y-2 ju text-justify leading-10">
-                <h1 className="font-bold text-2xl text-blue-700">Premium Dental Clinic</h1>
-                <p>Dedicated to providing exceptional dental care.</p>
-                <p>We offer a wide range of dental services including general dentistry, orthodontics, cosmetic dentistry, and emergency dental care. Our services are available at our locations in Ogba, Ikeja, and throughout Lagos.</p>
-            </div>
-           <div className="flex flex-col">
-             <div className="w-[100%] md:justify-center space-y-14">
-                <a href="#" className="text-blue-700 hover:text-white boder border-b-2 space-y-6 font-bold text-2xl">Services</a>
-                <ul className="space-y-5 mt-4">
-                    <li>Braces</li>
-                    <li>Crown</li>
-                    <li>Veneers</li>
-                    <li>Extraction</li>
-                    <li>Dental Bridges</li>
-                    <li>Dental Implant</li>
-                    <li>Teeth Whitening</li>
-                    <li>Root Canal Therapy</li>
-                    <li>Scaling and Polishing</li>
-                    <li>Replacement Of Missing Teeth</li>
-                </ul>
-            </div>
-            
-           </div>
-            <div className="space-y-4 lg:justify-center md:justify-center lg:items-center md:items-center">
-                <h1 className="text-blue-700 hover:text-white border-b-2 border-b-blue-700 space-y-6 font-bold text-2xl">Socials</h1>
+    {/* Background image */}
+    <Image
+      src={pic6}
+      alt="background"
+      fill
+      className="object-cover"
+    />
 
-                <div className="flex flex-col space-x-7">
-                    <div className=" flex flex-row gap-3 space-y-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" 
-        viewBox="0 0 512 512"
-        className="w-7 fill-white stroke-blue-600">
-        <path d="M160.2 25C152.3 6.1 131.7-3.9 112.1 1.4l-5.5 1.5c-64.6 17.6-119.8 80.2-103.7 156.4 37.1 175 174.8 312.7 349.8 349.8 76.3 16.2 138.8-39.1 156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47 11.8l-38.6 47.2C233.9 335.4 177.3 277 144.8 205.3L189 169.3c13.9-11.3 18.6-30.4 11.8-47L160.2 25z"/></svg>
-        <span className="text-[24px] text-blue-700">+234 703 334 7978</span>
-                    </div>
-                <div className="flex flex-row space-x-5">
-                    {foot.map((items, index) => (
-                    <div key= {index}
-                    >
-                        <a href={items.link} 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                            {items.svg}
+    {/* Overlay */}
+    <div className="absolute inset-0 bg-black/85 z-10" />
 
-                        </a>
-                    </div>
-                ))}
-                </div>
+    {/* Footer content */}
+    <div className="relative z-20 w-full px-6 py-16">
 
+      <div className="flex flex-col lg:flex-row gap-12 items-start">
 
-            </div>
+        {/* Premium Dental Clinic */}
+        <div className="w-full lg:w-[30%] space-y-4 text-left">
+          <h1 className="font-bold text-2xl text-blue-700">
+            Premium Dental Clinic
+          </h1>
+          <p>Dedicated to providing exceptional dental care.</p>
+          <p className="leading-7">
+            We offer a wide range of dental services including general dentistry,
+            orthodontics, cosmetic dentistry, and emergency dental care. Our
+            services are available at our locations in Ogba, Ikeja, and
+            throughout Lagos.
+          </p>
+        </div>
 
-            <div>
-              <Image
-              src={Logo}
-              alt=""
-              width={300}
-              height={400}
-              className="rounded-xl"/>
-            </div>
-            </div>
-            
-         </div>
+        {/* Services */}
+        <div className="w-full lg:w-[30%] text-left">
+          <h1 className="text-blue-700 border-b-2 border-blue-700 font-bold text-2xl">
+            Services
+          </h1>
+
+          <ul className="space-y-3 mt-6">
+            <li>Braces</li>
+            <li>Crown</li>
+            <li>Veneers</li>
+            <li>Extraction</li>
+            <li>Dental Bridges</li>
+            <li>Dental Implant</li>
+            <li>Teeth Whitening</li>
+            <li>Root Canal Therapy</li>
+            <li>Scaling and Polishing</li>
+            <li>Replacement Of Missing Teeth</li>
+          </ul>
+        </div>
+
+        {/* Socials */}
+        <div className="w-full lg:w-[30%] flex flex-col items-start space-y-6 text-left">
+          <h1 className="text-blue-700 border-b-2 border-blue-700 font-bold text-2xl">
+            Socials
+          </h1>
+
+          <div className="flex items-center gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              className="w-6 fill-white"
+            >
+              <path d="M160.2 25C152.3 6.1 131.7-3.9 112.1 1.4l-5.5 1.5c-64.6 17.6-119.8 80.2-103.7 156.4 37.1 175 174.8 312.7 349.8 349.8 76.3 16.2 138.8-39.1 156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47 11.8l-38.6 47.2C233.9 335.4 177.3 277 144.8 205.3L189 169.3c13.9-11.3 18.6-30.4 11.8-47L160.2 25z" />
+            </svg>
+
+            <span className="text-lg text-blue-700">
+              +234 703 334 7978
+            </span>
+          </div>
+
+          <div className="flex gap-4">
+            {foot.map((items, index) => (
+              <a
+                key={index}
+                href={items.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {items.svg}
+              </a>
+            ))}
+          </div>
+
+          <Image
+            src={Logo}
+            alt="logo"
+            width={200}
+            height={200}
+            className="rounded-xl"
+          />
+        </div>
 
       </div>
-    );
-}
+    </div>
+  </div>
+);
+
+
+//     return (
+          
+//       <div className=" relative overflow-hidden w-full">
+//         <Image
+//         src={pic6}
+//         alt="background"
+//         fill
+//         className="object-cover"
+//         // objectFit="cover"
+//         />
+//          <div className="absolute inset-0 h-full bg-black/85 z-10" />
+
+//          <div className="relative z-20 w-full px-6 py-16">
+
+//             <div className="lg:w-[30%] w-full space-y-4 lg:text-left leading-10">
+//                 <h1 className="font-bold text-2xl text-blue-700">Premium Dental Clinic</h1>
+//                 <p>Dedicated to providing exceptional dental care.</p>
+//                 <p>We offer a wide range of dental services including general dentistry, orthodontics, cosmetic dentistry, and emergency dental care. Our services are available at our locations in Ogba, Ikeja, and throughout Lagos.</p>
+//             </div>
+//            <div className="flex flex-col">
+//              <div className="w-full lg:w-[30%] text-center lg:text-left">
+//                 <a href="#" className="text-blue-700 hover:text-white boder border-b-2 font-bold text-2xl">Services</a>
+//                 <ul className="space-y-3 mt-6">
+//                     <li>Braces</li>
+//                     <li>Crown</li>
+//                     <li>Veneers</li>
+//                     <li>Extraction</li>
+//                     <li>Dental Bridges</li>
+//                     <li>Dental Implant</li>
+//                     <li>Teeth Whitening</li>
+//                     <li>Root Canal Therapy</li>
+//                     <li>Scaling and Polishing</li>
+//                     <li>Replacement Of Missing Teeth</li>
+//                 </ul>
+//             </div>
+            
+//            </div>
+//             <div className="w-full lg:w-[30%] flex flex-col items-center lg:items-start space-y-6">
+//                 <h1 className="text-blue-700 hover:text-white border-b-2 border-b-blue-700 font-bold text-2xl">Socials</h1>
+
+//                 <div className="flex items-center gap-3">
+//                     <div className=" flex flex-row gap-3 space-y-4">
+//                         <svg xmlns="http://www.w3.org/2000/svg" 
+//         viewBox="0 0 512 512"
+//         className="w-7 fill-white stroke-blue-600">
+//         <path d="M160.2 25C152.3 6.1 131.7-3.9 112.1 1.4l-5.5 1.5c-64.6 17.6-119.8 80.2-103.7 156.4 37.1 175 174.8 312.7 349.8 349.8 76.3 16.2 138.8-39.1 156.4-103.7l1.5-5.5c5.4-19.7-4.7-40.3-23.5-48.1l-97.3-40.5c-16.5-6.9-35.6-2.1-47 11.8l-38.6 47.2C233.9 335.4 177.3 277 144.8 205.3L189 169.3c13.9-11.3 18.6-30.4 11.8-47L160.2 25z"/></svg>
+//         <span className="text-lg text-blue-700">+234 703 334 7978</span>
+//                     </div>
+//                 <div className="flex gap-4">
+//                     {foot.map((items, index) => (
+//                     <div key= {index}
+//                     >
+//                         <a href={items.link} 
+//                         target="_blank"
+//                         rel="noopener noreferrer"
+//                         >
+//                             {items.svg}
+
+//                         </a>
+//                     </div>
+//                 ))}
+//                 </div>
+
+
+//             </div>
+
+//             <div>
+//               <Image
+//               src={Logo}
+//               alt=""
+//               width={300}
+//               height={400}
+//               className="rounded-xl"/>
+//             </div>
+//             </div>
+            
+//          </div>
+
+//       </div>
+//     );
+// }
 
 
