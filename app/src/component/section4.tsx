@@ -53,7 +53,7 @@ export default function SectionFour() {
         </h1>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 place-items-center ">
+      <div className="flex lg:flex-row flex-col ">
         {svig.map((svig, index) => (
           <div
             key={index}
@@ -63,7 +63,7 @@ export default function SectionFour() {
             {svig.svg}            
             <a className="text-2xl" href={svig.link}></a>
             {svig.text}
-            <div>flex lg:flex-row flex-col</div>
+            
           </div>
           
         ))}     
