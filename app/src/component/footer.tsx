@@ -83,7 +83,7 @@ return (
         {/* Premium Dental Clinic */}
         <div className="w-full lg:w-[30%] space-y-4 text-left">
           <h1 className="font-bold text-2xl text-blue-700">
-            Premium Dental Clinic
+            Premium Smile Dental Clinic
           </h1>
           <p>Dedicated to providing exceptional dental care.</p>
           <p className="leading-7">
