@@ -53,21 +53,22 @@ export default function SectionFour() {
         </h1>
       </div>
 
-      <div className="flex lg:flex-row flex-col">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 place-items-center ">
         {svig.map((svig, index) => (
           <div
             key={index}
             className="flex flex-col bg-white border-1 border-blue-200 shadow-lg shadow-blue-300 rounded-lg m-10 p-20 w-70 justify-center items-center text-black"
           >
-          
+            
             {svig.svg}            
             <a className="text-2xl" href={svig.link}></a>
             {svig.text}
-            
+            <div>flex lg:flex-row flex-col</div>
           </div>
           
-        ))}
-      </div>
+        ))}     
+
+      </div>    
       <div className="flex bg-blue-500 rounded-md p-2 text-white">
         <a href="/service" className="text-[20px] font-bold hover-blue-700">
           VIEW ALL SERVICES

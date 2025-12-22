@@ -8,7 +8,7 @@ export default function SectionFive () {
     return(
 
         <div className="flex flex-col justify-center items-center font-bold">
-            <h1 className="text-black text-center lg:text-[40px] text-[30px] m-10">Meet The Dentist In Lagos</h1>
+            <h1 className="text-black text-center lg:text-[40px] text-[20px] m-10">Meet The Dentist In Lagos</h1>
             
             <div className="flex flex-row justify-center px-4 w-full gap-4">
                 <div className="relative group overflow-hidden rounded-xl w-1/2 sm:w-[220px] md:w-[280] lg:w-[500px]">
