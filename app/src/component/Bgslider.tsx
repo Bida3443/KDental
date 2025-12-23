@@ -55,7 +55,7 @@ export default function BackgroundSlider() {
   return (
     
     <div className="relative">
-<div className="relative h-[60vh] md:h-[85vh] lg:h-screen w-full overflow-hidden">
+<div className="relative h-[40vh] md:h-[85vh] lg:h-screen w-full overflow-hidden">
       {images.map((img, index) => (
         <Image
           key={index}
@@ -98,7 +98,7 @@ export default function BackgroundSlider() {
         <a className="bg-blue-600 lg:px-10 px-4 lg:py-4 py-2 font-bold hover:drop-shadow-lg transform transition duration-300 ease-in-out rounded-md hover:text-black flex flex-row justify-center items-center space-x-2" href="/book">
           {" "}
 
-          
+        
           <svg xmlns="http://www.w3.org/2000/svg"
            viewBox="0 0 640 640"
            className="lg:w-7 w-5 fill-white stroke-white" href="#">

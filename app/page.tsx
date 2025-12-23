@@ -16,16 +16,16 @@ export default function Home() {
   return (
     <div>
 
-  <ImageTextRow />
-  <NavBar />
+  <ImageTextRow/>
+  <NavBar/>
   <BackgroundSlider/>
-  <SectionTwo />
+  <SectionTwo/>
   <SectionThree/>
   <SectionFour/>
   <SectionFive/>
   <SectionSix/>
-  <SectionSeven />
-  <FooterSection />
+  <SectionSeven/>
+  <FooterSection/>
     
 </div>
 
