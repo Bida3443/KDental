@@ -1,10 +1,12 @@
 export default function SectionTwo() {
   return (
-    <div className="flex flex-col text-black mt-10 justify-center text-center w-fit items-center space-y-4">
+    <div className="flex flex-col text-black justify-center  text-center w-fit items-center    
+         bg-white space-y-5 p-10">
       <p className="font-bold lg:text-[33px] text:[30px] ">Welcome To Premium Smile Dental Clinic</p>
       <h1 className="text-blue-700 lg:text-[27px] text-[14px] font-bold">
         The Premuim And The Most Trusted Dental Clinic In Lagos, Bring A Smile
         To Life
+
       </h1>
       
             <p className="lg:w-[80%] w-[90%] lg:text-[20px] text:[12] lg:text-justify text-justify  lg:leading-10 leading-8">

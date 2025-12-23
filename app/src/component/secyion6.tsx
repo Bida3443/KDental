@@ -53,7 +53,7 @@ export default function ImageSlider() {
   ];
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-white">
       <div className="flex flex-col lg:text-[30px] text-center text-[22px] justify-center items-center text-black font-bold">
         <h1 className="m-10">Explore the Elegance Of Our Dental Clinic</h1>
       </div>

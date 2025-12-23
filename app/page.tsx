@@ -15,49 +15,37 @@ import FooterSection from "./src/component/footer";
 export default function Home() {
   return (
     <div>
-{/* <div className="" > */}
+
   <ImageTextRow />
-  {/* <div>sssssss</div>
-  <div>ddddddd</div>
-  <div>mmmmmmm</div>
-  <div>ppppppp</div> */}
+ 
 
 {/* </div> */}
 
-<div className="flex flex-row relative">
+<div className="">
 
-  <div className="">
     <NavBar />
-
-  </div>
 
   <BackgroundSlider />
 </div>
 
-<div className="flex flex-row items-center justify-center bg-white w-full space-y-5 pb-10">
 
   <SectionTwo />
 
-</div>
 
-<div className="flex justify-center items-center">
   <SectionThree/>
-</div>
 
-<div className="flex flex-col bg-white">
+
   <SectionFour/>
-</div>
 
-<div className="bg-white ">
+
   <SectionFive/>
-</div>
 
-<div className="bg-white ">
+
+
   <SectionSix/>
-</div>
-    <div className="bg-blue-600">
+  
       <SectionSeven />
-    </div>
+    
 
     <footer>
       <FooterSection />

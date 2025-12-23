@@ -137,7 +137,9 @@ export default function NavBar() {
   ];
 
   return (
+  <div className="relative">
     <>
+    
       {/* ================= MOBILE HEADER ================= */}
       <div className="lg:hidden fixed top-5 left-0 w-full z-50 flex justify-between items-center px-6">
         <Link href="/" className="flex items-center">
@@ -208,7 +210,7 @@ export default function NavBar() {
       >
         
         <Link href="/" className="flex items-center">
-          <Image
+          <Image   
             src={Premium}
             alt="Logo"
             width={60}
@@ -221,7 +223,7 @@ export default function NavBar() {
           {nav.map((item, index) => (
             <div
               key={index}
-              className="flex flex-row items-center hover:text-gray-900 hover:scale-110"
+              className="flex flex-row items-center hover:text-gray-900 target_blank hover:scale-110"
             >
               <a className="text-2xl" href={item.link}>
                 {item.text}
@@ -238,6 +240,7 @@ export default function NavBar() {
         </a>
       </motion.div>
     </>
+  </div>
   );
 }
 

@@ -42,7 +42,7 @@ export default function SectionFour() {
   ];
 
   return (
-    <div className="flex flex-col lg:items-center text-center items-center justify-center m-10 ">
+    <div className="flex flex-col lg:items-center text-center items-center  bg-white justify-center p-10 ">
       <div className="text-black font-bold lg:text-[35px] text-[18px]">
         <h1>Comprehensive Care for Every Smile Services</h1>
       </div>

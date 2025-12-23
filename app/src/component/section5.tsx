@@ -7,7 +7,7 @@ export default function SectionFive () {
 
     return(
 
-        <div className="flex flex-col justify-center items-center font-bold">
+        <div className="flex flex-col justify-center items-center font-bold bg-white ">
             <h1 className="text-black text-center lg:text-[40px] text-[20px] m-10">Meet The Dentist In Lagos</h1>
             
             <div className="flex flex-row justify-center px-4 w-full gap-4">

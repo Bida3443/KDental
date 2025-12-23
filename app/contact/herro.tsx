@@ -1,15 +1,15 @@
-import NavBar from "../src/component/Nav";
+// import NavBar from "../src/component/Nav";
 import Image from "next/image";
 import erfan from "../../public/erfan.jpg";
 
 export default function Herro() {
   return (
     <div>
-      <div className="flex flex-row relative">
-        <div className="absolute  top-15 left-1/2 transform -translate-x-1/2 z-50 w-[70%] flex flex-row justify-center items-center text-center bg-blue-400 p-5 px-10 rounded-md">
+      <div className="flex flex-row relative justify-center">
+        {/* <div className="absolute  top-15 left-1/2 transform -translate-x-1/2 z-50 w-[70%] flex flex-row justify-center items-center text-center bg-blue-400 p-5 px-10 rounded-md">
           <NavBar />
           
-        </div>
+        </div> */}
         
         {/* <div className="flex justify-center items-center text-white font-bold">CONTACT US</div> */}
         
@@ -24,9 +24,9 @@ export default function Herro() {
             // objectFit="cover"
             
           />
-          <div className="absolute w-full h-full bg-black opacity-40 z-20" />
+          <div className="relative w-full h-full bg-black opacity-40 z-20" />
           <div className="absolute inset-0 z-30 flex flex-col justify-center items-center text-white px-4">
-        <h1 className="text-5xl font-bold mb-3">Contact Us</h1>
+        <h1 className="text-5xl font-bold">Contact Us</h1>
         {/* <p className="text-lg max-w-2xl text-center">
           We are here to assist you. Reach out and let us help you today.
         </p> */}
