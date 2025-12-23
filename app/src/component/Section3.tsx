@@ -72,13 +72,13 @@ export default function SectionThree() {
       </div>
       <div className="relative z-20 flex flex-col lg:flex-row justify-center gap-10 lg:gap-20 px-4 pb-10">
         <div className="flex flex-col text-center lg:text-left justify-center w-full max-w-xl mx-auto">
-          <h1 className="text-2xl mb-5 leading-8">
+          <h1 className="text-2xl text-justify mb-5 leading-8">
             At Premium Dental Clinic, we believe a healthy smile is more than just
             teeth, it is about confidence, comfort, and care. Choosing the right
             dentist is an important decision, and here is why patients in Ikeja
             and Ogba Lagos trust us.
           </h1>
-          <h2 className="leading-8 text-base sm:text-lg">
+          <h2 className="leading-8 text-justify text-base sm:text-lg">
             Backed by years of professional experience, we deliver every service
             from simple cleaning to advanced procedures with skill and
             compassion. We also understand that many people feel anxious about

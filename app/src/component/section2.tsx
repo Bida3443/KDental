@@ -2,14 +2,14 @@ export default function SectionTwo() {
   return (
     <div className="flex flex-col text-black justify-center  text-center w-fit items-center    
          bg-white space-y-5 p-10">
-      <p className="font-bold lg:text-[33px] text:[30px] ">Welcome To Premium Smile Dental Clinic</p>
-      <h1 className="text-blue-700 lg:text-[27px] text-[14px] font-bold">
+      <h1 className="font-bold lg:text-[33px] text:[25px] ">Welcome To Premium Smile Dental Clinic</h1>
+      <h2 className="text-blue-700 lg:text-[27px] text-[12px] font-bold">
         The Premuim And The Most Trusted Dental Clinic In Lagos, Bring A Smile
         To Life
 
-      </h1>
+      </h2>
       
-            <p className="lg:w-[80%] w-[90%] lg:text-[20px] text:[12] lg:text-justify text-justify  lg:leading-10 leading-8">
+            <p className="lg:w-[80%] w-[100%] lg:text-[20px] text:[10px] lg:text-justify text-justify lg:leading-10 leading-8">
         At Premium Smile Dental Clinic, your smile is our passion. Located in the heart of{" "}
         <a href="#" className="text-blue-600 inline-block">
           Ogba, Ikeja, Lagos,

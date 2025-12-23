@@ -1,4 +1,5 @@
 import Herroo from "./herroo";
+import NavBar from "../src/component/Nav";
 import ImageTextRow from "../src/component/info";
 import SectionnOne from "./sectionn1";
 import SectionFifteen from "./sectionn2";
@@ -9,6 +10,7 @@ export default function Book () {
 
     <div>
         <ImageTextRow/>
+        <NavBar/>
         <Herroo/>
         <SectionnOne />
         <SectionFifteen/>

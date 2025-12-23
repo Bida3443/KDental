@@ -17,39 +17,16 @@ export default function Home() {
     <div>
 
   <ImageTextRow />
- 
-
-{/* </div> */}
-
-<div className="">
-
-    <NavBar />
-
-  <BackgroundSlider />
-</div>
-
-
+  <NavBar />
+  <BackgroundSlider/>
   <SectionTwo />
-
-
   <SectionThree/>
-
-
   <SectionFour/>
-
-
   <SectionFive/>
-
-
-
   <SectionSix/>
-  
-      <SectionSeven />
+  <SectionSeven />
+  <FooterSection />
     
-
-    <footer>
-      <FooterSection />
-    </footer>
 </div>
 
   );
