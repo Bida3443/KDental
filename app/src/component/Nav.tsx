@@ -168,7 +168,7 @@ export default function NavBar() {
           initial={{ y: -40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.3 }}
-          className="lg:hidden fixed top-0 left-0 w-full lg:1/4 md:1/2 h-[70vh] md:h-[85vh] lg:h-screen bg-blue-400 z-40 flex flex-col items-center justify-center space-y-6 text-white"
+          className="lg:hidden fixed top-0 left-0 w-full lg:1/4 md:1/2 h-[40vh] md:h-[85vh] lg:h-screen bg-blue-400 z-40 flex flex-col items-center justify-center space-y-2 text-white"
         >
           {/* <Link href="/" onClick={() => setIsOpen(false)}>
             <Image
@@ -194,7 +194,7 @@ export default function NavBar() {
           <a
             href="/book"
             onClick={() => setIsOpen(false)}
-            className="bg-white p-3 px-10 rounded-md text-blue-700 text-[20px] font-bold transition-transform duration-300 hover:scale-105 hover:bg-blue-700 hover:text-white"
+            className="bg-white p-3 px-7 rounded-md text-blue-700 text-[15px] font-bold transition-transform duration-300 hover:scale-105 hover:bg-blue-700 hover:text-white"
           >
             BOOK NOW
           </a>

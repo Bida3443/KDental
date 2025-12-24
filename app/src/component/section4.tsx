@@ -43,21 +43,21 @@ export default function SectionFour() {
 
   return (
     <div className="flex flex-col lg:items-center text-center items-center  bg-white justify-center p-10 ">
-      <div className="text-black font-bold lg:text-[35px] text-[15px]">
+      <div className="text-black font-bold lg:text-[35px] md:text-[20] text-[15px]">
         <h1>Comprehensive Care for Every Smile Services</h1>
       </div>
-      <div className="text-black justify-center text-center lg:text-[20px] text-[11px]">
+      <div className="text-black justify-center text-center lg:text-[20px] md:text-[15] text-[11px]">
         <h1>
           Providing personalized and advanced dental care designed to restore,
           enhance, and maintain your perfect smile.
         </h1>
       </div>
 
-      <div className="flex lg:flex-row flex-col ">
+      <div className="flex lg:flex-row flex-col">
         {svig.map((svig, index) => (
           <div
             key={index}
-            className="flex flex-col bg-white border-1 border-blue-200 shadow-lg shadow-blue-300 rounded-lg m-10 p-20 w-70 justify-center items-center text-black"
+            className="flex flex-col bg-white border-1 border-blue-200 shadow-lg shadow-blue-300 rounded-lg lg:m-10 m-5 lg:p-20 p-10 w-70 justify-center items-center text-black"
           >
             
             {svig.svg}            
