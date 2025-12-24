@@ -40,6 +40,7 @@ export default function SectionSeven() {
       ),
       text1: "Mondays-Saturdays 09:00AM-18:00PM",
       text2: "Sundays 1:30am-17:00pm",
+      className:""
     },
   ];
 
@@ -60,9 +61,12 @@ export default function SectionSeven() {
         {plane.map((items, index) => (
           <div key={index} className="flex flex-col border-b-2">
             <div className="flex flex-row gap-2 space-y-7">
-              <div className="order-2">{items.text1}</div>
-              <div className="order-1">{items.text2}</div>
               <div className="order-0">{items.svg}</div>
+              <div className="flex flex-col">
+                <div className="order-2">{items.text1}</div> 
+              <div className="order-1 justify-center">{items.text2}</div>
+              </div>
+              
             </div>
           </div>
         ))}

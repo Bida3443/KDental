@@ -43,10 +43,10 @@ export default function SectionFour() {
 
   return (
     <div className="flex flex-col lg:items-center text-center items-center  bg-white justify-center p-10 ">
-      <div className="text-black font-bold lg:text-[35px] text-[18px]">
+      <div className="text-black font-bold lg:text-[35px] text-[15px]">
         <h1>Comprehensive Care for Every Smile Services</h1>
       </div>
-      <div className="text-black justify-center text-center lg:text-[20px] text-[15px]">
+      <div className="text-black justify-center text-center lg:text-[20px] text-[11px]">
         <h1>
           Providing personalized and advanced dental care designed to restore,
           enhance, and maintain your perfect smile.
