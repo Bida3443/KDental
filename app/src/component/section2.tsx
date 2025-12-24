@@ -9,7 +9,7 @@ export default function SectionTwo() {
 
       </h2>
       
-            <p className="lg:w-[80%] w-[100%] lg:text-[20px] md:text-[15px] text-[10px] lg:text-justify text-justify lg:leading-10 md:leading-5 leading-4">
+            <p className="lg:w-[80%] w-[100%] lg:text-[20px] md:text-[15px] text-[10px] lg:text-justify text-justify lg:leading-10 md:leading-5 leading-5">
         At Premium Smile Dental Clinic, your smile is our passion. Located in the heart of{" "}
         <a href="#" className="text-blue-600 inline-block">
           Ogba, Ikeja, Lagos,

@@ -54,16 +54,16 @@ export default function SectionThree() {
   ];
 
   return (
-    <div className="relative overflow-hidden w-full min-h-screen">
+    <div className="relative  overflow-hidden w-full min-h-screen">
       <Image
         src={carolina}
         alt="Background"
         fill
-        className="object-cover"
+        className="object-cover fixed"
         
       />
 
-      <div className="absolute inset-0 bg-black opacity-90 z-10" />
+      <div className="absolute inset-0 bg-black opacity-80 z-10" />
 
       <div className="relative z-20 max-w-7xl mx-auto px-10 py-5 md:py-20">
         <h1 className="text-white text-2xl md:text-4xl text-center font-bold">
@@ -78,7 +78,7 @@ export default function SectionThree() {
             dentist is an important decision, and here is why patients in Ikeja
             and Ogba Lagos trust us. 
           </h1>
-          <h2 className="leading-8 md:text-[15px] lg:text-[20px] text-[13px] text-justify">
+          <h2 className="lg:leading-8 leading-4 md:text-[15px] lg:text-[20px] text-[13px] text-justify">
             Backed by years of professional experience, we deliver every service
             from simple cleaning to advanced procedures with skill and
             compassion. We also understand that many people feel anxious about
