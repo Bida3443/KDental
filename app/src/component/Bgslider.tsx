@@ -87,17 +87,17 @@ export default function BackgroundSlider() {
       transition={{ duration: 0.7, ease: "easeOut" }}
 
       className="absolute inset-0 bg-black/40 flex items-center justify-center text-center flex-col lg:space-y-6 space-y-3">
-        <h1 className="text-white lg:text-5xl md:text-4xl text-[22px] font-medium">
+        <h1 className="text-white lg:text-5xl md:text-3xl text-[22px] font-medium">
           Premium Smile Dental Clinic
         </h1>
         <h1 className=" lg:text-4xl md:text-3xl text-[20] font-bold">Dental Clinic In Lagos</h1>
         <p className="lg:text-2xl text-[10px] font-normal">
-          Bring Smiles To Life, Your Favourite Dentist Is Here
+          Bringing Smiles To Life, Your Favourite Dentist Is Here
         </p>
 
         <a className="bg-blue-600 lg:px-10 px-4 lg:py-4 py-2 font-bold hover:drop-shadow-lg transform transition duration-300 ease-in-out rounded-md hover:text-black flex flex-row justify-center items-center space-x-2" href="/book">
           {" "}
-
+      
         
           <svg xmlns="http://www.w3.org/2000/svg"
            viewBox="0 0 640 640"

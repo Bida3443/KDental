@@ -28,7 +28,7 @@ const [form, setForm] = useState({
   return (
 
     <div className="bg-white p-10">
-      <div className="w-3/5 max-w-4xl mx-auto bg-blue-700 text-white rounded-2xl p-10">
+      <div className="lg:w-3/5  max-w-4xl mx-auto bg-blue-700 text-white rounded-2xl p-10">
       <h1 className="text-center text-3xl font-bold mb-8">Send us a Message</h1>
 
       <form onSubmit={handleSubmit} className="space-y-6">

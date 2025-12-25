@@ -14,7 +14,7 @@ export default function Herro() {
         {/* <div className="flex justify-center items-center text-white font-bold">CONTACT US</div> */}
         
 
-        <div className="w-full h-[70vh] relative">
+        <div className="w-full lg:h-[70vh] h-[40vh] relative">
           <Image
             src={erfan}
             alt="Background"
