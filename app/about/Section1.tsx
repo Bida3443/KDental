@@ -9,7 +9,7 @@ export default function SectionOne() {
           <Image
             src={Doctor}
             alt="Background"
-            className="rounded-xl m-5 items-center"
+            className="rounded-xl m-5 justify-center items-center"
             objectFit="cover"
             width={500}
             height={400}
