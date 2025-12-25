@@ -27,13 +27,13 @@ const [form, setForm] = useState({
 
   return (
 
-    <div className="bg-white p-10">
-      <div className="w-3/5 lg:max-w-4xl max-w-2x1 mx-auto bg-blue-700 text-white rounded-2xl p-10">
+    <div className="bg-white px-4 py-10">
+      <div className="w-full max-w-4xl mx-auto bg-blue-700 text-white rounded-2xl px-5 py-8 sm:px-8 lg:p-10 ">
       <h1 className="text-center lg:text-3xl text-[25px] font-bold mb-8">Send us a Message</h1>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Grid for 2-column fields */}
-        <div className="flex lg:flex-row flex-col lg:gap-30 gap-5">
+        <div className="flex lg:flex-row flex-col lg:gap-10 gap-5">
           {/* Name */}
           <div>
             <label className="block mb-2 text-sm font-medium">Name</label>
@@ -62,7 +62,7 @@ const [form, setForm] = useState({
         </div>
 
         {/* Email + Call Time */}
-        <div className="flex lg:flex-row flex-col lg:gap-30 gap-5">
+        <div className="flex lg:flex-row flex-col lg:gap-10 gap-5">
           {/* Email */}
           <div>
             <label className="block mb-2 text-sm font-medium">Email</label>
