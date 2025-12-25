@@ -12,7 +12,7 @@ export default function Hero () {
                 
                   </div> */}
                 
-                  <div className="w-full h-[70vh] relative">
+                  <div className="w-full lg:h-[70vh] h-[40vh] relative">
                     <Image
                                         src={erfan}
                                         alt="Background"
@@ -23,7 +23,7 @@ export default function Hero () {
                                       />
              <div className="absolute w-full h-full bg-black opacity-40 z-20" />
                <div className="absolute inset-0 z-30 flex flex-col justify-center items-center text-white px-4">
-        <h1 className="text-5xl font-bold mb-3">About Us</h1>
+        <h1 className="lg:text-5xl text-[24px] font-bold mb-3">About Us</h1>
         {/* <p className="text-lg max-w-2xl text-center">
           We are here to assist you. Reach out and let us help you today.
         </p> */}

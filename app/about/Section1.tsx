@@ -3,13 +3,13 @@ import Doctor from "../../public/Doctor1.png";
 
 export default function SectionOne() {
   return (
-    <div className="flex flex-col justify-center bg-white gap-6 pt-10">
-      <div className="flex flex-row justify-center ">
+    <div className="flex flex-col justify-center bg-white gap-10 pt-10">
+      <div className="flex lg:flex-row flex-col space-x-20 justify-center items-center ">
         <div>
           <Image
             src={Doctor}
             alt="Background"
-            className="rounded-xl m-5"
+            className="rounded-xl m-5 items-center"
             objectFit="cover"
             width={500}
             height={400}
