@@ -35,23 +35,24 @@ export default function SectionnOne () {
 
              <section className="py-16 bg-white">
       {/* Page Title */}
-      <div className="text-center mb-10">
-        <h2 className="text-3xl font-semibold text-blue-700">
+      <div className="text-center mb-10 px-4 ">
+        <h2 className="lg:text-3xl text-2xl font-semibold text-blue-700">
           Premium Smile Dental Clinic in Lagos
         </h2>
-        <p className="lg:max-w-4xl max-w-3x1 mx-auto leading-7 mt-3 lg:justify-center text-justify text-gray-700">
+        <p className="lg:max-w-4xl max-w-2x1 mx-auto leading-7 mt-3 lg:justify-center text-justify text-gray-700">
           Premium Smile Dental Clinic is a leading dental practice in Lagos, Nigeria, dedicated to delivering exceptional oral care and beautiful smiles. We pride ourselves on creating happy, healthy, and confident smiles using advanced, cutting-edge dental technologies.
         Your comfort, safety, and satisfaction remain our top priority as we provide world-class dental solutions right here in Lagos, Nigeria.
-        </p>
-      </div>
+        </p>   
+      </div>  
 
       {/* FORM CARD */}
-      <div className=" max-w-4xl mx-auto w-full bg-blue-700 text-white rounded-2xl px-5 py-8 sm:px-8 lg:p-10 shadow-lg">
+      <div className="px-4 sm:px-6 lg:px-0">
+      <div className=" lg:max-w-4xl max-w-2xl mx-auto w-full bg-blue-700 text-white rounded-2xl px-5 py-8 sm:px-8 lg:p-10 shadow-lg">
         <h1 className="text-center text-3xl font-bold mb-8">Send us a Message</h1>
 
         <form onSubmit={handleSubmit} className="space-y-8">
           {/* GRID START */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cosls-1 md:grid-cols-2 gap-6">
 
             {/* Name */}
             <div>
@@ -227,6 +228,7 @@ export default function SectionnOne () {
             Send
           </button>
         </form>
+      </div>
       </div>
     </section>
         </div>
