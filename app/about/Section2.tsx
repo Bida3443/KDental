@@ -95,14 +95,14 @@ export default function SectionTwo() {
     ),
   };
   return (
-    <div className="bg-white px-4 py-6 md:px-8 lg:p-10 rounded-lg pt-20 ">
+    <div className="bg-white px-4 py-6 md:px-8 lg:p-10 rounded-lg pt-15 ">
       {/* Tabs */}
       <div className="flex flex-wrap gap-3">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActive(tab.id)}
-            className={`pb-2 lg:text-[20px] text-[10px] ${
+            className={`pb-2 lg:text-[20px] flex flex-row text-[10px] ${
               active === tab.id
                 ? "text-white bg-blue-700 px-4 py-2 rounded-md"
                 : "text-blue-700 hover:text-white p-2 rounded-md hover:bg-blue-700"
