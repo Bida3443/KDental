@@ -18,7 +18,7 @@ export default function SectionTwo() {
   const content: Record<TabKey, React.ReactNode> = {
     who: (
       <>
-        <h1 className="font-bold lg:text-2xl text-[20px] mb-4 text-blue-700">
+        <h1 className="font-bold lg:text-2xl text-[18px] mb-4 text-blue-700">
           We Offer High Quality Services
         </h1>
         <p className="text-gray-700 lg:leading-10 leading-7 text-justify">
