@@ -18,7 +18,7 @@ export default function SectionTwo() {
   const content: Record<TabKey, React.ReactNode> = {
     who: (
       <>
-        <h1 className="font-bold lg:text-2xl text-[18px] mb-4 text-blue-700">
+        <h1 className="font-bold lg:text-2xl text-[15px] mb-4 text-blue-700">
           We Offer High Quality Services
         </h1>
         <p className="text-gray-700 lg:leading-10 leading-7 text-justify">
@@ -37,7 +37,7 @@ export default function SectionTwo() {
 
     strengths: (
       <>
-        <h1 className="font-bold lg:text-2xl text-[20px] mb-4 text-blue-700">
+        <h1 className="font-bold lg:text-2xl text-[15px] mb-4 text-blue-700">
           What Makes Our Clinic Remarkably Different
         </h1>
         <p className="text-gray-700 lg:leading-10 leading-7 text-justify">
@@ -58,7 +58,7 @@ export default function SectionTwo() {
 
     promise: (
       <>
-        <h1 className="font-bold lg:text-2xl text-[20px] mb-4 text-blue-700">
+        <h1 className="font-bold lg:text-2xl text-[15px] mb-4 text-blue-700">
           Our Commitment to Your Comfort and Confidence
         </h1>
         <p className="text-gray-700 lg:leading-10 leading-7 text-justify line-height: 4">
@@ -77,7 +77,7 @@ export default function SectionTwo() {
               
     what: (
       <>
-        <h1 className="font-bold lg:text-2xl text-[20px] mb-4 text-blue-700">
+        <h1 className="font-bold lg:text-2xl text-[15px] mb-4 text-blue-700">
           Comprehensive Dental Care for Every Smile
         </h1>
         <p className="text-gray-700 lg:leading-10 leading-7 text-justify space-y-4">
@@ -95,14 +95,14 @@ export default function SectionTwo() {
     ),
   };
   return (
-    <div className="bg-white px-4 py-6 md:px-8 lg:p-10 rounded-lg ">
+    <div className="bg-white px-4 py-6 md:px-8 lg:p-10 rounded-lg pt-20 ">
       {/* Tabs */}
       <div className="flex flex-wrap gap-3">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActive(tab.id)}
-            className={`pb-2 text-lg ${
+            className={`pb-2 lg:text-[20px] text-[10px] ${
               active === tab.id
                 ? "text-white bg-blue-700 px-4 py-2 rounded-md"
                 : "text-blue-700 hover:text-white p-2 rounded-md hover:bg-blue-700"
