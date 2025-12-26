@@ -39,14 +39,14 @@ export default function SectionnOne () {
         <h2 className="text-3xl font-semibold text-blue-700">
           Premium Smile Dental Clinic in Lagos
         </h2>
-        <p className="max-w-4xl mx-auto mt-3 text-gray-700">
+        <p className="lg:max-w-4xl max-w-3x1 mx-auto leading-7 mt-3 lg:justify-center text-justify text-gray-700">
           Premium Smile Dental Clinic is a leading dental practice in Lagos, Nigeria, dedicated to delivering exceptional oral care and beautiful smiles. We pride ourselves on creating happy, healthy, and confident smiles using advanced, cutting-edge dental technologies.
         Your comfort, safety, and satisfaction remain our top priority as we provide world-class dental solutions right here in Lagos, Nigeria.
         </p>
       </div>
 
       {/* FORM CARD */}
-      <div className="w-[80%] max-w-5xl mx-auto bg-blue-700 text-white rounded-2xl p-10 shadow-lg">
+      <div className=" max-w-4xl mx-auto w-full bg-blue-700 text-white rounded-2xl px-5 py-8 sm:px-8 lg:p-10 shadow-lg">
         <h1 className="text-center text-3xl font-bold mb-8">Send us a Message</h1>
 
         <form onSubmit={handleSubmit} className="space-y-8">
@@ -196,6 +196,8 @@ export default function SectionnOne () {
               >
                 <option>Google Search</option>
                 <option>Instagram</option>
+                <option>TikTok</option>
+                <option>Facebook</option>
                 <option>Referral</option>
                 <option>Walk-In</option>
               </select>
