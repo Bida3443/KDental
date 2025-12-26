@@ -10,7 +10,7 @@ export default function Hhero () {
                         <NavBar/>
                     </div> */}
         
-                    <div className="w-full h-[70vh] relative">
+                    <div className="w-full lg:h-[70vh] h-[40vh] relative">
                                         <Image
                                                             src={erfan}
                                                             alt="Background"

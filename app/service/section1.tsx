@@ -144,11 +144,11 @@ export default function SecttionOnne() {
 
   return (
     <div className="flex flex-col justify-center bg-white">
-      <div className="flex flex-col text-center p-10 justify-center items-center text-black">
-        <h1 className="text-blue-700 font-bold text-3xl">
+      <div className="flex flex-col text-center space-y-6 leading-8 p-10 justify-center items-center text-black">
+        <h1 className="text-blue-700 font-bold lg:text-3xl text-[20px]">
           Elevated Dental Care Crafted for the Perfect Smile
         </h1>
-        <p className="w-250">
+        <p className="lg:w-[60%] w-[100%]">
           we deliver exceptional dental care tailored to every smile. Our wide
           range of advanced treatments is designed to enhance oral health,
           restore confidence, and provide long-lasting results in a calm,
@@ -157,6 +157,7 @@ export default function SecttionOnne() {
           truly elevated dental experience.
         </p>
       </div>
+
       <div className="flex justify-center items-center mb-10">
         <div className="flex flex-wrap flex-row justify-center">
           {card.map((card, index) => (

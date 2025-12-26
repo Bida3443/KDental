@@ -1,15 +1,15 @@
-import NavBar from "../src/component/Nav"
+// import NavBar from "../src/component/Nav"
 import Image from "next/image";
 import erfan from "../../public/erfan.jpg";
 
 export default function Heero () {
     return (
                <div className=" flex flex-row relative">
-            <div className="absolute top-15 left-1/2 transform -translate-x-1/2 z-50 w-[70%] flex flex-row justify-center items-center text-center bg-blue-400 p-5 px-10 rounded-md">
+            {/* <div className="absolute top-15 left-1/2 transform -translate-x-1/2 z-50 w-[70%] flex flex-row justify-center items-center text-center bg-blue-400 p-5 px-10 rounded-md">
                 <NavBar/>
-            </div>
+            </div> */}
 
-            <div className="w-full h-[70vh] relative">
+            <div className="w-full lg:h-[70vh] h-[40vh] relative">
                                 <Image
                                                     src={erfan}
                                                     alt="Background"
