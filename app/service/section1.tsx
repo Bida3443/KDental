@@ -148,7 +148,7 @@ export default function SecttionOnne() {
         <h1 className="text-blue-700 font-bold lg:text-3xl text-[20px]">
           Elevated Dental Care Crafted for the Perfect Smile
         </h1>
-        <p className="lg:w-[60%] w-[100%]">
+        <p className="lg:w-[60%] w-[100%] lg:text-center text-justify">
           we deliver exceptional dental care tailored to every smile. Our wide
           range of advanced treatments is designed to enhance oral health,
           restore confidence, and provide long-lasting results in a calm,
@@ -159,12 +159,21 @@ export default function SecttionOnne() {
       </div>
 
       <div className="flex justify-center items-center mb-10">
-        <div className="flex flex-wrap lg:flex-row flex-col justify-center">
+        <div className="flex flex-wrap w-full max-w-6xl gap-4 px-4 justify-center">
           {card.map((card, index) => (
             <a
               key={index}
               href={card.link}
-              className="flex flex-col bg-white hover:bg-blue-200 border-1 border-blue-200 shadow-lg shadow-blue-300 rounded-lg m-7 lg:p-20 p-10  lg:w-70 w-60 justify-center text-center items-center text-black transition-all duration-700 ease-in-out"
+              className="flex flex-col
+          bg-white hover:bg-blue-200
+          border border-blue-200
+          shadow-lg shadow-blue-300
+          rounded-lg
+          p-6 md:p-8 lg:p-12
+          w-1/2 md:w-1/3 lg:w-1/3
+          text-center items-center
+          text-black
+          transition-all duration-700 ease-in-out"
             >
               {card.svg}
               <p className="mt-4 text-xl" >  </p>
@@ -172,6 +181,7 @@ export default function SecttionOnne() {
             </a>
 
           ))}
+          
         </div>      
       </div>
     </div>
