@@ -102,7 +102,7 @@ export default function SectionTwo() {
           <button
             key={tab.id}
             onClick={() => setActive(tab.id)}
-            className={`pb-2 lg:text-[20px] flex flex-row text-[6px] ${
+            className={`pb-2 lg:text-[20px] flex flex-row text-[8px] ${
               active === tab.id
                 ? "text-white bg-blue-700 px-4 py-2 rounded-md"
                 : "text-blue-700 hover:text-white p-2 rounded-md hover:bg-blue-700"
