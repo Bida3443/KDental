@@ -4,19 +4,18 @@ import { motion } from "framer-motion";
 
 import Image from "next/image";
 import Braces from "../../public/braces.jpg";
-import NavBar from "../src/component/Nav";
+// import NavBar from "../src/component/Nav";
 
 
 export default function Bhero() {
     return (
         <div>
             <div className=" flex flex-row relative">
-              <div className="absolute top-15 left-1/2 transform -translate-x-1/2 z-50 w-[70%] flex flex-row justify-center items-center text-center bg-blue-400 p-5 px-10 rounded-md">
-                              <NavBar/>
-                          </div>
+              
+                          
                         
             
-                        <div className="w-full h-[70vh] relative">
+                        <div className="w-full lg:h-[70vh] h-[40vh] relative">
                                             <Image
                                                                 src={Braces}
                                                                 alt="Background"
@@ -30,9 +29,9 @@ export default function Bhero() {
   animate={{ y: 0, opacity: 1 }}
   transition={{ duration: 0.9, ease: "easeOut" }}
                                        className="absolute inset-0 z-30 flex flex-col justify-center items-start text-white mt-10 px-4">
-                                <h1 className="text-3xl font-bold mb-3 flex justify-center">Transform your smile with <br/> professional dental braces</h1>
+                                <h1 className="lg:text-3xl text-[20px] font-bold mb-3 flex justify-center">Transform your smile with <br/> professional dental braces</h1>
                                  <a
-                                 className="bg-blue-700 p-3 px-7 rounded-md text-white text-[20px] target: font-bold items-center transition-all duration-300 ease-in-out
+                                 className="bg-blue-700 lg:p-3 p-2 lg:px-7 px-5 rounded-md text-white lg:text-[20px] text-[10px] font-bold items-center transition-all duration-300 ease-in-out
                                                 hover:bg-white hover:text-blue-700 hover:scale-105 hover:shadow-lg"
                                      href="/book"
                                     >

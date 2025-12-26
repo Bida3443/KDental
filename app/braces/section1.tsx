@@ -10,7 +10,7 @@ import Braces2 from "../../public/braces2.jpg";
 export default function SectionOnnee() {
   return (
     <div
-    className="flex flex-row gap-10 bg-white p-6 justify-center items-center pt-15 text-black">
+    className="flex lg:flex-row flex-col gap-10 bg-white p-6 justify-center items-center pt-15 text-black">
       <motion.div  initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}

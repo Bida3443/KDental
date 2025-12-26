@@ -5,7 +5,7 @@ import Question from "./question";
 // import EmblaCarousel from "./carousel"
 import Caro from "./caro";
 import BeforeAfter from "./section2"
-// import NavBar from "../src/component/Nav";
+import NavBar from "../src/component/Nav";
 import FooterSection from "../src/component/footer";
 
 
@@ -14,6 +14,7 @@ export default function Braces() {
     return (
         <div>
             <ImageTextRow/>
+            <NavBar/>
             <Bhero/>
             <SectionOnnee/>
             <BeforeAfter/>
