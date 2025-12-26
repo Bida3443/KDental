@@ -48,6 +48,7 @@ const faqs = [
 export default function SectionnTTwo() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   return (
+    <div className="px-4 sm:px-6 lg:px-0">
     <div className="w-full flex justify-center py-10 bg-amber-50">
       <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-2xl">
         <h2 className="text-center text-2xl font-semibold mb-6 text-blue-700">
@@ -102,6 +103,7 @@ export default function SectionnTTwo() {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }
