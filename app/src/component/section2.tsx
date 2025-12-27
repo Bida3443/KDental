@@ -1,8 +1,20 @@
+"use client"
+
+import {motion} from "framer-motion"
+
+
 export default function SectionTwo() {
   return (
-    <div className="flex flex-col text-black justify-center  text-center w-fit items-center    
+    <motion.div  initial={{ y: 80, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+     className="flex flex-col text-black justify-center  text-center w-fit items-center    
          bg-white space-y-2 lg:p-10 p-6">
-      <h1 className="font-bold lg:text-[33px] md:text-[25px] text-[12x] ">Welcome To Premium Smile Dental Clinic</h1>
+      <motion.h1  initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      className="font-bold lg:text-[33px] md:text-[25px] text-[12x] ">Welcome To Premium Smile Dental Clinic</motion.h1>
       <h2 className="text-blue-700 lg:text-[27px] md:text-[23px] text-[10px] font-bold">
         The Premuim And The Most Trusted Dental Clinic In Lagos, Bring A Smile
         To Life
@@ -32,6 +44,6 @@ export default function SectionTwo() {
         comfort, and care to every smile.
       </p>
       
-    </div>
+    </motion.div>
   );
 }

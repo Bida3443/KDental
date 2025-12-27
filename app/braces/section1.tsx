@@ -15,7 +15,7 @@ export default function SectionOnnee() {
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="flex flex-col w-[100%] gap-6">
+        className="flex flex-col lg:w-[50%] w-[80%] gap-6">
         <h1 className="text-4xl text-blue-700 font-bold border-b-2 border-b-blue-700">Premium Braces</h1>
         <p className="flex leading-7 text-justify">
           At our dental clinic, we understand how much a confident smile can
