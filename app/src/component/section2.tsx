@@ -11,17 +11,21 @@ export default function SectionTwo() {
      className="flex flex-col text-black justify-center  text-center w-fit items-center    
          bg-white space-y-2 lg:p-10 p-6">
       <motion.h1  initial={{ x: -100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  viewport={{ once: true }}
       className="font-bold lg:text-[33px] md:text-[25px] text-[12x] ">Welcome To Premium Smile Dental Clinic</motion.h1>
-      <h2 className="text-blue-700 lg:text-[27px] md:text-[23px] text-[10px] font-bold">
+      <motion.h2  initial = {{x: 100, opacity: 0}}
+                  whileInView={{x: 0, opacity: 1}}
+                  transition={{duration: 0.8, ease:"easeOut"}}
+                  viewport={{once:true}}
+      className="text-blue-700 lg:text-[27px] md:text-[23px] text-[10px] font-bold">
         The Premuim And The Most Trusted Dental Clinic In Lagos, Bring A Smile
         To Life
 
-      </h2>
+      </motion.h2>
       
-            <p className="lg:w-[80%] w-[100%] lg:text-[20px] md:text-[15px] text-[10px] lg:text-justify text-justify lg:leading-10 md:leading-5 leading-5">
+            <p  className="lg:w-[80%] w-[100%] lg:text-[20px] md:text-[15px] text-[10px] lg:text-justify text-justify lg:leading-10 md:leading-5 leading-5">
         At Premium Smile Dental Clinic, your smile is our passion. Located in the heart of{" "}
         <a href="#" className="text-blue-600 inline-block">
           Ogba, Ikeja, Lagos,

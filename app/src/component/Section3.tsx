@@ -1,4 +1,7 @@
+"use client"
+
 import Image from "next/image";
+import {motion} from "framer-motion";
 
 import carolina from "../../../public/caroline.jpg";
 
@@ -54,7 +57,15 @@ export default function SectionThree() {
   ];
 
   return (
-    <div className="relative  overflow-hidden w-full min-h-screen">
+    <motion.div
+    
+           initial={{ x: 100, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  viewport={{ once: true }}
+    
+    className="relative  overflow-hidden w-full min-h-screen">
+      
       <Image
         src={carolina}
         alt="Background"
@@ -66,19 +77,32 @@ export default function SectionThree() {
       <div className="absolute inset-0 bg-black opacity-80 z-10" />
 
       <div className="relative z-20 max-w-7xl mx-auto px-10 py-5 md:py-20">
-        <h1 className="text-white text-2xl md:text-4xl text-center font-bold">
+        <motion.h1 
+        initial={{ y: 80, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+        className="text-white text-2xl md:text-4xl text-center font-bold">
           Why Choose Us
-        </h1>
+        </motion.h1>
       </div>
       <div className="relative z-20 flex flex-col lg:flex-row justify-center gap-10 lg:gap-25 px-4 pb-10">
         <div className="flex flex-col text-center lg:text-left justify-center w-full max-w-xl mx-auto">
-          <h1 className="lg:text-2xl md:text-[20px] text-[16px] text-justify mb-5 leading-8">
+          <motion.h1 
+          initial={{ y: 80, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+          className="lg:text-2xl md:text-[20px] text-[16px] text-justify mb-5 leading-8">
             At Premium Dental Clinic, we believe a healthy smile is more than just
             teeth, it is about confidence, comfort, and care. Choosing the right
             dentist is an important decision, and here is why patients in Ikeja
             and Ogba Lagos trust us. 
-          </h1>
-          <h2 className="lg:leading-8 leading-4 md:text-[15px] lg:text-[20px] text-[13px] text-justify">
+          </motion.h1>
+          <motion.h2 
+          initial={{ y: 80, opacity: 0}}
+          animate= {{ y: 0, opacity: 1}}
+          transition={{duration: 0.9, ease: "easeOut"}}
+          
+          className="lg:leading-8 leading-7 md:text-[15px] lg:text-[20px] text-[13px] text-justify">
             Backed by years of professional experience, we deliver every service
             from simple cleaning to advanced procedures with skill and
             compassion. We also understand that many people feel anxious about
@@ -87,7 +111,7 @@ export default function SectionThree() {
             Most importantly, we are committed to making world-class dental care
             accessible by offering affordable services without compromising
             quality.
-          </h2>
+          </motion.h2>
         </div>
         <div className="flex flex-col lg:space-y-5 spaca-x-5 w-full max-w-md mx-auto">
           {mark.map((item, index)=> (
@@ -111,6 +135,6 @@ export default function SectionThree() {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
