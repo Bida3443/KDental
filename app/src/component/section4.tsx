@@ -1,3 +1,7 @@
+"use client"
+
+import {motion} from "framer-motion";
+
 export default function SectionFour() {
   const svig = [
     {
@@ -44,14 +48,26 @@ export default function SectionFour() {
   return (
     <div className="flex flex-col lg:items-center text-center items-center  bg-white justify-center p-10 ">
       <div className="text-black font-bold lg:text-[35px] md:text-[20] text-[15px]">
-        <h1>Comprehensive Care for Every Smile Services</h1>
+        <motion.h1
+
+        initial={{ x: -100, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  viewport={{ once: true }}
+        
+        >Comprehensive Care for Every Smile Services</motion.h1>
       </div>
-      <div className="text-black justify-center text-center lg:text-[20px] md:text-[15] text-[11px]">
+      <motion.div 
+      initial={{x: 100, opacity: 0}}
+      whileInView={{x: 0, opacity: 1}}
+      transition={{duration: 0.8, ease: "easeOut"}}
+      viewport={{once: true}}
+      className="text-black justify-center text-center lg:text-[20px] md:text-[15] text-[11px]">
         <h1>
           Providing personalized and advanced dental care designed to restore,
           enhance, and maintain your perfect smile.
         </h1>
-      </div>
+      </motion.div>
 
       <div className="flex lg:flex-row flex-col">
         {svig.map((svig, index) => (
