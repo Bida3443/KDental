@@ -1,11 +1,21 @@
+"use client"
+
+import {motion} from "framer-motion";
+
 import Image from "next/image";
 import caroline from "../../public/Doctor2.jpg";
 
 export default function SectionThree() {
   return (
-    <div className="w-full flex flex-col md:flex-row h-auto md:h-[480px]">
+    <div 
+    className="w-full flex flex-col md:flex-row h-auto md:h-[480px]">
       {/* LEFT IMAGE */}
-      <div className="w-full md:w-1/2 h-[300px] md:h-full relative flex justify-center">
+      <div 
+      // initial={{ y: -100, opacity: 0  }}
+      // whileInView={{ y: 0, opacity: 0 }}
+      // transition={{ duration: 0.9, ease: "easeOut" }}
+      // viewport={{ once:true }}
+      className="w-full md:w-1/2 h-[300px] md:h-full relative flex justify-center">
         <Image
           src={caroline}
           alt="Dentist"
