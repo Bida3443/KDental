@@ -1,6 +1,9 @@
 // import Image from "next/image";
 
 // import Link from "next/link";
+"use client"
+
+import {motion} from "framer-motion";
 
 export default function SecttionOnne() {
   const card = [
@@ -145,20 +148,36 @@ export default function SecttionOnne() {
   return (
     <div className="flex flex-col justify-center bg-white">
       <div className="flex flex-col text-center space-y-6 leading-8 p-10 justify-center items-center text-black">
-        <h1 className="text-blue-700 font-bold lg:text-3xl text-[20px]">
+        <motion.h1 
+        initial={{y: 80, opacity: 0}}
+        animate={{y: 0, opacity: 1}}
+        transition={{duration: 0.8, ease: "easeOut"}}
+        
+        className="text-blue-700 font-bold lg:text-3xl text-[20px]">
           Elevated Dental Care Crafted for the Perfect Smile
-        </h1>
-        <p className="lg:w-[60%] w-[110%] lg:text-center text-justify">
+        </motion.h1>
+        <motion.p 
+        initial={{ x: 100, opacity: 1 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{duration:0.8, ease: "easeOut"}}
+        viewport={{once:true}}
+        
+        className="lg:w-[60%] w-[110%] lg:text-center text-justify">
           we deliver exceptional dental care tailored to every smile. Our wide
           range of advanced treatments is designed to enhance oral health,
           restore confidence, and provide long-lasting results in a calm,
           sophisticated environment. Whether you seek preventive care, cosmetic
           refinement, or specialized procedures, our experienced team ensures a
           truly elevated dental experience.
-        </p>
+        </motion.p>
       </div>
 
-      <div className="flex justify-center items-center mb-10">
+      <motion.div 
+      initial={{ y: 90, opacity: 1 }}
+      animate= {{ y: 0, opacity: 1 }}
+      transition={{duration: 0.9, ease: "easeOut"}}
+      
+      className="flex justify-center items-center mb-10">
         <div className="flex flex-wrap w-[80%] flex-row justify-center">
           {card.map((card, index) => (
           <a
@@ -173,7 +192,7 @@ export default function SecttionOnne() {
 
           ))}
         </div>      
-      </div>
+      </motion.div>
     </div>
   );
 }
