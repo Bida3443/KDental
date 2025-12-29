@@ -9,15 +9,6 @@ import slider4 from "../../../public/slider4.jpg";
 import slider5 from "../../../public/slider5.jpg";
 import slider6 from "../../../public/slider6.jpg";
 
-// const images = [
-//   "/images/slide1.jpg",
-//   "/images/slide2.jpg",
-//   "/images/slide3.jpg",
-//   "/images/slide4.jpg",
-//   "/images/slide5.jpg",
-//   "/images/slide6.jpg",
-// ];
-
 
 export default function ImageSlider() {
   const images = [

@@ -73,7 +73,7 @@ export default function SectionFour() {
         {svig.map((svig, index) => (
           <motion.div
             key={index}
-             initial= {{y: 100, opacity: 0}}
+             initial= {{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.9, ease: "easeOut" }} 
             className="flex flex-col bg-white border-1 border-blue-200 shadow-lg shadow-blue-300 rounded-lg lg:m-10 m-5 lg:p-20 p-10 lg:w-70 w-60 justify-center items-center text-black"
@@ -81,7 +81,7 @@ export default function SectionFour() {
             
             {svig.svg}            
             <a className="text-2xl" href={svig.link}></a>
-            {svig.text}
+            {svig.text}      
             
           </motion.div>
           

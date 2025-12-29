@@ -107,7 +107,6 @@ export default function Caro() {
             <div className="p-1">
               <Card>
                 
-                
                 <CardContent className=" flex aspect-square items-center justify-center p-6">
                  <span className="text-2xl font-semibold">{index + 1}</span>
   

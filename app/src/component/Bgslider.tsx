@@ -68,15 +68,7 @@ export default function BackgroundSlider() {
           objectFit="cover"
         />
 
-        // <div
-        //   key={index}
-        //   className={``}
-        //   style={{
-        //     backgroundImage: `url(${img})`,
-        //     backgroundSize: "cover",
-        //     backgroundPosition: "center",
-        //   }}
-        // ></div>
+        
       ))}
 
       {/* Content overlay (optional) */}

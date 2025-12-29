@@ -26,11 +26,11 @@ export default function SectionFive () {
                       src={Doctor1}
                       alt="Dentist attending to patient"
                       className="rounded-xl w-full h-auto transition-transform duration-500 group-hover:scale-110"
-                      width={500} 
-                      height={400} 
+                      width={500}    
+                      height={400}    
                       style={{ objectFit: "cover" }}
                       // objectFit="cover"
-                    />
+                    />   
                     <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-bold text-[16px] sm:text-[18px] lg:text-[20px]">
                       
                       <a className="hover:underline text-center" href="/about" >Dr.Kehinde Bamise<br/>CEO</a>
