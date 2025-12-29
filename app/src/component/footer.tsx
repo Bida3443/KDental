@@ -1,4 +1,8 @@
+"use client"
+
 import Image from "next/image";
+
+import {motion} from "framer-motion";
 
 import pic6 from "../../../public/Pic 6.jpg";
 import Logo from "../../../public/Premium 2.jpeg"
@@ -146,14 +150,23 @@ return (
               </a>
             ))}
           </div>
-
+              <motion.div
+              initial={{y: 100, opacity: 1}}
+              // animate={{y: 0, opacity: 1}}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{duration: 0.8, ease: "easeOut"}}
+              
+              >
+                
           <Image
             src={Logo}
             alt="logo"
             width={200}
             height={200}
-            className="rounded-xl"
-          />
+            
+            className="rounded-xl"/>
+              </motion.div>
+          
         </div>
 
       </div>

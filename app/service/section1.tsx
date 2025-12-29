@@ -173,9 +173,10 @@ export default function SecttionOnne() {
       </div>
 
       <motion.div 
-      initial={{ y: 90, opacity: 1 }}
-      animate= {{ y: 0, opacity: 1 }}
-      transition={{duration: 0.9, ease: "easeOut"}}
+            initial={{ y: 90, opacity: 1 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            // animate= {{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.9, ease: "easeOut" }}
       
       className="flex justify-center items-center mb-10">
         <div className="flex flex-wrap w-[80%] flex-row justify-center">

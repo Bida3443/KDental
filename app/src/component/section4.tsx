@@ -50,7 +50,7 @@ export default function SectionFour() {
       <div className="text-black font-bold lg:text-[35px] md:text-[20] text-[15px]">
         <motion.h1
 
-        initial={{ x: -100, opacity: 0 }}
+                  initial={{ x: -100, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
                   viewport={{ once: true }}
@@ -58,10 +58,10 @@ export default function SectionFour() {
         >Comprehensive Care for Every Smile Services</motion.h1>
       </div>
       <motion.div 
-      initial={{x: 100, opacity: 0}}
-      whileInView={{x: 0, opacity: 1}}
-      transition={{duration: 0.8, ease: "easeOut"}}
-      viewport={{once: true}}
+                initial={{x: 100, opacity: 0}}
+                whileInView={{x: 0, opacity: 1}}
+                transition={{duration: 0.8, ease: "easeOut"}}
+                viewport={{once: true}}
       className="text-black justify-center text-center lg:text-[20px] md:text-[15] text-[11px]">
         <h1>
           Providing personalized and advanced dental care designed to restore,
@@ -73,9 +73,10 @@ export default function SectionFour() {
         {svig.map((svig, index) => (
           <motion.div
             key={index}
-             initial= {{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.9, ease: "easeOut" }} 
+              initial= {{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.9, ease: "easeOut" }} 
+
             className="flex flex-col bg-white border-1 border-blue-200 shadow-lg shadow-blue-300 rounded-lg lg:m-10 m-5 lg:p-20 p-10 lg:w-70 w-60 justify-center items-center text-black"
           >
             
