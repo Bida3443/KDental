@@ -80,9 +80,9 @@
 
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
-import Image from "next/image"
+// import Image from "next/image"
 
-import review from "../../public/review.jpg";
+// import review from "../../public/review.jpg";
 
 import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -99,15 +99,15 @@ export default function Caro() {
     Autoplay({ delay: 2000, stopOnInteraction: true })
   )
 
-  const review = [
-     {
-    image:"/review.jpg",
-  },
-   {
-    image:"/review.jpg"
-   }
+  // const review = [
+  //    {
+  //   image:"/review.jpg",
+  // },
+  //  {
+  //   image:"/review.jpg"
+  //  }
   
-  ]
+  // ]
 
   return (
     <div className="w-full flex overflow-x-hidden justify-center bg-blue-300 h-full py-3 md:py-6">
@@ -117,9 +117,11 @@ export default function Caro() {
         className="w-full max-w-3xl mx-auto px-3 md:px-4"
         >
       <CarouselContent className="flex">
-         {review.map((items, index) => (
 
-                ))}
+         {/* {review.map((items, index) => (
+
+                ))} */}
+
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem
            key={index} 
@@ -129,7 +131,7 @@ export default function Caro() {
               <Card className="overflow-hidden">
                 
                 <CardContent className=" flex aspect-[6/3] md:aspect-square items-center justify-center p-4 md:p-6">
-                <div className="relative w-full h-[160px] md:h-[200px]">
+                {/* <div className="relative w-full h-[160px] md:h-[200px]">
                   <Image
                   src={review}
                   alt=""
@@ -138,7 +140,7 @@ export default function Caro() {
                   
                   
                   />
-                </div>
+                </div> */}
                
                 
                 

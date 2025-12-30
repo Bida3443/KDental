@@ -1,3 +1,7 @@
+"use client"
+
+import {motion} from "framer-motion";
+
 import Image from "next/image";
 import Before from "../../public/Before.png";
 
@@ -10,7 +14,12 @@ export default function BeforeAfter() {
 
             </div>
             <div className="flex flex-row gap-20">
-                <div>
+                <motion.div
+                initial={{x: -100, opacity: 0}}
+                whileInView={{x: 1, opacity: 1}}
+                transition={{duration: 0.9, ease: "easeOut"}}
+                
+                >
                 <Image
                 src={Before}
                 alt=""
@@ -19,10 +28,16 @@ export default function BeforeAfter() {
                 height={500}
                 className="rounded-xl"
                 />
-                <div></div>
+            
 
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+            initial={{x: 100, opacity: 0}}
+            whileInView={{x: 1, opacity: 1}}
+            transition={{duration: 0.9, ease: "easeOut"}}
+
+            
+            >
                 <Image
                 src={Before}
                 alt=""
@@ -31,7 +46,7 @@ export default function BeforeAfter() {
                 height={500}
                 className="rounded-xl"
                 />
-            </div>
+            </motion.div>
             </div>
         </div>
     );
