@@ -1,5 +1,7 @@
 "use client";
 
+import {motion} from "framer-motion"
+
 import { useState } from "react";
 
 const faqs = [
@@ -51,9 +53,16 @@ export default function SectionnTTwo() {
     <div className="px-4 sm:px-6 lg:px-0">
     <div className="w-full flex justify-center py-10 bg-amber-50">
       <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-2xl">
-        <h2 className="text-center text-2xl font-semibold mb-6 text-blue-700">
+        <motion.h2 
+        initial={{y: 80, opacity: 0}}
+        animate={{y: 0, opacity: 1}}
+        transition={{duration: 0.8, ease: "easeOut"}}
+        viewport={{once: true}}
+        
+        
+        className="text-center text-2xl font-semibold mb-6 text-blue-700">
           Cosmetics Braces Most Popular FAQs
-        </h2>
+        </motion.h2>
 
         {faqs.map((faq, index) => (
           <div key={index} className="mb-3">
