@@ -80,14 +80,15 @@
 
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
-// import Image from "next/image"
-// import pic from "../../public/Pic 1.jpg"
+import Image from "next/image"
+
+import review from "../../public/review.jpg";
 
 import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
-  CarouselContent,
-  CarouselItem,  
+  CarouselContent,                               
+  CarouselItem,                        
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
@@ -97,19 +98,53 @@ export default function Caro() {
    const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   )
-  return (
-    <div className="w-full flex justify-center bg-blue-300 h-full">
-      < Carousel  plugins={[plugin.current]} onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset} className="w-full max-w-3xl ">
-      <CarouselContent className="-ml-1">
-        {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
-            <div className="p-1">
-              <Card>
-                
-                <CardContent className=" flex aspect-square items-center justify-center p-6">
-                 <span className="text-2xl font-semibold">{index + 1}</span>
+
+  const review = [
+     {
+    image:"/review.jpg",
+  },
+   {
+    image:"/review.jpg"
+   }
   
+  ]
+
+  return (
+    <div className="w-full flex overflow-x-hidden justify-center bg-blue-300 h-full py-3 md:py-6">
+      < Carousel  plugins={[plugin.current]}
+        onMouseEnter={plugin.current.stop}
+        onMouseLeave={plugin.current.reset} 
+        className="w-full max-w-3xl mx-auto px-3 md:px-4"
+        >
+      <CarouselContent className="flex">
+         {review.map((items, index) => (
+
+                ))}
+        {Array.from({ length: 5 }).map((_, index) => (
+          <CarouselItem
+           key={index} 
+           className="basis-full md:basis-1/2 lg:basis-1/3 px-1 md:px-2">
+            <div className="p-1"
+            > 
+              <Card className="overflow-hidden">
+                
+                <CardContent className=" flex aspect-[6/3] md:aspect-square items-center justify-center p-4 md:p-6">
+                <div className="relative w-full h-[160px] md:h-[200px]">
+                  <Image
+                  src={review}
+                  alt=""
+
+                  style={{objectFit: "cover"}}
+                  
+                  
+                  />
+                </div>
+               
+                
+                
+                
+                 {/* <span className="text-lg md:text-2xl font-semibold">{index + 1}</span> */}
+
                 </CardContent>
               </Card>
             </div>
