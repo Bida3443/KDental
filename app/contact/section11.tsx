@@ -52,7 +52,7 @@ const [form, setForm] = useState({
               type="text"
               name="name"
               placeholder="Name"
-              className=" max-w-4xl p-3 lg:w-6/4 w-3/4 bg-white rounded-lg  text-black outline-none"
+              className=" max-w-4xl p-3 lg:w-6/4 w-full bg-white rounded-lg  text-black outline-none"
               onChange={handleChange}
               value={form.name}
             />
@@ -65,7 +65,7 @@ const [form, setForm] = useState({
               type="text"
               name="phone"
               placeholder="Phone Number"
-              className=" p-3 lg:w-6/4 w-3/4 bg-white rounded-lg text-black outline-none"
+              className=" p-3 lg:w-6/4 w-full bg-white rounded-lg text-black outline-none"
               onChange={handleChange}
               value={form.phone}
             />
@@ -81,7 +81,7 @@ const [form, setForm] = useState({
               type="email"
               name="email"
               placeholder="Email"
-              className="lg:w-6/4 w-3/4 p-3 bg-white rounded-lg text-black outline-none"
+              className="lg:w-6/4 w-full p-3 bg-white rounded-lg text-black outline-none"
               onChange={handleChange}
               value={form.email}
             />
@@ -94,7 +94,7 @@ const [form, setForm] = useState({
             </label>
             <select
               name="time"
-              className="lg:w-6/4 w-3/4 p-3 bg-white rounded-lg text-black outline-none"
+              className="lg:w-6/4 w-full p-3 bg-white rounded-lg text-black outline-none"
               onChange={handleChange}
               value={form.time}
             >
