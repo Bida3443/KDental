@@ -2,6 +2,8 @@
 "use client";
 import { useState } from "react";
 
+import {motion} from "framer-motion";
+
 export default function SectionEleven() {
 
 
@@ -28,20 +30,29 @@ const [form, setForm] = useState({
   return (
 
     <div className="bg-white px-4 py-10">
-      <div className="w-full max-w-4xl mx-auto bg-blue-700 text-white rounded-2xl px-5 py-8 sm:px-8 lg:p-10 ">
-      <h1 className="text-center lg:text-3xl text-[25px] font-bold mb-8">Send us a Message</h1>
+      <div className="w-full max-w-4xl mx-auto bg-blue-700 text-white rounded-2xl  px-5 py-8 sm:px-8 lg:p-10 ">
+      <motion.h1 
+      initial={{x: 10, opacity: 1}}
+      whileInView={{x: 10, opacity: 1}}
+      transition={{duration: 0.9, ease: "easeOut"}}
+      className="text-center lg:text-3xl text-[25px] font-bold mb-8">Send us a Message</motion.h1>
 
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <motion.form
+      // initial={{y: 40, opacity: 1}}
+      // whileInView={{y: 40, opacity: 1}}
+      // transition={{duration: 0.9, ease: "easeOut"}}
+      
+      onSubmit={handleSubmit} className="space-y-6">
         {/* Grid for 2-column fields */}
         <div className="flex lg:flex-row flex-col lg:gap-10 gap-5">
           {/* Name */}
           <div>
-            <label className="block mb-2 text-sm font-medium">Name</label>
+            <label className="block justify-start mb-2 text-sm font-medium">Name</label>
             <input
               type="text"
               name="name"
               placeholder="Name"
-              className="w-full p-3  bg-white rounded-lg  text-black outline-none"
+              className=" max-w-4xl p-3 px-15 bg-white rounded-lg  text-black outline-none"
               onChange={handleChange}
               value={form.name}
             />
@@ -112,11 +123,11 @@ const [form, setForm] = useState({
         {/* Submit */}
         <button
           type="submit"
-          className="bg-black px-8 py-3 rounded-full text-white text-lg"
+          className="bg-black px-8 py-3 mb-3 rounded-full text-white text-lg"
         >
           Send
         </button>
-      </form>
+      </motion.form>
     </div>
     </div>
   );
