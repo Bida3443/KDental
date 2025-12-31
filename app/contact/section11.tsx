@@ -44,15 +44,15 @@ const [form, setForm] = useState({
       
       onSubmit={handleSubmit} className="space-y-6">
         {/* Grid for 2-column fields */}
-        <div className="flex lg:flex-row flex-col lg:gap-10 gap-5">
+        <div className="flex lg:flex-row flex-col lg:gap-40 gap-10">
           {/* Name */}
           <div>
-            <label className="block justify-start mb-2 text-sm font-medium">Name</label>
+            <label className="block mb-2 text-sm font-medium">Name</label>
             <input
               type="text"
               name="name"
               placeholder="Name"
-              className=" max-w-4xl p-3 px-15 bg-white rounded-lg  text-black outline-none"
+              className=" max-w-4xl p-3 lg:w-6/4 w-3/4 bg-white rounded-lg  text-black outline-none"
               onChange={handleChange}
               value={form.name}
             />
@@ -65,7 +65,7 @@ const [form, setForm] = useState({
               type="text"
               name="phone"
               placeholder="Phone Number"
-              className="w-full p-3 bg-white rounded-lg text-black outline-none"
+              className=" p-3 lg:w-6/4 w-3/4 bg-white rounded-lg text-black outline-none"
               onChange={handleChange}
               value={form.phone}
             />
@@ -73,7 +73,7 @@ const [form, setForm] = useState({
         </div>
 
         {/* Email + Call Time */}
-        <div className="flex lg:flex-row flex-col lg:gap-10 gap-5">
+        <div className="flex lg:flex-row flex-col lg:gap-40 gap-10">
           {/* Email */}
           <div>
             <label className="block mb-2 text-sm font-medium">Email</label>
@@ -81,7 +81,7 @@ const [form, setForm] = useState({
               type="email"
               name="email"
               placeholder="Email"
-              className="w-full p-3 bg-white rounded-lg text-black outline-none"
+              className="lg:w-6/4 w-3/4 p-3 bg-white rounded-lg text-black outline-none"
               onChange={handleChange}
               value={form.email}
             />
@@ -94,7 +94,7 @@ const [form, setForm] = useState({
             </label>
             <select
               name="time"
-              className="w-full p-3 bg-white rounded-lg text-black outline-none"
+              className="lg:w-6/4 w-3/4 p-3 bg-white rounded-lg text-black outline-none"
               onChange={handleChange}
               value={form.time}
             >
