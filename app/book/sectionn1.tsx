@@ -1,6 +1,8 @@
 "use client"
 import {useState} from "react"
 
+import {motion} from "framer-motion";
+
 
 export default function SectionnOne () {
         const [form, setForm] = useState({
@@ -221,12 +223,27 @@ export default function SectionnOne () {
           </div>
 
           {/* BUTTON */}
-          <button
+          <motion.a
+
+                animate={{
+        opacity: [1, 0.7, 1],
+        boxShadow: [
+      "0 0 0 rgba(0,0,0,0)",
+      "0 0 20px rgba(59,130,246,0.8)",
+      "0 0 0 rgba(0,0,0,0)",
+    ],
+  }}
+        transition={{
+        duration: 1.5,
+        repeat: Infinity,
+        ease: "easeInOut",
+  }}
             type="submit"
             className="bg-black px-10 py-3 rounded-full text-white text-lg hover:bg-gray-900"
+            href=""
           >
             Send
-          </button>
+          </motion.a>
         </form>
       </div>
       </div>

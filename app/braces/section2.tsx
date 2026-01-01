@@ -15,7 +15,7 @@ export default function BeforeAfter() {
             </div>
             <div className="flex flex-row gap-20">
                 <motion.div
-                initial={{x: -100, opacity: 0}}
+                initial={{x: -10, opacity: 0}}
                 whileInView={{x: 1, opacity: 1}}
                 transition={{duration: 0.9, ease: "easeOut"}}
                 
@@ -29,14 +29,12 @@ export default function BeforeAfter() {
                 className="rounded-xl"
                 />
             
-
             </motion.div>
             <motion.div
-            initial={{x: 100, opacity: 0}}
+            initial={{x: 10, opacity: 0}}
             whileInView={{x: 1, opacity: 1}}
             transition={{duration: 0.9, ease: "easeOut"}}
 
-            
             >
                 <Image
                 src={Before}

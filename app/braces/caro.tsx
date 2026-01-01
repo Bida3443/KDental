@@ -142,9 +142,6 @@ export default function Caro() {
                   />
                 </div> */}
                
-                
-                
-                
                  {/* <span className="text-lg md:text-2xl font-semibold">{index + 1}</span> */}
 
                 </CardContent>

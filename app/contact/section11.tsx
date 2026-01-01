@@ -32,8 +32,8 @@ const [form, setForm] = useState({
     <div className="bg-white px-4 py-10">
       <div className="w-full max-w-4xl mx-auto bg-blue-700 text-white rounded-2xl  px-5 py-8 sm:px-8 lg:p-10 ">
       <motion.h1 
-      initial={{x: 10, opacity: 1}}
-      whileInView={{x: 10, opacity: 1}}
+      initial={{x: 100, opacity: 1}}
+      whileInView={{x: 20, opacity: 1}}
       transition={{duration: 0.9, ease: "easeOut"}}
       className="text-center lg:text-3xl text-[25px] font-bold mb-8">Send us a Message</motion.h1>
 
@@ -78,7 +78,7 @@ const [form, setForm] = useState({
           <div>
             <label className="block mb-2 text-sm font-medium">Email</label>
             <input
-              type="email"
+              type="email"    
               name="email"
               placeholder="Email"
               className="lg:w-6/4 w-full p-3 bg-white rounded-lg text-black outline-none"
@@ -121,12 +121,26 @@ const [form, setForm] = useState({
         </div>
 
         {/* Submit */}
-        <button
+        <motion.a
+        animate={{
+        opacity: [1, 0.7, 1],
+        boxShadow: [
+      "0 0 0 rgba(0,0,0,0)",
+      "0 0 20px rgba(59,130,246,0.8)",
+      "0 0 0 rgba(0,0,0,0)",
+    ],
+  }}
+        transition={{
+        duration: 1.5,
+        repeat: Infinity,
+        ease: "easeInOut",
+  }}
           type="submit"
-          className="bg-black px-8 py-3 mb-3 rounded-full text-white text-lg"
+          className="bg-black px-8 py-3  rounded-full text-white text-lg"
+          href=""
         >
           Send
-        </button>
+        </motion.a>
       </motion.form>
     </div>
     </div>
