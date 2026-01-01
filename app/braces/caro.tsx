@@ -80,9 +80,9 @@
 
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
-// import Image from "next/image"
+import Image from "next/image"
 
-// import review from "../../public/review.jpg";
+import review from "../../public/review.jpg";
 
 import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -131,7 +131,7 @@ export default function Caro() {
               <Card className="overflow-hidden">
                 
                 <CardContent className=" flex aspect-[6/3] md:aspect-square items-center justify-center p-4 md:p-6">
-                {/* <div className="relative w-full h-[160px] md:h-[200px]">
+                <div className="relative w-full max-w-3x1 mx-auto h-[160px] md:h-[200px]">
                   <Image
                   src={review}
                   alt=""
@@ -140,7 +140,7 @@ export default function Caro() {
                   
                   
                   />
-                </div> */}
+                </div>
                
                  {/* <span className="text-lg md:text-2xl font-semibold">{index + 1}</span> */}
 
