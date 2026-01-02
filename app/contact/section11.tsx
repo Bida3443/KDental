@@ -31,18 +31,18 @@ const [form, setForm] = useState({
 
     <div className="bg-white px-4 py-10">
       <div className="w-full max-w-4xl mx-auto bg-blue-700 text-white rounded-2xl  px-5 py-8 sm:px-8 lg:p-10 ">
-      <motion.h1 
-      initial={{x: 100, opacity: 1}}
-      whileInView={{x: 20, opacity: 1}}
-      transition={{duration: 0.9, ease: "easeOut"}}
-      className="text-center lg:text-3xl text-[25px] font-bold mb-8">Send us a Message</motion.h1>
+      <h1 
+      // initial={{x: 100, opacity: 1}}
+      // whileInView={{x: 20, opacity: 1}}
+      // transition={{duration: 0.9, ease: "easeOut"}}
+      className="text-center lg:text-3xl text-[25px] font-bold mb-8">Send us a Message</h1>
 
-      <motion.form
+      <form
       // initial={{y: 40, opacity: 1}}
       // whileInView={{y: 40, opacity: 1}}
       // transition={{duration: 0.9, ease: "easeOut"}}
       
-      onSubmit={handleSubmit} className="space-y-6">
+      onSubmit={handleSubmit}  className="space-y-6">
         {/* Grid for 2-column fields */}
         <div className="flex lg:flex-row flex-col lg:gap-40 gap-10">
           {/* Name */}
@@ -51,6 +51,7 @@ const [form, setForm] = useState({
             <input
               type="text"
               name="name"
+              required
               placeholder="Name"
               className=" max-w-4xl p-3 lg:w-6/4 w-full bg-white rounded-lg  text-black outline-none"
               onChange={handleChange}
@@ -141,7 +142,7 @@ const [form, setForm] = useState({
         >
           Send
         </motion.a>
-      </motion.form>
+      </form>
     </div>
     </div>
   );
