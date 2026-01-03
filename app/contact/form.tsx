@@ -20,38 +20,46 @@ const [form, setForm] = useState({
   ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
+  const [isLoading, setIsLoading] = useState(false);
+
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form Submitted:", form);
 
-    try{
+    setIsLoading(true);
+
+  try{
     const res = await fetch('/api/contact', {
       method: 'POST',
-      
-      body: JSON.stringify({
-
-        name: form.name, 
+       headers: {
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify ({
+        name: form.name,
         phone: form.phone,
         email: form.email,
         time: form.time,
         notes: form.notes,
-    }),
 
+      }),
+     
+    });
+    const data = await res.json();
 
-
-
-    headers: {
-      'content-type': 'application/json',
-     },
-    })
-    } catch(err:any) {
-      console.error('Err', err)
+    if (!res.ok) {
+      alert(data.message || "something went wrong");
+      return;
     }
-  };
-  
 
-
+  alert("Message sent successfully!");
+  } catch (error) {
+    console.error("Error:", error);
+    alert("Failed to send message");
+  } finally {
+    setIsLoading(false); // API request ends
+  }
+};
+    
   return (
 
     <div className="bg-white px-4 py-10">
@@ -149,8 +157,9 @@ const [form, setForm] = useState({
         {/* Submit */}
         <motion.button
         animate={{
+          // disabled={isLoading}
         opacity: [1, 0.7, 1],
-        boxShadow: [
+        boxShadow: isLoading ? "none"  : [
       "0 0 0 rgba(0,0,0,0)",
       "0 0 20px rgba(59,130,246,0.8)",
       "0 0 0 rgba(0,0,0,0)",
@@ -158,12 +167,12 @@ const [form, setForm] = useState({
   }}
         transition={{
         duration: 1.5,
-        repeat: Infinity,
+        repeat: isLoading ? 0  : Infinity,
         ease: "easeInOut",
   }}
           type="submit"
-          className="bg-black px-8 py-3  rounded-full text-white text-lg"
-          
+          className="bg-black px-8 py-3 cursor-pointer rounded-full text-white text-lg"
+          // {isLoading ? "Sending..." : "Send"}
         >
           Send
         </motion.button>
@@ -171,4 +180,4 @@ const [form, setForm] = useState({
     </div>
     </div>
   );
-  }
+}
