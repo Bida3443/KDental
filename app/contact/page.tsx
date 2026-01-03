@@ -1,6 +1,6 @@
 import Herro from "./herro";
 import ImageTextRow from "../src/component/info";
-import SectionEleven from "./section11";
+import SectionEleven from "./form";
 import SectionTwelve from "./section12";
 import SectionThirteen from "./section13";
 import NavBar from "../src/component/Nav";

@@ -1,10 +1,10 @@
-
 "use client";
+
 import { useState } from "react";
 
 import {motion} from "framer-motion";
 
-export default function SectionEleven() {
+export default function ContactForm() {
 
 
 const [form, setForm] = useState({
@@ -21,10 +21,35 @@ const [form, setForm] = useState({
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form Submitted:", form);
+
+    try{
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      
+      body: JSON.stringify({
+
+        name: form.name, 
+        phone: form.phone,
+        email: form.email,
+        time: form.time,
+        notes: form.notes,
+    }),
+
+
+
+
+    headers: {
+      'content-type': 'application/json',
+     },
+    })
+    } catch(err:any) {
+      console.error('Err', err)
+    }
   };
+  
 
 
   return (
@@ -122,7 +147,7 @@ const [form, setForm] = useState({
         </div>
 
         {/* Submit */}
-        <motion.a
+        <motion.button
         animate={{
         opacity: [1, 0.7, 1],
         boxShadow: [
@@ -138,10 +163,10 @@ const [form, setForm] = useState({
   }}
           type="submit"
           className="bg-black px-8 py-3  rounded-full text-white text-lg"
-          href=""
+          
         >
           Send
-        </motion.a>
+        </motion.button>
       </form>
     </div>
     </div>
