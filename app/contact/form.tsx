@@ -52,6 +52,17 @@ const [form, setForm] = useState({
     }
 
   alert("Message sent successfully!");
+
+setForm({
+  name: "",
+  phone: "",
+  email: "",
+  time: "As soon as possible",
+  notes: "",
+})
+
+
+  
   } catch (error) {
     console.error("Error:", error);
     alert("Failed to send message");
@@ -156,9 +167,11 @@ const [form, setForm] = useState({
 
         {/* Submit */}
         <motion.button
+        type= "submit"
+        disabled={isLoading}
         animate={{
-          // disabled={isLoading}
-        opacity: [1, 0.7, 1],
+        
+        opacity: isLoading ? 0.6 : [1, 0.7, 1],
         boxShadow: isLoading ? "none"  : [
       "0 0 0 rgba(0,0,0,0)",
       "0 0 20px rgba(59,130,246,0.8)",
@@ -170,11 +183,11 @@ const [form, setForm] = useState({
         repeat: isLoading ? 0  : Infinity,
         ease: "easeInOut",
   }}
-          type="submit"
+          
           className="bg-black px-8 py-3 cursor-pointer rounded-full text-white text-lg"
-          // {isLoading ? "Sending..." : "Send"}
         >
-          Send
+          {isLoading ? "Sending..." : "Send"}
+          
         </motion.button>
       </form>
     </div>
