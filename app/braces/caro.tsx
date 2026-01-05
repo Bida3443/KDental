@@ -99,18 +99,9 @@ export default function Caro() {
     Autoplay({ delay: 2000, stopOnInteraction: true })
   )
 
-  // const review = [
-  //    {
-  //   image:"/review.jpg",
-  // },
-  //  {
-  //   image:"/review.jpg"
-  //  }
-  
-  // ]
 
   return (
-    <div className="w-full flex overflow-x-hidden justify-center bg-blue-300 h-full py-3 md:py-6">
+    <div className="w-full flex overflow-x-hidden justify-center bg-blue-100 h-full py-3 md:py-6">
       < Carousel  plugins={[plugin.current]}
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset} 
@@ -128,19 +119,21 @@ export default function Caro() {
            className="basis-full md:basis-1/2 lg:basis-1/3 px-1 md:px-2">
             <div className="p-1"
             > 
-              <Card className="overflow-hidden">
+              <Card className="h-[220px] md:h-[260px] lg:h-[280px] overflow-hidden rounded-xl">
                 
-                <CardContent className=" flex aspect-[6/3] md:aspect-square items-center justify-center p-4 md:p-6">
-                <div className="relative w-full max-w-3x1 mx-auto h-[160px] md:h-[200px]">
+                <CardContent className=" relative h-full p-0">
+                
                   <Image
                   src={review}
                   alt=""
-
-                  style={{objectFit: "cover"}}
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  priority
+              
                   
                   
                   />
-                </div>
+               
                
                  {/* <span className="text-lg md:text-2xl font-semibold">{index + 1}</span> */}
 
