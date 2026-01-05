@@ -49,18 +49,12 @@ const faqs = [
 
 export default function SectionnTTwo() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+
   return (
     <div className="px-4 sm:px-0 lg:px-0">
-    <div className="w-full flex justify-center p-10 bg-amber-50">
-      <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-2xl">
-        <h2 
-        // initial={{y: 80, opacity: 0}}
-        // animate={{y: 0, opacity: 1}}
-        // transition={{duration: 0.8, ease: "easeOut"}}
-        // viewport={{once: true}}
-        
-        
-        className="text-center text-2xl font-semibold mb-6 text-blue-700">
+    <div className="w-full flex justify-center px-4 py-6 sm:p-10 bg-amber-50">
+      <div className="bg-white p-4 sm:p-6 max-w-full rounded-lg shadow-lg w-full sm:max-w-2xl">
+        <h2 className="text-center text-2xl font-semibold mb-6 text-blue-700">
           Cosmetics Braces Most Popular FAQs
         </h2>
 
@@ -80,12 +74,12 @@ export default function SectionnTTwo() {
 
             <button
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
-              className={`w-full flex justify-between items-center px-4 py-3 rounded-md font-medium
+              className={`w-full flex justify-between items-center gap-3 px-4 py-3 rounded-md font-medium
     ${
       openIndex === index ? "bg-blue-700 text-black" : "bg-blue-500 text-white"
     }`}
             >
-              <span>{faq.question}</span>
+              <span className="text-left pr-3  break-words">{faq.question}</span>
 
               {/* Dropdown arrow */}
               <svg
