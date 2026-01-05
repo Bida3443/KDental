@@ -24,14 +24,17 @@ export default function Caro() {
   )
 
   return (
-    <div className="w-full bg-blue-300 py-8">
+    <div className="w-full bg-blue-100 py-8">
+      <div className="flex justify-center items-center text-center lg:text-[30px] md:text-[30px] text-[20px] pb-5 text-blue-700 font-bold">
+        <h1>Google Reviwews</h1>
+      </div>
       <Carousel
         plugins={[plugin.current]}
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
         className="relative w-full max-w-6xl mx-auto px-4"
       >
-        <CarouselContent className="-ml-1">
+        <CarouselContent className="">
           {Array.from({ length: 5 }).map((_, index) => (
             <CarouselItem
               key={index}
@@ -55,8 +58,8 @@ export default function Caro() {
           ))}
         </CarouselContent>
 
-        <CarouselPrevious className="absolute -left-6 z-50 bg-white shadow-md border" />
-        <CarouselNext className="absolute -right-6 z-50 bg-white shadow-md border" />
+        <CarouselPrevious className="absolute -left-6 z-50 bg-blue-500 shadow-md border" />
+        <CarouselNext className="absolute -right-6 z-50 bg-blue-500  shadow-md border" />
       </Carousel>
     </div>
   

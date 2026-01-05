@@ -13,7 +13,7 @@ export default function BeforeAfter() {
                 <div className="border-2 border-blue-700 w-50 mx-auto M-5 flex items-center mt-5 justify-center"></div>
 
             </div>
-            <div className="flex flex-row gap-20">
+            <div className="flex flex-row lg:gap-20 gap-10">
                 <motion.div
                 initial={{x: -10, opacity: 0}}
                 whileInView={{x: 1, opacity: 1}}
