@@ -11,12 +11,16 @@ export default function SectionOnnee() {
   return (
     <div
     className="flex lg:flex-row flex-col gap-10 bg-white p-6 justify-center items-center pt-15 text-black">
-      <motion.div  initial={{ x: -100, opacity: 0 }}
+      <div  
+        className="flex flex-col lg:w-2/4 w-full gap-6">
+          <motion.div 
+          initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="flex flex-col lg:w-2/4 w-full gap-6">
-        <h1 className="text-4xl text-blue-700 font-bold border-b-2 border-b-blue-700">Premium Braces</h1>
+          
+          >
+             <h1 className="text-4xl text-blue-700 font-bold border-b-2 border-b-blue-700">Premium Braces</h1>
         <p className="flex leading-7 text-justify">
           At our dental clinic, we understand how much a confident smile can
           change your life, and that is why we offer braces to help correct
@@ -40,7 +44,10 @@ export default function SectionOnnee() {
           help you achieve a healthier, more balanced, and more attractive
           smile one that you wll be proud to share every day.
         </p>
-      </motion.div>
+          </motion.div>
+
+      </div>
+      
       <motion.div 
        initial={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}

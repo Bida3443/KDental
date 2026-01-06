@@ -38,13 +38,25 @@ export default function SectionnOne () {
              <section className="py-16 bg-white">
       {/* Page Title */}
       <div className="text-center mb-10 px-4 ">
-        <h2 className="lg:text-3xl text-2xl font-semibold text-blue-700">
+        <motion.h2 
+        initial={{x: -30, opacity: 1}}
+        whileInView={{x: 0, opacity: 1}}
+        transition={{duration: 0.9, ease: "easeOut"}}
+        
+        className="lg:text-3xl text-2xl font-semibold text-blue-700">
           Premium Smile Dental Clinic in Lagos
-        </h2>
-        <p className="lg:max-w-4xl max-w-2x1 mx-auto leading-7 mt-3 lg:justify-center text-justify text-gray-700">
+        </motion.h2>
+
+        <motion.p 
+        initial={{x: 30, opacity: 1}}
+        whileInView={{x: 0, opacity: 1}}
+        transition={{duration: 0.9, ease: "easeOut"}}
+
+        
+        className="lg:max-w-4xl max-w-2x1 mx-auto leading-7 mt-3 lg:justify-center text-justify text-gray-700">
           Premium Smile Dental Clinic is a leading dental practice in Lagos, Nigeria, dedicated to delivering exceptional oral care and beautiful smiles. We pride ourselves on creating happy, healthy, and confident smiles using advanced, cutting-edge dental technologies.
         Your comfort, safety, and satisfaction remain our top priority as we provide world-class dental solutions right here in Lagos, Nigeria.
-        </p>   
+        </motion.p>   
       </div>  
 
       {/* FORM CARD */}

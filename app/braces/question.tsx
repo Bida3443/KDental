@@ -51,7 +51,7 @@ export default function SectionnTTwo() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <div className="px-4 sm:px-0 lg:px-0">
+    <div className="px-0 sm:px-0 lg:px-0">
     <div className="w-full flex justify-center px-4 py-6 sm:p-10 bg-amber-50">
       <div className="bg-white p-4 sm:p-6 max-w-full rounded-lg shadow-lg w-full sm:max-w-2xl">
         <h2 className="text-center text-2xl font-semibold mb-6 text-blue-700">
