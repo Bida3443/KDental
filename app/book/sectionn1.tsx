@@ -62,7 +62,11 @@ export default function SectionnOne () {
       {/* FORM CARD */}
       <div className="px-4 sm:px-6 lg:px-0">
       <div className=" lg:max-w-4xl max-w-2xl mx-auto w-full bg-blue-700 text-white rounded-2xl px-5 py-8 sm:px-8 lg:p-10 shadow-lg">
-        <h1 className="text-center text-3xl font-bold mb-8">Send us a Message</h1>
+        <motion.h1
+        initial={{y: 100, opacity: 1}}
+        whileInView={{y: 1, opacity: 1}}
+        transition={{duration: 0.9, ease: "easeOut"}}
+         className="text-center text-3xl font-bold mb-8">Send us a Message</motion.h1>
 
         <form onSubmit={handleSubmit} className="space-y-8">
           {/* GRID START */}
