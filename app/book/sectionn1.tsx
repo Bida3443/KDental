@@ -66,7 +66,7 @@ export default function SectionnOne () {
         initial={{y: 100, opacity: 1}}
         whileInView={{y: 1, opacity: 1}}
         transition={{duration: 0.9, ease: "easeOut"}}
-         className="text-center text-3xl font-bold mb-8">Send us a Message</motion.h1>
+        className="text-center text-3xl font-bold mb-8">Send us a Message</motion.h1>
 
         <form onSubmit={handleSubmit} className="space-y-8">
           {/* GRID START */}
@@ -97,6 +97,7 @@ export default function SectionnOne () {
                 onChange={handleChange}
               />
             </div>
+
 
             {/* Email */}
             <div>

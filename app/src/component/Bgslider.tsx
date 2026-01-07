@@ -72,25 +72,45 @@ export default function BackgroundSlider() {
       ))}
 
       {/* Content overlay (optional) */}
-      <motion.div 
+      <div 
   
-      initial={{ y: 80, opacity: 0 }}       // Start lower
-      animate={{ y: 0, opacity: 1 }}        // Slide up + fade in
-      transition={{ duration: 0.7, ease: "easeOut" }}
+      // initial={{ y: 80, opacity: 0 }}      // Start lower
+      // animate={{ y: 0, opacity: 1 }}        // Slide up + fade in
+      // transition={{ duration: 0.7, ease: "easeOut" }}
 
       className="absolute inset-0 bg-black/40 flex items-center justify-center text-center flex-col lg:space-y-6 space-y-3">
-        <h1 className="text-white lg:text-5xl md:text-3xl text-[22px] font-medium">
-          Premium Smile Dental Clinic
-        </h1>
-        <h1 className=" lg:text-4xl md:text-3xl text-[20] font-bold">Dental Clinic In Lagos</h1>
-        <p className="lg:text-2xl text-[10px] font-normal">
-          Bringing Smiles To Life, Your Favourite Dentist Is Here
-        </p>
-
-        <a className="bg-blue-600 lg:px-10 px-4 lg:py-4 py-2 font-bold hover:drop-shadow-lg transform transition duration-300 ease-in-out rounded-md hover:text-black flex flex-row justify-center items-center space-x-2" href="/book">
-          {" "}
-      
+        <motion.h1 
+        initial={{y: 80, opacity: 0}}
+        animate={{y: 0, opacity: 1}}
+        transition={{duration: 0.9, ease: "easeOut"}}
         
+        className="text-white lg:text-5xl md:text-3xl text-[22px] font-medium">
+          Premium Smile Dental Clinic
+        </motion.h1>
+        <motion.h1 
+        initial={{y: 80, opacity: 0}}
+        animate={{y: 0, opacity: 1}}
+        transition={{duration: 0.8, ease: "easeOut"}}
+        
+        className=" lg:text-4xl md:text-3xl text-[20] font-bold">Dental Clinic In Lagos</motion.h1>
+        <motion.p 
+        initial={{y: 80, opacity: 0}}
+        animate={{y: 0, opacity: 1}}
+        transition={{duration: 0.8, ease: "easeOut"}}
+        
+        className="lg:text-2xl text-[10px] font-normal">
+          Bringing Smiles To Life, Your Favourite Dentist Is Here
+        </motion.p>
+
+        <motion.a 
+        initial={{y: 40, opacity: 1}}
+        whileInView={{y: 1, opacity: 1}}
+        transition={{duration: 0.6, ease: "easeOut"}}
+        
+        className="bg-blue-600 lg:px-10 px-4 lg:py-4 py-2 font-bold hover:drop-shadow-lg transform transition duration-300 ease-in-out rounded-md hover:text-black flex flex-row justify-center items-center space-x-2" href="/book">
+          {" "}
+
+
           <svg xmlns="http://www.w3.org/2000/svg"
            viewBox="0 0 640 640"
            className="lg:w-7 w-5 fill-white stroke-white" href="#">
@@ -99,9 +119,9 @@ export default function BackgroundSlider() {
           </svg>
 
           Book An Appointment
-        </a>
+        </motion.a>
 
-      </motion.div>
+      </div>
     </div>
 
     </div>
