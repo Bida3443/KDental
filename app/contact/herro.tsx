@@ -2,6 +2,8 @@
 import Image from "next/image";
 import erfan from "../../public/erfan.jpg";
 
+import {motion} from "framer-motion";
+
 export default function Herro() {
   return (
     <div className=" overflow-hidden relative">
@@ -26,7 +28,12 @@ export default function Herro() {
           />
           <div className="relative w-full h-full bg-black opacity-40 z-20" />
           <div className="absolute inset-0 z-30 flex flex-col justify-center items-center text-white px-4">
-        <h1 className="lg:text-5xl text-[24px] font-bold mb-3">Contact Us</h1>
+        <motion.h1 
+        initial={{y: 20, opacity: 1}}
+        animate={{y: 1, opacity: 1}}
+        transition={{duration: 0.9, ease: "easeOut"}}
+        
+        className="lg:text-5xl text-[24px] font-bold mb-3">Contact Us</motion.h1>
         {/* <p className="text-lg max-w-2xl text-center">
           We are here to assist you. Reach out and let us help you today.
         </p> */}

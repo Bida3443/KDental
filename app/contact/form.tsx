@@ -75,11 +75,11 @@ setForm({
 
     <div className="bg-white px-4 py-10">
       <div className="w-full max-w-4xl mx-auto bg-blue-700 text-white rounded-2xl  px-5 py-8 sm:px-8 lg:p-10 ">
-      <h1 
-      // initial={{x: 100, opacity: 1}}
-      // whileInView={{x: 20, opacity: 1}}
-      // transition={{duration: 0.9, ease: "easeOut"}}
-      className="text-center lg:text-3xl text-[25px] font-bold mb-8">Send us a Message</h1>
+      <motion.h1 
+      initial={{y: 40, opacity: 1}}
+      whileInView={{y: 1, opacity: 1}}
+      transition={{duration: 0.9, ease: "easeOut"}} 
+      className="text-center lg:text-3xl text-[25px] font-bold mb-8">Send us a Message</motion.h1>
 
       <form
       // initial={{y: 40, opacity: 1}}
