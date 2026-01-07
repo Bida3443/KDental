@@ -1,4 +1,7 @@
 // import NavBar from "../src/component/Nav";
+
+"use client"
+
 import Image from "next/image";
 import erfan from "../../public/erfan.jpg";
 
