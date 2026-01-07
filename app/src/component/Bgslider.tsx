@@ -102,10 +102,8 @@ export default function BackgroundSlider() {
           Bringing Smiles To Life, Your Favourite Dentist Is Here
         </motion.p>
 
-        <motion.a 
-        initial={{y: 40, opacity: 1}}
-        whileInView={{y: 1, opacity: 1}}
-        transition={{duration: 0.6, ease: "easeOut"}}
+        <a
+        
         
         className="bg-blue-600 lg:px-10 px-4 lg:py-4 py-2 font-bold hover:drop-shadow-lg transform transition duration-300 ease-in-out rounded-md hover:text-black flex flex-row justify-center items-center space-x-2" href="/book">
           {" "}
@@ -119,7 +117,7 @@ export default function BackgroundSlider() {
           </svg>
 
           Book An Appointment
-        </motion.a>
+        </a>
 
       </div>
     </div>
