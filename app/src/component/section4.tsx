@@ -57,17 +57,20 @@ export default function SectionFour() {
         
         >Comprehensive Care for Every Smile Services</motion.h1>
       </div>
-      <motion.div 
-                initial={{x: 100, opacity: 0}}
+      <div 
+                
+      className="text-black justify-center text-center lg:text-[20px] md:text-[15] text-[11px]">
+        <motion.h1
+            initial={{x: 100, opacity: 0}}
                 whileInView={{x: 0, opacity: 1}}
                 transition={{duration: 0.8, ease: "easeOut"}}
                 viewport={{once: true}}
-      className="text-black justify-center text-center lg:text-[20px] md:text-[15] text-[11px]">
-        <h1>
+        
+        >
           Providing personalized and advanced dental care designed to restore,
           enhance, and maintain your perfect smile.
-        </h1>
-      </motion.div>
+        </motion.h1>
+      </div>
 
       <div className="flex lg:flex-row flex-col">
         {svig.map((svig, index) => (

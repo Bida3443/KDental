@@ -5,9 +5,11 @@ import {motion} from "framer-motion"
 
 export default function SectionTwo() {
   return (
-    <motion.div   initial={{ y: 80, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.9, ease: "easeOut" }}
+    <div   
+    
+    // initial={{ y: 80, opacity: 0 }}
+    //               animate={{ y: 0, opacity: 1 }}
+    //               transition={{ duration: 0.9, ease: "easeOut" }}
      className="flex flex-col text-black justify-center  text-center w-fit items-center    
          bg-white space-y-2 lg:p-10 p-6">
       <motion.h1  initial={{ x: -100, opacity: 0 }}
@@ -48,6 +50,6 @@ export default function SectionTwo() {
         comfort, and care to every smile.
       </p>
       
-    </motion.div>
+    </div>
   );
 }

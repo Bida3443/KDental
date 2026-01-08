@@ -57,12 +57,12 @@ export default function SectionThree() {
   ];
 
   return (
-    <motion.div
+    <div
     
-           initial={{ x: 100, opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
-                  viewport={{ once: true }}
+          //  initial={{ x: 100, opacity: 0 }}
+          //         whileInView={{ x: 0, opacity: 1 }}
+          //         transition={{ duration: 0.8, ease: "easeOut" }}
+          //         viewport={{ once: true }}
     
     className="relative  overflow-hidden w-full min-h-screen">
       
@@ -135,6 +135,6 @@ export default function SectionThree() {
           ))}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
