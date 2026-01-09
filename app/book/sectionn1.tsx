@@ -27,12 +27,51 @@ export default function SectionnOne () {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form Submitted:", form);
-  };
+  const [isLoading, setIsLoading] = useState(false);
+
+  // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+    
+  //   console.log("Form Submitted:", form);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  setIsLoading(true);
+
+  try {
+    const res = await fetch("/api/appointment", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
+
+    const data = await res.json();
+
+    console.log("Status:", res.status);
+    console.log("Response:", data);
+
+    if (!res.ok) {
+      alert(data.message || "Validation failed");
+      return; // ⛔ STOP execution here
+    }
+
+    alert("Appointment request sent successfully!");
+
+  } catch (error) {
+    console.error("Frontend error:", error);
+    alert("Something went wrong");
+  }
+};
+
+
+
+
 
     return(
+
         <div>
 
              <section className="py-16 bg-white">
@@ -63,8 +102,8 @@ export default function SectionnOne () {
       <div className="px-4 sm:px-6 lg:px-0">
       <div className=" lg:max-w-4xl max-w-2xl mx-auto w-full bg-blue-700 text-white rounded-2xl px-5 py-8 sm:px-8 lg:p-10 shadow-lg">
         <motion.h1
-        initial={{y: 100, opacity: 1}}
-        whileInView={{y: 1, opacity: 1}}
+        initial={{y: 100, opacity: 1}}      
+        whileInView={{y: 1, opacity: 1}}    
         transition={{duration: 0.9, ease: "easeOut"}}
         className="text-center text-3xl font-bold mb-8">Send us a Message</motion.h1>
 
@@ -240,11 +279,12 @@ export default function SectionnOne () {
           </div>
 
           {/* BUTTON */}
-          <motion.a
-
-                animate={{
-        opacity: [1, 0.7, 1],
-        boxShadow: [
+          <motion.button
+          type= "submit"
+          disabled= {isLoading}
+          animate={{
+        opacity: isLoading ? 0.6 : [1, 0.7, 1],
+        boxShadow: isLoading ? "none" : [
       "0 0 0 rgba(0,0,0,0)",
       "0 0 20px rgba(59,130,246,0.8)",
       "0 0 0 rgba(0,0,0,0)",
@@ -252,21 +292,22 @@ export default function SectionnOne () {
   }}
         transition={{
         duration: 1.5,
-        repeat: Infinity,
+        repeat: isLoading ? 0 : Infinity,
         ease: "easeInOut",
   }}
-            type="submit"
+            
             className="bg-black px-10 py-3 rounded-full text-white text-lg hover:bg-gray-900"
-            href=""
+            
           >
-            Send
-          </motion.a>
+            {isLoading ? " sending..." : "send"}
+
+          </motion.button>
         </form>
       </div>
       </div>
     </section>
         </div>
-    );
-}
+  );
+  }
 
 

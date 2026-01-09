@@ -57,7 +57,7 @@ export async function POST(req: Request) {
 
   const { name, email } = formData;
 
-  // Basic validation
+  // Basic validation 
   if (!name || !email) {
     return new Response(
       JSON.stringify({ success: false, message: "Name and email are required" }),

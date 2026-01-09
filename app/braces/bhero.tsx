@@ -39,8 +39,7 @@ export default function Bhero() {
                                       </a>
 
                                         </motion.div>
-                                
-                                
+
                               </div>
                                           </div>
                         </div>

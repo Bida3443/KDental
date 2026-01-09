@@ -1,6 +1,6 @@
 "use client"
 
-import {motion} from "framer-motion";
+// import {motion} from "framer-motion";
 
 import Image from "next/image";
 
@@ -15,12 +15,12 @@ export default function SectionFive () {
             <h1 className="text-black text-center lg:text-[40px] text-[20px] m-10">Meet The Dentist In Lagos</h1>
             
             <div className="flex flex-row justify-center px-4 w-full lg:space-x-20 space-x-10">
-                <motion.div 
-                          initial={{ opacity: 0 }}
-                          whileInView={{ opacity: 1 }}
-                          transition={{ duration: 0.9, ease: "easeInOut" }}
+                <div 
+                          // initial={{ opacity: 0 }}
+                          // whileInView={{ opacity: 1 }}
+                          // transition={{ duration: 0.9, ease: "easeInOut" }}
                   // viewport={{ once: true }}
-                className="relative group overflow-hidden rounded-xl w-1/2 sm:w-[220px] md:w-[280] lg:w-[500px]">
+                className="relative group overflow-hidden rounded-xl w-1/2 sm:w-[220px] md:w-[280px] lg:w-[500px]">
                 
                 <Image
                       src={Doctor1}
@@ -36,11 +36,11 @@ export default function SectionFive () {
                     <a className="hover:underline text-center" href="/about" >Dr.Kehinde Bamise<br/>CEO</a>
                       
                     </div> 
-            </motion.div> 
-            <motion.div   
-                    initial= {{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{duration: 0.8, ease: "easeInOut"}}
+            </div> 
+            <div   
+                    // initial= {{ opacity: 0 }}
+                    // whileInView={{ opacity: 1 }}
+                    // transition={{duration: 0.8, ease: "easeInOut"}}
             className="relative group overflow-hidden rounded-xl w-1/2 sm:w-[220px] md:w-[280px] lg:w-[500px]">
 
                 <Image
@@ -55,13 +55,11 @@ export default function SectionFive () {
                       <a className="hover:underline text-center" href="/about">Dr.Kehinde Bamise <br />CEO</a>
                       
                     </div>
-            </motion.div>
+            </div>
             
             </div>
         </div>
         
-
-
     );
 }
 
