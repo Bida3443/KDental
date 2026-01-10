@@ -7,15 +7,18 @@ import implant from "../../public/implant.jpg";
 export default function SsectionOnnee() {
   return (
     <div className="flex flex-row gap-10 bg-white p-6 justify-center items-center pt-15 text-black">
-      <motion.div className=" flex flex-col w-150 gap-6"
-      initial={{ x: -100, opacity: 0 }}
+      <div className=" flex flex-col w-150 gap-6"
+      
+        >
+        <motion.h1 
+        initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        >
-        <h1 className="text-4xl text-blue-700 font-bold border-b-2 border-b-blue-700">
+        
+        className="text-4xl text-blue-700 font-bold border-b-2 border-b-blue-700">
           Premium Dental Implants
-        </h1>
+        </motion.h1>
         <p className="flex leading-7 text-justify">
           At our dental clinic, we understand how much a complete and confident
           smile can improve your quality of life, and that is why we offer
@@ -43,7 +46,7 @@ export default function SsectionOnnee() {
           teeth—giving you the confidence to eat, speak, and smile freely every
           day.
         </p>
-      </motion.div>
+      </div>
       <motion.div
       initial={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
