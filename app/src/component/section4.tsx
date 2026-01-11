@@ -1,6 +1,6 @@
 "use client"
 
-import {motion} from "framer-motion";
+// import {motion} from "framer-motion";
 
 export default function SectionFour() {
   const svig = [
@@ -48,37 +48,37 @@ export default function SectionFour() {
   return (
     <div className="flex flex-col lg:items-center text-center items-center  bg-white justify-center p-10 ">
       <div className="text-black font-bold lg:text-[35px] md:text-[20] text-[15px]">
-        <motion.h1
+        <h1
 
-                  initial={{ x: -100, opacity: 0 }}
-                  whileInView={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
-                  viewport={{ once: true }}
+                  // initial={{ x: -100, opacity: 0 }}
+                  // whileInView={{ x: 0, opacity: 1 }}
+                  // transition={{ duration: 0.8, ease: "easeOut" }}
+                  // viewport={{ once: true }}
         
-        >Comprehensive Care for Every Smile Services</motion.h1>
+        >Comprehensive Care for Every Smile Services</h1>
       </div>
       <div 
                 
       className="text-black justify-center text-center lg:text-[20px] md:text-[15] text-[11px]">
-        <motion.h1
-            initial={{x: 100, opacity: 0}}
-                whileInView={{x: 0, opacity: 1}}
-                transition={{duration: 0.8, ease: "easeOut"}}
-                viewport={{once: true}}
+        <h1
+            // initial={{x: 100, opacity: 0}}
+            //     whileInView={{x: 0, opacity: 1}}
+            //     transition={{duration: 0.8, ease: "easeOut"}}
+            //     viewport={{once: true}}
         
         >
           Providing personalized and advanced dental care designed to restore,
           enhance, and maintain your perfect smile.
-        </motion.h1>
+        </h1>
       </div>
 
       <div className="flex lg:flex-row flex-col">
         {svig.map((svig, index) => (
-          <motion.div
+          <div
             key={index}
-              initial= {{ y: 100, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.9, ease: "easeOut" }} 
+              // initial= {{ y: 100, opacity: 0 }}
+              // whileInView={{ y: 0, opacity: 1 }}
+              // transition={{ duration: 0.9, ease: "easeOut" }} 
 
             className="flex flex-col bg-white border-1 border-blue-200 shadow-lg shadow-blue-300 rounded-lg lg:m-10 m-5 lg:p-20 p-10 lg:w-70 w-60 justify-center items-center text-black"
           >
@@ -87,7 +87,7 @@ export default function SectionFour() {
             <a className="text-2xl" href={svig.link}></a>
             {svig.text}      
             
-          </motion.div>
+          </div>
           
         ))}     
 
