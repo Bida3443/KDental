@@ -11,17 +11,22 @@ export default function SectionOnnee() {
   return (
     <div
     className="flex lg:flex-row flex-col gap-10 bg-white p-6 justify-center items-center pt-15 text-black">
-      <div  
-        className="flex flex-col lg:w-2/4 w-full gap-6">
-          <motion.div 
-          initial={{ x: -100, opacity: 0 }}
+      <div className="flex flex-col lg:w-2/4 w-full gap-6">
+          <div
+          >
+             <motion.h1
+               initial={{ x: -100, opacity: 0 }}
+               transition={{ duration: 0.8, ease: "easeOut" }}
+               whileInView={{ x: 0, opacity: 1 }}
+               viewport={{ once: true }}
+               className="text-4xl text-blue-700 font-bold border-b-2 border-b-blue-700">Premium Braces</motion.h1>
+        <motion.p 
+         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-          
-          >
-             <h1 className="text-4xl text-blue-700 font-bold border-b-2 border-b-blue-700">Premium Braces</h1>
-        <p className="flex leading-7 text-justify">
+
+        className="flex leading-7 text-justify">
           At our dental clinic, we understand how much a confident smile can
           change your life, and that is why we offer braces to help correct
           crooked teeth, gaps, and bite issues such as overbite, underbite, and
@@ -39,27 +44,29 @@ export default function SectionOnnee() {
           braces in 6 to 12 months for mild alignment, 12 to 18 months for
           moderate cases, and 18 to 24 months or more for more complex
           corrections. Throughout your treatment, our clinic will schedule
-          visits every 4 to 6 weeks to adjust your braces, track your progress,
+          visits every 4 to 6 weeks to adjust your bracses, track your progress,
           and ensure you remain comfortable. In the end, our dental clinic will
           help you achieve a healthier, more balanced, and more attractive
           smile one that you wll be proud to share every day.
-        </p>
-          </motion.div>
+        </motion.p>
+          </div>
 
       </div>
       
       <motion.div 
+
        initial={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}>
+
         <Image
         alt=""
         src={Braces2}
         width={600}
         height={700}   
         style={{objectFit:"cover"}}
-                 />
+         />
       </motion.div>
     </div>
   );
