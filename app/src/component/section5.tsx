@@ -16,9 +16,9 @@ export default function SectionFive () {
             
             <div className="flex flex-row justify-center px-4 w-full lg:space-x-20 space-x-10">
                 <div 
-                          // initial={{ opacity: 0 }}
-                          // whileInView={{ opacity: 1 }}
-                          // transition={{ duration: 0.9, ease: "easeInOut" }}
+                          // initial={{ x: -100, opacity: 0 }}
+                          // whileInView={{ x: 1, opacity: 1 }}
+                          // transition={{ duration: 0.8, ease: "easeInOut" }}
                   // viewport={{ once: true }}
                 className="relative group overflow-hidden rounded-xl w-1/2 sm:w-[220px] md:w-[280px] lg:w-[500px]">
                 
@@ -38,8 +38,8 @@ export default function SectionFive () {
                     </div> 
             </div> 
             <div   
-                    // initial= {{ opacity: 0 }}
-                    // whileInView={{ opacity: 1 }}
+                    // initial= {{ x: 100, opacity: 0 }}
+                    // whileInView={{ x: 1, opacity: 1 }}
                     // transition={{duration: 0.8, ease: "easeInOut"}}
             className="relative group overflow-hidden rounded-xl w-1/2 sm:w-[220px] md:w-[280px] lg:w-[500px]">
 
