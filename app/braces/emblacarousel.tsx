@@ -51,8 +51,8 @@ export default function EmblaCarousel() {
       />
       <div className="absolute w-full h-full bg-blue-400 "/>
       <div className="relative p-5">
-        <h1 className=" flex text-white justify-center font-bold lg:text-[35px] text-[20px]">Google Reviews</h1>
-      </div>s
+        <h1 className=" flex text-white justify-center font-bold lg:text-[35px] text-[30px]">Google Reviews</h1>
+      </div>
       {/* Viewport */}
       <div ref={emblaRef} className="overflow-hidden">
         {/* Slides */}

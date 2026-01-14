@@ -29,7 +29,7 @@ export default function Bhero() {
                                                     transition={{ duration: 0.9, ease: "easeOut" }}
                                         
                                         >
-                                          <h1 className="lg:text-3xl text-[20px] font-bold mb-3 flex justify-center">Transform your smile with <br/> professional dental braces</h1>
+                                          <h1 className="lg:text-3xl text-[20px] font-bold mb-5 flex justify-center">Transform your smile with <br/> professional dental braces</h1>
                                  <a
                                  className="bg-blue-700 lg:p-3 p-2 lg:px-7 px-5 rounded-md text-white lg:text-[20px] text-[10px] font-bold items-center transition-all duration-300 ease-in-out
                                                 hover:bg-white hover:text-blue-700 hover:scale-105 hover:shadow-lg"
@@ -44,8 +44,6 @@ export default function Bhero() {
                                           </div>
                         </div>
         </div>
-
-
 
     );
 }
