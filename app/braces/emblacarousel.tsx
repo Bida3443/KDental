@@ -51,8 +51,8 @@ export default function EmblaCarousel() {
       />
       <div className="absolute w-full h-full bg-blue-400 "/>
       <div className="relative p-5">
-        <h1 className="bg-red-600 flex text-black justify-center font-bold text-[30px]">Google Review</h1>
-      </div>
+        <h1 className=" flex text-white justify-center font-bold lg:text-[35px] text-[20px]">Google Reviews</h1>
+      </div>s
       {/* Viewport */}
       <div ref={emblaRef} className="overflow-hidden">
         {/* Slides */}
@@ -78,7 +78,7 @@ export default function EmblaCarousel() {
       {/* PREV BUTTON */}
       <button
         onClick={scrollPrev}
-        className="absolute left-3 top-1/2 -translate-y-1/2 z-10 bg-black/60 text-white p-3 rounded-full hover:bg-black"
+        className="absolute cursor-pointer left-3 top-1/2 -translate-y-1/2 z-10 bg-black/60 text-white p-3 rounded-full hover:bg-black"
       >
         ‹
       </button>
