@@ -41,7 +41,7 @@ export default function EmblaCarousel() {
   }, [emblaApi]);
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative w-full overflow-hidden pb-5">
       <Image
       src={review5}
       alt="Backgrond image"
@@ -49,7 +49,7 @@ export default function EmblaCarousel() {
       className="w-full h-full opacity-10 z-20"
       style={{objectFit:"cover"}}
       />
-      <div className="absolute w-full h-full bg-blue-400 " />
+      <div className="absolute w-full h-full bg-blue-400 "/>
       <div className="relative p-5">
         <h1 className="bg-red-600 flex text-black justify-center font-bold text-[30px]">Google Review</h1>
       </div>
