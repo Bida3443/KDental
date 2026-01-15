@@ -32,7 +32,7 @@ export default function WhatsappChat() {
           </p>
 
           <a
-            href="https://wa.me/2347086159080?text=Hello%20Doctor,%20I%20need%20a%20consultation."
+            href="https://wa.me/2347037813135?text=Hello%20Doctor,%20I%20need%20a%20consultation."
             target="_blank"
             className="block mt-4 bg-green-500 text-white text-center py-2 rounded-md font-semibold hover:bg-green-600 transition-all"
           >
