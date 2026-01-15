@@ -44,7 +44,7 @@ export default function SecttionOnne() {
         </svg>
       ),
       text: "Veneers",
-      link: "veneer",
+      link: "veneers",
     },
 
     // COMMENT AM HERE
