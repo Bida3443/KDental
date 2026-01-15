@@ -6,46 +6,47 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "How long is the typical duration of wearing braces?",
+    question: "How long does braces treatment usually last?",
     answer:
-      "The treatment duration varies based on the complexity of your case and the chosen type of braces, typically ranging from 12 to 36 months. Your orthodontist will provide a personalized timeline tailored to your needs.",
+      "The length of treatment depends on how complex your dental alignment is and the type of braces used. In most cases, treatment can last anywhere from 12 to 36 months. Your orthodontist will outline a timeline that suits your specific condition.",
   },
   {
-    question: "Will wearing braces cause discomfort?",
+    question: "Is it normal to feel discomfort when wearing braces?",
     answer:
-      "Braces may cause mild discomfort during adjustments, but it usually subsides within a few days.",
+      "Some mild soreness or pressure may occur, especially after adjustments, but this typically fades within a few days as your mouth adapts.",
   },
   {
-    question: "Can I still enjoy my favorite foods with braces?",
+    question: "Can I continue eating my favorite foods with braces?",
     answer:
-      "Yes, but you may need to avoid overly hard or sticky foods to protect your brackets.",
+      "Yes, you can still enjoy most foods, but it is recommended to avoid very hard, sticky, or chewy items that could damage the braces.",
   },
   {
-    question: "How often do I need to visit the orthodontist during treatment?",
+    question: "How frequently will I need orthodontic check-ups?",
     answer:
-      "Visits are typically every 4 to 6 weeks for adjustments and monitoring.",
+      "Most patients are scheduled for follow-up visits every 4 to 6 weeks to adjust the braces and monitor progress.",
   },
   {
-    question: "What distinguishes Invisalign from traditional braces?",
+    question: "What is the difference between Invisalign and regular braces?",
     answer:
-      "Invisalign uses clear removable aligners, while traditional braces use fixed metal or ceramic brackets.",
+      "Invisalign treatment uses clear, removable aligners, while traditional braces rely on fixed metal or ceramic brackets to straighten teeth.",
   },
   {
-    question: "How do I maintain oral hygiene while wearing braces?",
+    question: "How can I keep my teeth clean while wearing braces?",
     answer:
-      "Brush and floss thoroughly, and use interdental brushes to clean around brackets.",
+      "Good oral hygiene involves brushing carefully after meals, flossing daily, and using special interdental brushes to clean around brackets and wires.",
   },
   {
-    question: "What happens after braces removal?",
+    question: "What happens once my braces are removed?",
     answer:
-      "You'll receive retainers to maintain your new alignment and prevent shifting.",
+      "After braces are taken off, you will be given retainers to help maintain your new smile and prevent teeth from shifting back.",
   },
   {
-    question: "What is the cost of braces in Lagos?",
+    question: "How much do braces typically cost in Lagos?",
     answer:
-      "Costs vary based on the type of braces and clinic, usually ranging from moderate to premium pricing.",
+      "The cost of braces varies depending on the type of treatment and the clinic. Prices generally range from affordable options to more premium plans.",
   },
 ];
+
 
 export default function SectionnTTwo() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
