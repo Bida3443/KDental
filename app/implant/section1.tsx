@@ -45,13 +45,9 @@ export default function SsectionOnnee() {
           implant treatments follow a simple, well-planned process: implant
           placement, healing and bone integration which usually takes about 3 to
           6 months, and finally placing the natural-looking crown once
-          everything is fully supported. <br /> Throughout this period, our clinic will
-          schedule follow-up visits to monitor your healing, ensure comfort, and
-          guide you on proper care so your implants remain strong and stable. In
-          the end, our dental clinic will help you restore your smile with
-          dental implants that look, feel, and function like natural
-          teeth—giving you the confidence to eat, speak, and smile freely every
-          day.
+          everything is fully supported. <br /> 
+         
+
         </motion.p>
       </div>
       <motion.div

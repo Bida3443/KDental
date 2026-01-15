@@ -3,7 +3,8 @@
 import { motion } from "framer-motion";
 // import NavBar from "../src/component/Nav";
 import Image from "next/image";
-import Implant from "../../public/implants.jpg";
+import veneer from "../../public/veneerr.jpg";
+// import Veneers from "./page";
 
 
 export default function HeroVeneer() {
@@ -14,7 +15,7 @@ export default function HeroVeneer() {
               
                           <div className="w-full lg:h-[70vh] h-[40vh] relative">
                                               <Image
-                                                                  src={Implant}
+                                                                  src={veneer}
                                                                   alt="Background"
                                                                   fill
                                                                   className="w-full h-full"
@@ -29,7 +30,8 @@ export default function HeroVeneer() {
                                                       transition={{ duration: 0.9, ease: "easeOut" }}
                                           
                                           >
-                                            <h1 className="lg:text-3xl text-[20px] font-bold mb-5 flex justify-center">Replace Missing Teeth with <br/> Advanced Dental Implant Solutions</h1>
+                            <h1 className="lg:text-3xl text-[20px] font-bold mb-5 flex justify-center">Transform Your Smile with <br/> Advanced Dental Veneer Solutions
+</h1>
                                    <a
                                    className="bg-blue-700 lg:p-3 p-2 lg:px-7 px-5 rounded-md text-white lg:text-[20px] text-[10px] font-bold items-center transition-all duration-300 ease-in-out
                                                   hover:bg-white hover:text-blue-700 hover:scale-105 hover:shadow-lg"
