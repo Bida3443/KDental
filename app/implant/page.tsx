@@ -3,6 +3,7 @@ import ImageTextRow from "../src/component/info";
 import NavBar from "../src/component/Nav";
 import SsectionOnnee from "./section1";
 import FooterSection from "../src/component/footer";
+import BeforeAfterr from "./beforeafter";
 
 export default function Implant() {
     return(
@@ -11,6 +12,7 @@ export default function Implant() {
             <NavBar/>
             <Hiero/>
             <SsectionOnnee/>
+            <BeforeAfterr/>
             <FooterSection/>
 
         </div>
