@@ -55,7 +55,7 @@ export default function SsectionOnnee() {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        >
+         >
         <Image
           alt=""
           src={implant}
