@@ -1,6 +1,6 @@
 "use client"
 
-// import {motion} from "framer-motion";
+import {motion} from "framer-motion";
 
 import Image from "next/image";
 import Braces2 from "../../public/braces2.jpg";
@@ -13,12 +13,12 @@ export default function SectionOnnee() {
       <div className="flex flex-col lg:w-2/4 w-full gap-6">
           <div
           >
-             <h1
-              //  initial={{ x: -100, opacity: 0 }}
-              //  transition={{ duration: 0.8, ease: "easeOut" }}
-              //  whileInView={{ x: 0, opacity: 1 }}
-              //  viewport={{ once: true }}
-               className="text-4xl text-blue-700 font-bold border-b-2 border-b-blue-700">Premium Braces</h1>
+             <motion.h1
+               initial={{ x: -100, opacity: 0 }}
+               transition={{ duration: 0.8, ease: "easeOut" }}
+               whileInView={{ x: 0, opacity: 1 }}
+               viewport={{ once: true }}
+               className="text-4xl text-blue-700 font-bold border-b-2 border-b-blue-700">Premium Braces</motion.h1>
         <p 
         //  initial={{ x: -100, opacity: 0 }}
         // whileInView={{ x: 0, opacity: 1 }}
@@ -52,12 +52,12 @@ export default function SectionOnnee() {
 
       </div>
       
-      <div 
+      <motion.div 
 
-      //  initial={{ x: 100, opacity: 0 }}
-      //   whileInView={{ x: 0, opacity: 1 }}
-      //   transition={{ duration: 0.8, ease: "easeOut" }}
-      //   viewport={{ once: true }}
+       initial={{ x: 100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
        >
 
         <Image
@@ -67,7 +67,7 @@ export default function SectionOnnee() {
         height={700}   
         style={{objectFit:"cover"}}
          />
-      </div>
+      </motion.div>
     </div>
   );
 }
