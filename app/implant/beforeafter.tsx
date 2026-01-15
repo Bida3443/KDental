@@ -3,8 +3,9 @@
 import {motion} from "framer-motion";
 
 import Image from "next/image";
-import Before from "../../public/Before.png";
+// import Before from "../../public/Before.png";
 import implant from "../../public/3.png";
+import implantt from "../../public/4.png";
 
 export default function BeforeAfterr() {
     return(
@@ -34,15 +35,15 @@ export default function BeforeAfterr() {
             <motion.div
             initial={{x: 10, opacity: 0}}
             whileInView={{x: 1, opacity: 1}}
-            transition={{duration: 0.9, ease: "easeOut"}}
+            transition={{duration: 0.9, ease: "easeOut"}}   
 
             >
                 <Image
-                src={Before}
+                src={implantt}   
                 alt=""
                 style={{objectFit:"cover"}}
                 width={300}
-                height={500}
+                height={600}
                 className="rounded-xl"
                 />
             </motion.div>

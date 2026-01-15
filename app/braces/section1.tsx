@@ -6,7 +6,6 @@ import Image from "next/image";
 import Braces2 from "../../public/braces2.jpg";
 
 
-
 export default function SectionOnnee() {
   return (
     <div
