@@ -4,48 +4,49 @@
 
 import { useState } from "react";
 
-const faqs = [
+const implantFaqs = [
   {
-    question: "How long does braces treatment usually last?",
+    question: "What are dental implants?",
     answer:
-      "The length of treatment depends on how complex your dental alignment is and the type of braces used. In most cases, treatment can last from 6 to 12 months. Your orthodontist will outline a timeline that suits your specific condition.",
+      "Dental implants are permanent replacements for missing teeth. They consist of a titanium post placed in the jawbone, which acts as a strong foundation for a natural-looking crown.",
   },
   {
-    question: "Is it normal to feel discomfort when wearing braces?",
+    question: "Who is a good candidate for dental implants?",
     answer:
-      "Some mild soreness or pressure may occur, especially after adjustments, but this typically fades within a few days as your mouth adapts.",
+      "Most adults with healthy gums and sufficient jawbone can receive dental implants. A thorough dental examination will determine if implants are suitable for your oral condition.",
   },
   {
-    question: "Can I continue eating my favorite foods with braces?",
+    question: "Is the dental implant procedure painful?",
     answer:
-      "Yes, you can still enjoy most foods, but it is recommended to avoid very hard, sticky, or chewy items that could damage the braces.",
+      "The procedure is performed under local anesthesia, so pain is minimal. Some mild discomfort may occur after the surgery, but it is usually manageable with prescribed medication.",
   },
   {
-    question: "How frequently will I need orthodontic check-ups?",
+    question: "How long does the dental implant process take?",
     answer:
-      "Most patients are scheduled for follow-up visits every 4 to 6 weeks to adjust the braces and monitor progress.",
+      "The complete process typically takes between 3 to 6 months. This allows time for the implant to bond with the jawbone before the final crown is placed.",
   },
   {
-    question: "What is the difference between Invisalign and regular braces?",
+    question: "How long do dental implants last?",
     answer:
-      "Invisalign treatment uses clear, removable aligners, while traditional braces rely on fixed metal or ceramic brackets to straighten teeth.",
+      "With proper oral hygiene and regular dental check-ups, dental implants can last many years and often a lifetime.",
   },
   {
-    question: "How can I keep my teeth clean while wearing braces?",
+    question: "Can dental implants look and feel like natural teeth?",
     answer:
-      "Good oral hygiene involves brushing carefully after meals, flossing daily, and using special interdental brushes to clean around brackets and wires.",
+      "Yes, dental implants are designed to closely match the appearance and function of natural teeth, allowing you to eat, speak, and smile with confidence.",
   },
   {
-    question: "What happens once my braces are removed?",
+    question: "How do I care for my dental implants?",
     answer:
-      "After braces are taken off, you will be given retainers to help maintain your new smile and prevent teeth from shifting back.",
+      "Caring for implants is similar to caring for natural teeth. Regular brushing, flossing, and routine dental visits are essential to keep them in excellent condition.",
   },
   {
-    question: "How much do braces typically cost in Lagos?",
+    question: "What is the cost of dental implants in Lagos?",
     answer:
-      "The cost of braces varies depending on the type of treatment and the clinic. Prices generally range from affordable options to more premium plans.",
+      "The cost of dental implants varies depending on the number of implants needed and the treatment plan. Your dentist will provide a detailed estimate after an assessment.",
   },
 ];
+
 
 
 export default function SectionnTTwo() {
@@ -56,11 +57,12 @@ export default function SectionnTTwo() {
     <div className="w-full flex justify-center px-4 py-6 sm:p-10 bg-amber-50">
       <div className="bg-white p-4 sm:p-6 max-w-full rounded-lg shadow-lg w-full sm:max-w-2xl">
         <h2 className="text-center text-2xl font-semibold mb-6 text-blue-700">
-          Cosmetics Braces Most Popular FAQs
+          Dental Implants Most Popular FAQs
         </h2>
 
-        {faqs.map((faq, index) => (
+        {implantFaqs.map((implant, index) => (
           <div key={index} className="mb-3">
+            
             {/* <button
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
               className={`w-full text-left px-4 py-3 rounded-md font-medium 
@@ -80,7 +82,7 @@ export default function SectionnTTwo() {
       openIndex === index ? "bg-blue-700 text-black" : "bg-blue-500 text-white"
     }`}
             >
-              <span className="text-left pr-3  break-words">{faq.question}</span>
+              <span className="text-left pr-3  break-words">{implant.question}</span>
 
               {/* Dropdown arrow */}
               <svg
@@ -101,7 +103,7 @@ export default function SectionnTTwo() {
 
             {openIndex === index && (
               <div className="bg-white text-gray-700 p-4 rounded-md border border-blue-300 mt-1">
-                {faq.answer}
+                {implant.answer}
               </div>
             )}
           </div>

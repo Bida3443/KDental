@@ -20,7 +20,7 @@ export default function SsectionOnnee() {
         className="text-4xl text-blue-700 font-bold border-b-2 border-b-blue-700">
           Premium Dental Implants
         </motion.h1>
-        <motion.p 
+        <motion.p  
          initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}

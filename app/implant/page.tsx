@@ -5,6 +5,7 @@ import SsectionOnnee from "./section1";
 import FooterSection from "../src/component/footer";
 import BeforeAfterr from "./beforeafter";
 import Embla from "./embla";
+import Question from "./question";
 
 
 export default function Implant() {
@@ -16,6 +17,7 @@ export default function Implant() {
             <SsectionOnnee/>
             <BeforeAfterr/>
             <Embla/>
+            <Question/>
             <FooterSection/>
 
         </div>
