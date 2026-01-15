@@ -53,12 +53,12 @@ export default function SectionOnnee() {
 
       </div>
       
-      <div 
+      <motion.div 
 
-      //  initial={{ x: 100, opacity: 0 }}
-      //   whileInView={{ x: 0, opacity: 1 }}
-      //   transition={{ duration: 0.8, ease: "easeOut" }}
-      //   viewport={{ once: true }}
+       initial={{ x: 100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
        >
 
         <Image
@@ -68,7 +68,7 @@ export default function SectionOnnee() {
         height={700}   
         style={{objectFit:"cover"}}
          />
-      </div>
+      </motion.div>
     </div>
   );
 }

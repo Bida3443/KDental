@@ -30,12 +30,12 @@ export default function EmblaCarousel() {
     [Autoplay({ delay: 3000, stopOnInteraction: false })]
   );
 
-  // 👉 PREV
+  // PREV
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
   }, [emblaApi]);
 
-  // 👉 NEXT
+  // NEXT
   const scrollNext = useCallback(() => {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
