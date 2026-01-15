@@ -18,7 +18,7 @@ export default function SsectionOnnee() {
         viewport={{ once: true }}
 
         className="text-4xl text-blue-700 font-bold border-b-2 border-b-blue-700">
-          Premium Dental Implants
+          Premium Implants
         </motion.h1>
         <motion.p  
          initial={{ x: -100, opacity: 0 }}
