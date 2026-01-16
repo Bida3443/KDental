@@ -134,7 +134,7 @@ return (
             </svg>
 
             <span className="text-lg text-blue-700">
-              +234 703 334 7978
+              +234 703 781 3135
             </span>
           </div>
 
