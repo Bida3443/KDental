@@ -4,6 +4,7 @@ import NavBar from "../src/component/Nav";
 import HeroVeneer from "./heroveneer";
 import VeneerSection from "./veneersection";
 import BeforeAndAfterr from "./Beforeandafter";
+import Embler from "./embler";
 
 
 export default function Veneers(){
@@ -15,6 +16,7 @@ export default function Veneers(){
             <HeroVeneer/>
             <VeneerSection/>
             <BeforeAndAfterr/>
+            <Embler/>
         </div>
     )
 }
