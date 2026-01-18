@@ -9,9 +9,9 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
 import review1 from "../../public/review.jpg";
-import review2 from "../../public/caroline.jpg";
-import review3 from "../../public/Premium.png";
-import review4 from "../../public/Doctor1.png";
+import review2 from "../../public/review1.jpg"
+import review3 from "../../public/review2.jpg";
+import review4 from "../../public/review3.jpg";
 import review5 from "../../public/caroline.jpg";
 import review6 from "../../public/Before.png";
 
