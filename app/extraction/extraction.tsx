@@ -18,7 +18,7 @@ export default function ExtractionSec() {
                transition={{ duration: 0.8, ease: "easeOut" }}
                whileInView={{ x: 0, opacity: 1 }}
                viewport={{ once: true }}
-               className="lg:text-4xl text-3x1  text-blue-700 font-bold border-b-2 border-b-blue-700">Premium Extraction</motion.h1>
+               className="lg:text-4xl text-[35px]  text-blue-700 font-bold border-b-2 border-b-blue-700">Premium Extraction</motion.h1>
         <p 
         //  initial={{ x: -100, opacity: 0 }}
         // whileInView={{ x: 0, opacity: 1 }}
