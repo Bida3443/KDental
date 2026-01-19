@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 // import NavBar from "../src/component/Nav";
 import Image from "next/image";
-import White from "../../public/White.jpg";
+import White from "../../public/Whitee.jpg";
 // import Veneers from "./page";
 
 

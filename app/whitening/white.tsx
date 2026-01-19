@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import white from "../../public/Whitee.jpg";
+import white from "../../public/White.jpg";
 
 
 export default function TeethWhitening() {
