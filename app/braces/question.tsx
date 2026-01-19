@@ -6,50 +6,49 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "How long does it take to get a dental bridge?",
+    question: "How long does braces treatment usually last?",
     answer:
-      "The process usually takes two to three visits over a few weeks, depending on the type of dental bridge and your individual treatment needs.",
+      "The length of treatment depends on how complex your dental alignment is and the type of braces used. In most cases, treatment can last from 6 to 12 months. Your orthodontist will outline a timeline that suits your specific condition.",
   },
   {
-    question: "Is getting a dental bridge painful?",
+    question: "Is it normal to feel discomfort when wearing braces?",
     answer:
-      "The procedure is generally comfortable and performed under local anesthesia. Some mild sensitivity may occur afterward but usually settles within a few days.",
+      "Some mild soreness or pressure may occur, especially after adjustments, but this typically fades within a few days as your mouth adapts.",
   },
   {
-    question: "Can I eat normally with a dental bridge?",
+    question: "Can I continue eating my favorite foods with braces?",
     answer:
-      "Yes, once your bridge is fully placed and adjusted, you can eat most foods comfortably. It is advised to avoid very hard or sticky foods to protect the bridge.",
+      "Yes, you can still enjoy most foods, but it is recommended to avoid very hard, sticky, or chewy items that could damage the braces.",
   },
   {
-    question: "How often will I need check-ups after getting a dental bridge?",
+    question: "How frequently will I need orthodontic check-ups?",
     answer:
-      "Regular dental check-ups are recommended every 6 months to ensure the bridge remains secure and your oral health stays in good condition.",
+      "Most patients are scheduled for follow-up visits every 4 to 6 weeks to adjust the braces and monitor progress.",
   },
   {
-    question: "What types of dental bridges are available?",
+    question: "What is the difference between Invisalign and regular braces?",
     answer:
-      "Dental bridges can be made from materials such as porcelain, ceramic, or metal, and may include traditional bridges, cantilever bridges, or implant-supported bridges.",
+      "Invisalign treatment uses clear, removable aligners, while traditional braces rely on fixed metal or ceramic brackets to straighten teeth.",
   },
   {
-    question: "How do I care for my dental bridge?",
+    question: "How can I keep my teeth clean while wearing braces?",
     answer:
-      "Maintaining good oral hygiene is essential. Brush twice daily, floss carefully around the bridge, and attend regular dental visits to keep your bridge and surrounding teeth healthy.",
+      "Good oral hygiene involves brushing carefully after meals, flossing daily, and using special interdental brushes to clean around brackets and wires.",
   },
   {
-    question: "How long do dental bridges last?",
+    question: "What happens once my braces are removed?",
     answer:
-      "With proper care and good oral hygiene, dental bridges can last many years. Your dentist will advise you on how to maintain them for long-term durability.",
+      "After braces are taken off, you will be given retainers to help maintain your new smile and prevent teeth from shifting back.",
   },
   {
-    question: "How much do dental bridges typically cost in Lagos?",
+    question: "How much do braces typically cost in Lagos?",
     answer:
-      "The cost of dental bridges depends on the type of bridge, materials used, and your specific dental needs. Prices range from affordable options to more advanced restorations.",
+      "The cost of braces varies depending on the type of treatment and the clinic. Prices generally range from affordable options to more premium plans.",
   },
 ];
 
 
-
-export default function BridgeQuestion() {
+export default function SectionnTTwo() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
@@ -57,7 +56,7 @@ export default function BridgeQuestion() {
     <div className="w-full flex justify-center px-4 py-6 sm:p-10 bg-amber-50">
       <div className="bg-white p-4 sm:p-6 max-w-full rounded-lg shadow-lg w-full sm:max-w-2xl">
         <h2 className="text-center text-2xl font-semibold mb-6 text-blue-700">
-          Dental Bridge Most Popular FAQs
+          Cosmetics Braces Most Popular FAQs
         </h2>
 
         {faqs.map((faq, index) => (

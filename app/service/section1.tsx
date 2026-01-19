@@ -72,7 +72,7 @@ export default function SecttionOnne() {
         </svg>
       ),
       text: "Dental Bridge",
-      link: "#",
+      link: "bridge",
     },
     {
       svg: (
