@@ -85,7 +85,7 @@ export default function SecttionOnne() {
         </svg>
       ),
       text: "Teeth Whitening",
-      link: "#",
+      link: "whitening",
     },
 
     // Another one
