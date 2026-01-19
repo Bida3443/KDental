@@ -12,8 +12,9 @@ import review1 from "../../public/review.jpg";
 import review2 from "../../public/review1.jpg"
 import review3 from "../../public/review2.jpg";
 import review4 from "../../public/review3.jpg";
-import review5 from "../../public/review3.jpg";
+import review5 from "../../public/review1.jpg";
 import review6 from "../../public/review2.jpg";
+import caroline from "../../public/caroline.jpg";
 
 const slides = [
   { image: review1 },
@@ -43,7 +44,7 @@ export default function EmblaCarousel() {
   return (
     <div className="relative w-full overflow-hidden pb-5">
       <Image
-      src={review5}
+      src={caroline}
       alt="Backgrond image"
       fill
       className="w-full h-full opacity-10 z-20"
