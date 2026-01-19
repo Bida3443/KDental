@@ -1,0 +1,52 @@
+"use client"
+
+import {motion} from "framer-motion";
+
+import Image from "next/image";
+import White from "../../public/3.png";
+import Whitee from "../../public/4.png" 
+
+export default function WhiteBefore() {
+    return(
+        <div className="flex flex-col justify-center items-center p-5 gap-10 bg-white pb-10">
+            <div>
+                <h1 className="lg:text-4xl text-2x1 font-bold text-blue-700">Teeth Whitening: Before and After</h1>
+                <div className="border-2 border-blue-700 w-50 mx-auto M-5 flex items-center mt-5 justify-center"></div>
+
+            </div>
+            <div className="flex flex-row lg:gap-20 gap-10">
+                <motion.div
+                initial={{x: -10, opacity: 0}}
+                whileInView={{x: 1, opacity: 1}}
+                transition={{duration: 0.9, ease: "easeOut"}}
+                
+                >
+                <Image
+                src={White}
+                alt=""
+                style={{objectFit:"cover"}}
+                width={300}
+                height={500}
+                className="rounded-xl"
+                />
+            
+            </motion.div>
+            <motion.div
+            initial={{x: 10, opacity: 0}}
+            whileInView={{x: 1, opacity: 1}}
+            transition={{duration: 0.9, ease: "easeOut"}}
+
+            >
+                <Image
+                src={Whitee}
+                alt=""
+                style={{objectFit:"cover"}}
+                width={300}
+                height={500}
+                className="rounded-xl"
+                />
+            </motion.div>
+            </div>
+        </div>
+    );
+}
