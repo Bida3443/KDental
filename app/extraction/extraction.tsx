@@ -29,7 +29,7 @@ export default function ExtractionSec() {
          At our dental clinic, we understand how dental pain, infection, or damaged teeth can affect your comfort and confidence. That is why we offer professional dental extraction to safely remove problematic teeth and restore your oral health. Dental extraction may be recommended for severely decayed, broken, impacted, or painful teeth that can no longer be saved. <br />
 
         Your dental extraction journey begins with a thorough dental examination and digital X-rays so we can clearly understand your condition and plan the safest treatment. Our dental clinic uses modern techniques and effective anesthesia to ensure a gentle and comfortable extraction experience for both children and adults. <br />
-
+    
         After the extraction, our dental clinic will provide clear aftercare instructions to support proper healing and prevent complications. Follow-up visits may be scheduled to monitor recovery, ensuring you heal comfortably and return to a healthier, pain-free smile you can feel confident about every day.
         </p>
           </div>
