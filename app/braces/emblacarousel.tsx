@@ -13,7 +13,7 @@ import review2 from "../../public/review1.jpg"
 import review3 from "../../public/review2.jpg";
 import review4 from "../../public/review3.jpg";
 import review5 from "../../public/review3.jpg";
-import review6 from "../../public/review3.png";
+import review6 from "../../public/review2.jpg";
 
 const slides = [
   { image: review1 },
