@@ -29,7 +29,8 @@ export default function ScalingHero() {
                                                     transition={{ duration: 0.9, ease: "easeOut" }}
                                         
                                         >
-                                          <h1 className="lg:text-3xl text-[20px] font-bold mb-5 flex justify-center">Cleaner teeth, healthier gums with <br/> scaling and polishing
+                                          <h1 className="lg:text-3xl text-[20px] font-bold mb-5 flex justify-center">Stop infection and restore comfort with <br/> root canal treatment
+
 </h1>
                                  <a
                                  className="bg-blue-700 lg:p-3 p-2 lg:px-7 px-5 rounded-md text-white lg:text-[20px] text-[10px] font-bold items-center transition-all duration-300 ease-in-out

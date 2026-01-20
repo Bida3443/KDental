@@ -101,7 +101,7 @@ export default function SecttionOnne() {
         </svg>
       ),
       text: "Scaling and Polishing",
-      link: "#",
+      link: "scaling",
     },
     {
       svg: (
