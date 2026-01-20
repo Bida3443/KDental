@@ -3,6 +3,7 @@ import NavBar from "../src/component/Nav";
 import ScalingHero from "./hero";
 import ScalingSec from "./scaling";
 import EmblaCarousel from "../braces/emblacarousel";
+import ScalingPolish from "./scalingquestion";
 
 
 
@@ -16,6 +17,8 @@ export default function Scaling () {
             <ScalingHero/>
             <ScalingSec/>
             <EmblaCarousel/>
+            <ScalingPolish/>
+
             
 
         </div>
