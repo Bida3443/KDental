@@ -3,7 +3,7 @@
 import {motion} from "framer-motion";
 
 import Image from "next/image";
-import scaling from "../../public/scaling.jpg";
+import Root from "../../public/Root.jpg"
 // import Scaling from "./page";
 
 
@@ -47,7 +47,7 @@ export default function RootSec() {
 
         <Image
         alt=""
-        src={scaling}
+        src={Root}
         width={600}
         height={700}   
         style={{objectFit:"cover"}}

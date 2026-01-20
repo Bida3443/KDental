@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 import Image from "next/image";
-import Root from "../../public/Roott.jpg"
+import Root from "../../public/Roott.jpg";
 // import NavBar from "../src/component/Nav";
 
 
