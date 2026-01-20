@@ -114,7 +114,7 @@ export default function SecttionOnne() {
         </svg>
       ),
       text: "Rooth Canal Therapy",
-      link: "#",
+      link: "rootcanal",
     },
     {
       svg: (
@@ -127,7 +127,7 @@ export default function SecttionOnne() {
         </svg>
       ),
       text: "Crowns",
-      link: "#",
+      link: "crown",
     },
     {
       svg: (
@@ -143,7 +143,7 @@ export default function SecttionOnne() {
       link: "/gallery",
       className: "lg:w-20 w-15",
     },
-  ];2
+  ];
 
   return (
     <div className="flex flex-col justify-center bg-white">
