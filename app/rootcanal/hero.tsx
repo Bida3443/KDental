@@ -29,7 +29,7 @@ export default function RootHero() {
                                                     transition={{ duration: 0.9, ease: "easeOut" }}
                                         
                                         >
-                                          <h1 className="lg:text-3xl text-[20px] font-bold mb-5 flex justify-center">Stop infection and restore comfort with <br/> root canal treatment
+                                          <h1 className="lg:text-3xl text-[20px] font-bold mb-5 flex justify-center">Stop infection and restore comfort <br/> with root canal treatment
 
 </h1>
                                  <a
