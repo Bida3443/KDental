@@ -7,7 +7,7 @@ import scaling from "../../public/scaling.jpg";
 // import Scaling from "./page";
 
 
-export default function ExtractionSec() {
+export default function RootSec() {
   return (
     <div
     className="flex lg:flex-row flex-col gap-10 bg-white p-6 justify-center items-center pt-15 text-black">
