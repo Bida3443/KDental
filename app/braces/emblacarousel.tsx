@@ -77,20 +77,20 @@ export default function EmblaCarousel() {
       </div>
 
       {/* PREV BUTTON */}
-      <button
+      {/* <button
         onClick={scrollPrev}
         className="absolute cursor-pointer left-3 top-1/2 -translate-y-1/2 z-10 bg-black/60 text-white p-3 rounded-full hover:bg-black"
       >
         ‹
-      </button>
+      </button> */}
 
       {/* NEXT BUTTON */}
-      <button
+      {/* <button
         onClick={scrollNext}
         className="absolute right-3 top-1/2 -translate-y-1/2 z-10 bg-black/60 text-white p-3 rounded-full hover:bg-black"
       >
         ›
-      </button>
+      </button> */}
     </div>
   );
 }

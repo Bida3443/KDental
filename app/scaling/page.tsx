@@ -4,6 +4,7 @@ import ScalingHero from "./hero";
 import ScalingSec from "./scaling";
 import EmblaCarousel from "../braces/emblacarousel";
 import ScalingPolish from "./scalingquestion";
+import FooterSection from "../src/component/footer";
 
 
 
@@ -18,8 +19,7 @@ export default function Scaling () {
             <ScalingSec/>
             <EmblaCarousel/>
             <ScalingPolish/>
-
-            
+            <FooterSection/>
 
         </div>
     )
