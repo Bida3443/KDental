@@ -140,7 +140,7 @@ export default function SecttionOnne() {
         </svg>
       ),
       text: "Replacement of Missing Teeth",
-      link: "/gallery",
+      link: "replacement",
       className: "lg:w-20 w-15",
     },
   ];
