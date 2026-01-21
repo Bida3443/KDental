@@ -3,18 +3,18 @@
 import { motion } from "framer-motion";
 
 import Image from "next/image";
-import Scaling from "../../public/scalingg.jpg"
+import Crown from "../../public/Crown.jpg";
 // import NavBar from "../src/component/Nav";
 
 
-export default function ScalingHero() {
+export default function CrownHero() {
     return (
         <div>
             <div className=" flex flex-row relative">
             
                         <div className="w-full lg:h-[70vh] h-[40vh] relative">
                                             <Image
-                                                                src={Scaling}
+                                                                src={Crown}
                                                                 alt="Background"
                                                                 fill
                                                                 className="w-full h-full"
