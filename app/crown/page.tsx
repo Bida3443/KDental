@@ -3,6 +3,8 @@ import NavBar from "../src/component/Nav";
 import CrownHero from "./hero";
 import EmblaCarousel from "../braces/emblacarousel";
 import FooterSection from "../src/component/footer";
+import CrownSec from "./crown";
+import CrownQuestion from "./crownquestion";
 
 
 
@@ -12,6 +14,8 @@ export default function RootCanal() {
             <ImageTextRow/>
             <NavBar/>
             <CrownHero/>
+            <CrownSec/>
+            <CrownQuestion/>
             <EmblaCarousel/>
             <FooterSection/>
 
