@@ -39,7 +39,7 @@ export async function POST(req: Request) {
     }
 
     await resend.emails.send({
-      from: "Dental Clinic <onboarding@resend.dev>",
+      from: "onboarding@resend.dev",
       to: "premiumsmiledentalclinic1@gmail.com",
       subject: "New Appointment Booking",
       text: "New appointment received",

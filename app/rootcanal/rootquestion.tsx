@@ -58,10 +58,10 @@ export default function RootTherapy() {
     <div className="w-full flex justify-center px-4 py-6 sm:p-10 bg-amber-50">
       <div className="bg-white p-4 sm:p-6 max-w-full rounded-lg shadow-lg w-full sm:max-w-2xl">
         <h2 className="text-center text-2xl font-semibold mb-6 text-blue-700">
-          Root Canal Therapy Most Popular FAQs
+          Root Most Popular FAQs
         </h2>
 
-        {faqs.map((faq, index) => (
+        {faqs.map ((faq, index) => (
           <div key={index} className="mb-3">
             {/* <button
               onClick={() => setOpenIndex(openIndex === index ? null : index)}

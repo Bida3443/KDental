@@ -58,10 +58,17 @@ export default function ScalingPolish() {
       <div className="bg-white p-4 sm:p-6 max-w-full rounded-lg shadow-lg w-full sm:max-w-2xl">
         <h2 className="text-center text-2xl font-semibold mb-6 text-blue-700">
           Scaling And Polishing Most Popular FAQs
+        
         </h2>
+
+        <div className="flex flex-">
+
+        </div>
+
 
         {faqs.map((faq, index) => (
           <div key={index} className="mb-3">
+            
             {/* <button
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
               className={`w-full text-left px-4 py-3 rounded-md font-medium 
