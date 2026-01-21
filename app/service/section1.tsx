@@ -150,7 +150,7 @@ export default function SecttionOnne() {
       <div className="flex flex-col text-center space-y-6 leading-8 p-10 justify-center items-center text-black">
         <motion.h1 
         initial={{y: 80, opacity: 0}}
-        animate={{y: 0, opacity: 1}}
+        whileInView={{y: 1, opacity: 1}}
         transition={{duration: 0.8, ease: "easeOut"}}
         
         className="text-blue-700 font-bold lg:text-3xl text-[20px]">
