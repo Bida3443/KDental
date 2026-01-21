@@ -29,7 +29,7 @@ export default function CrownHero() {
                                                     transition={{ duration: 0.9, ease: "easeOut" }}
                                         
                                         >
-                                          <h1 className="lg:text-3xl text-[20px] font-bold mb-5 flex justify-center">Restore strength and confidence with <br/> dental crowns
+                                          <h1 className="lg:text-3xl text-[20px] font-bold mb-5 flex justify-center">Restore strength and confidence <br/> with dental crowns
 
 
 </h1>
