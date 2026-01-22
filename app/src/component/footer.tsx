@@ -170,7 +170,12 @@ return (
         </div>
 
       </div>
+      <div className="flex flex-row justify-between border-amber-300  mt-15">
+        <div>vvvvvvvvvvv</div>
+        <div>bbbbbbbbbbb</div>
+      </div>
     </div>
+      <div>ggggggggggggg</div>
   </div>
 );
 
