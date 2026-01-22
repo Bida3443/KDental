@@ -66,7 +66,7 @@ export default function FooterSection (){
         ];
 
 return (
-  <div className="relative w-full overflow-hidden">
+  <div className="relative w-full -pb-5 overflow-hidden">
 
     {/* Background image */}
     <Image
@@ -170,9 +170,12 @@ return (
         </div>
 
       </div>
-      <div className="flex flex-row justify-between border-t-1 border-blue-700  pt-2 mt-25">
-        <div>copywrite 2026 Premium Smile Dental Clinic. All Right Reserved</div>
-        <div>Terms & Conditions</div>
+      <div className="flex lg:flex-row flex-col lg:justify-between md:justify-center lg:items-start items-center border-t-1 border-blue-700  pt-2 mt-25">
+        <div>copyright © 2026 Premium Smile Dental Clinic. All Right Reserved</div>
+        <div className="flex flex-row gap-4">
+          <p>Terms & Conditions</p>
+          <p>Privacy and policy</p>
+        </div>
       </div>
     </div>
       <div>ggggggggggggg</div>
