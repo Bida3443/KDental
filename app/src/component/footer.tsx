@@ -170,9 +170,9 @@ return (
         </div>
 
       </div>
-      <div className="flex flex-row justify-between border-amber-300  mt-15">
-        <div>vvvvvvvvvvv</div>
-        <div>bbbbbbbbbbb</div>
+      <div className="flex flex-row justify-between border-t-1 border-blue-700  pt-2 mt-25">
+        <div>copywrite 2026 Premium Smile Dental Clinic. All Right Reserved</div>
+        <div>Terms & Conditions</div>
       </div>
     </div>
       <div>ggggggggggggg</div>
