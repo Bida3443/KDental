@@ -170,7 +170,7 @@ return (
         </div>
 
       </div>
-      <div className="flex lg:flex-row flex-col lg:justify-between md:justify-center lg:items-start items-center border-t-1 border-blue-700  pt-2 mt-25">
+      <div className="flex lg:flex-row flex-col gap-5 lg:justify-between md:justify-center lg:items-start items-center border-t-1 border-blue-700  lg:pt-2 pt-5 mt-25">
         <div>copyright © 2026 Premium Smile Dental Clinic. All Right Reserved</div>
         <div className="flex flex-row gap-4">
           <p>Terms & Conditions</p>
