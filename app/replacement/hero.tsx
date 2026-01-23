@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 import Image from "next/image";
-import Crown from "../../public/Crown.jpg";
+import Replacement from "../../public/Replacement.jpg";
 // import NavBar from "../src/component/Nav";
 
 
@@ -14,7 +14,7 @@ export default function ReplacementHero() {
             
                         <div className="w-full lg:h-[70vh] h-[40vh] relative">
                                             <Image
-                                                                src={Crown}
+                                                                src={Replacement}
                                                                 alt="Background"
                                                                 fill
                                                                 className="w-full h-full"
