@@ -18,7 +18,7 @@ export default function ReplacementSec() {
                transition={{ duration: 0.8, ease: "easeOut" }}
                whileInView={{ x: 0, opacity: 1 }}
                viewport={{ once: true }}
-               className="lg:text-4xl text-[35px]  text-blue-700 font-bold border-b-2 border-b-blue-700">Premium Extraction</motion.h1>
+               className="lg:text-4xl text-[25px]  text-blue-700 font-bold border-b-2 border-b-blue-700">Replacement Of Missing Teeth</motion.h1>
         <p 
         //  initial={{ x: -100, opacity: 0 }}
         // whileInView={{ x: 0, opacity: 1 }}
@@ -26,11 +26,11 @@ export default function ReplacementSec() {
         // viewport={{ once: true }}
 
         className="flex leading-7 text-justify">
-         At our dental clinic, we understand how dental pain, infection, or damaged teeth can affect your comfort and confidence. That is why we offer professional dental extraction to safely remove problematic teeth and restore your oral health. Dental extraction may be recommended for severely decayed, broken, impacted, or painful teeth that can no longer be saved. <br />
+         Missing teeth can affect your ability to chew comfortably, speak clearly, and smile with confidence. Replacing missing teeth helps restore normal function, improve appearance, and protect your overall oral health. Professional tooth replacement solutions are designed to fill gaps, prevent surrounding teeth from shifting, and support proper bite alignment. <br />
 
-        Your dental extraction journey begins with a thorough dental examination and digital X-rays so we can clearly understand your condition and plan the safest treatment. Our dental clinic uses modern techniques and effective anesthesia to ensure a gentle and comfortable extraction experience for both children and adults. <br />
-    
-        After the extraction, our dental clinic will provide clear aftercare instructions to support proper healing and prevent complications. Follow-up visits may be scheduled to monitor recovery, ensuring you heal comfortably and return to a healthier, pain-free smile you can feel confident about every day.
+         The tooth replacement process begins with a thorough dental examination and digital X-rays to assess your oral condition and determine the most suitable treatment option. Depending on your needs, replacement options may include dental bridges, dental implants, or removable dentures, all carefully planned to restore comfort and functionality. <br />
+
+         After your tooth replacement treatment, clear care instructions will be provided to help maintain your restoration and support long-term oral health. Follow-up visits may be scheduled to ensure proper fit and comfort, allowing you to enjoy a complete, healthy, and confident smile every day.
         </p>
           </div>
 
