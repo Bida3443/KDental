@@ -18,7 +18,7 @@ export default function ReplacementSec() {
                transition={{ duration: 0.8, ease: "easeOut" }}
                whileInView={{ x: 0, opacity: 1 }}
                viewport={{ once: true }}
-               className="lg:text-4xl text-[25px]  text-blue-700 font-bold border-b-2 border-b-blue-700">Replacement Of Missing Teeth</motion.h1>
+               className="lg:text-4xl text-[20px]  text-blue-700 font-bold border-b-2 border-b-blue-700">Replacement Of Missing Teeth</motion.h1>
         <p 
         //  initial={{ x: -100, opacity: 0 }}
         // whileInView={{ x: 0, opacity: 1 }}
