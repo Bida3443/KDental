@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 import Image from "next/image";
-import Replacement from "../../public/Replacement.jpg";
+import Replacement from "../../public/Replacements.jpg";
 // import NavBar from "../src/component/Nav";
 
 
