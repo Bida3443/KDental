@@ -3,6 +3,8 @@ import NavBar from "../src/component/Nav";
 import ReplacementSec from "./replacement";
 import ReplacementHero from "./hero";
 import EmblaCarousel from "../braces/emblacarousel";
+import ReplaceQuestion from "./replacequestion";
+import FooterSection from "../src/component/footer";
 
 
 export default function Replacement() {
@@ -13,6 +15,8 @@ export default function Replacement() {
             <ReplacementHero/>
             <ReplacementSec/>
             <EmblaCarousel/>
+            <ReplaceQuestion/>
+            <FooterSection/>
 
         </div>
     )
