@@ -18,7 +18,7 @@ export default function ReplacementSec() {
                transition={{ duration: 0.8, ease: "easeOut" }}
                whileInView={{ x: 0, opacity: 1 }}
                viewport={{ once: true }}
-               className="lg:text-4xl text-[20px]  text-blue-700 font-bold border-b-2 border-b-blue-700">Replacement Of Missing Teeth</motion.h1>
+               className="lg:text-4xl text-[20px]  text-blue-700 font-bold border-b-2 border-b-blue-700"> Replacement Of Missing Teeth</motion.h1>
         <p 
         //  initial={{ x: -100, opacity: 0 }}
         // whileInView={{ x: 0, opacity: 1 }}
@@ -30,7 +30,7 @@ export default function ReplacementSec() {
 
          The tooth replacement process begins with a thorough dental examination and digital X-rays to assess your oral condition and determine the most suitable treatment option. Depending on your needs, replacement options may include dental bridges, dental implants, or removable dentures, all carefully planned to restore comfort and functionality. <br />
 
-         After your tooth replacement treatment, clear care instructions will be provided to help maintain your restoration and support long-term oral health. Follow-up visits may be scheduled to ensure proper fit and comfort, allowing you to enjoy a complete, healthy, and confident smile every day.
+         After your tooth replacement treatment, clear care instructions will be provided to help maintain your restoration and support long-term oral health. Follow-up visits may be scheduled to ensure proper fit and comfort, allowing you to enjoy a complete, healthy, and confident smile every day. dghbbgy
         </p>
           </div>
 
