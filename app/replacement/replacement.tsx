@@ -30,7 +30,7 @@ export default function ReplacementSec() {
 
          The tooth replacement process begins with a thorough dental examination and digital X-rays to assess your oral condition and determine the most suitable treatment option. Depending on your needs, replacement options may include dental bridges, dental implants, or removable dentures, all carefully planned to restore comfort and functionality. <br />
 
-         After your tooth replacement treatment, clear care instructions will be provided to help maintain your restoration and support long-term oral health. Follow-up visits may be scheduled to ensure proper fit and comfort, allowing you to enjoy a complete, healthy, and confident smile every day. dghbbgy
+         After your tooth replacement treatment, clear care instructions will be provided to help maintain your restoration and support long-term oral health. Follow-up visits may be scheduled to ensure proper fit and comfort, allowing you to enjoy a complete, healthy, and confident smile every day. 
         </p>
           </div>
 
