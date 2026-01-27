@@ -21,7 +21,7 @@ import { EmailComponent } from "@/components/email-template";
 
 const resend = new Resend ("re_ZnRG56hA_LhnSWBGJN1W4kqQnWu8irWad");
 
-console.log("Resend key exists:", !!process.env.re_8UymLd18_zT6nTXZo1uZTb9t84GdbKe1p);
+console.log("Resend key exists:", !!process.env.re_ZnRG56hA_LhnSWBGJN1W4kqQnWu8irWad);
 
 export async function POST(req: Request) {
   try {
@@ -56,6 +56,7 @@ export async function POST(req: Request) {
       subject: "New Appointment Booking",
       html,
     });
+
     if (error) {
       console.log("This is the error: ", error);
       return Response.json({ error }, { status: 500 });
