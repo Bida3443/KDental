@@ -25,7 +25,7 @@ export default function ReplacementSec() {
         // transition={{ duration: 0.8, ease: "easeOut" }}
         // viewport={{ once: true }}
 
-        className="flex leading-7 text-justify">
+         className="flex leading-7 text-justify">
          Missing teeth can affect your ability to chew comfortably, speak clearly, and smile with confidence. Replacing missing teeth helps restore normal function, improve appearance, and protect your overall oral health. Professional tooth replacement solutions are designed to fill gaps, prevent surrounding teeth from shifting, and support proper bite alignment. <br />
 
          The tooth replacement process begins with a thorough dental examination and digital X-rays to assess your oral condition and determine the most suitable treatment option. Depending on your needs, replacement options may include dental bridges, dental implants, or removable dentures, all carefully planned to restore comfort and functionality. <br />

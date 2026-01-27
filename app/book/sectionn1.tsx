@@ -54,18 +54,19 @@ export default function SectionnOne () {
     console.log("Response:", data);
 
     if (!res.ok) {
+      setIsLoading (false)
       alert(data.message || "Validation failed");
       return; // ⛔ STOP execution here
     }
-
+    setIsLoading (false)
     alert("Appointment request sent successfully!");
 
   } catch (error) {
     console.error("Frontend error:", error);
+    setIsLoading (false)
     alert("Something went wrong");
   }
 };
-
 
 
 

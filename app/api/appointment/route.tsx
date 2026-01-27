@@ -16,6 +16,8 @@
 
 
 import {Resend}  from "resend";
+import { render } from "@react-email/render";
+import { EmailComponent } from "@/components/email-template";
 
 
 const resend = new Resend ("re_8UymLd18_zT6nTXZo1uZTb9t84GdbKe1p");
@@ -24,9 +26,9 @@ console.log("Resend key exists:", !!process.env.re_8UymLd18_zT6nTXZo1uZTb9t84Gdb
 
 export async function POST(req: Request) {
   try {
-    const data = await req.json();
+    const body = await req.json();
 
-    const { name, phone, email, date, time, treatment } = data;
+    const { name, phone, email, date, time, treatment } = body;
 
     if (!name || !phone || !email || !date || !time || !treatment) {
       return new Response(
@@ -37,17 +39,31 @@ export async function POST(req: Request) {
         { status: 400 }
       );
     }
+      const html = await render(
+      <EmailComponent
+        name={name}
+        email={email}
+        phone={phone}
+date={date}
+time={time}
+treatment={treatment}
+              />
+    );
+    const {data,error} = await  resend.emails.send({
 
-    await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "premiumsmiledentalclinic1@gmail.com",
+      to: "alexanderbamise@gmail.com",
       subject: "New Appointment Booking",
-      text: "New appointment received",
+      html,
     });
-
-    return new Response(JSON.stringify({ success: true }), {
-      status: 200,
-    });
+    if (error) {
+      console.log("This is the error: ", error);
+      return Response.json({ error }, { status: 500 });
+    }
+    // return new Response(JSON.stringify({ success: true }), {
+    //   status: 200,
+    // });
+    return Response.json(data);
 
   } catch (error) {
     console.error(error);
