@@ -69,8 +69,6 @@ export default function SectionnOne () {
 };
 
 
-
-
     return(
 
         <div>

@@ -14,7 +14,6 @@
 //   );
 // }
 
-
 import {Resend}  from "resend";
 import { render } from "@react-email/render";
 import { EmailComponent } from "@/components/email-template";
@@ -28,7 +27,7 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
 
-    const { name, phone, email, date, time, treatment } = body;
+    const { name, phone, email, date, time, treatment, notes } = body;
 
     if (!name || !phone || !email || !date || !time || !treatment) {
       return new Response(
@@ -44,9 +43,10 @@ export async function POST(req: Request) {
         name={name}
         email={email}
         phone={phone}
-date={date}
-time={time}
-treatment={treatment}
+        date={date}
+        time={time}
+        treatment={treatment}
+        notes= {notes}
               />
     );
     const {data,error} = await  resend.emails.send({
