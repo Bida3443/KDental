@@ -47,10 +47,11 @@ const [form, setForm] = useState({
     const data = await res.json();
 
     if (!res.ok) {
+      setIsLoading (false)
       alert(data.message || "something went wrong");
       return;
     }
-
+    setIsLoading (false)
   alert("Message sent successfully!");
 
 setForm({
