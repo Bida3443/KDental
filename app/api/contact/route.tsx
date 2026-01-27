@@ -49,7 +49,7 @@ import { Resend } from "resend";
 import { render } from "@react-email/render";
 import { EmailComponent } from "@/components/email-template-s";
 
-const resend = new Resend("re_8UymLd18_zT6nTXZo1uZTb9t84GdbKe1p");
+const resend = new Resend("re_ZnRG56hA_LhnSWBGJN1W4kqQnWu8irWad");
 
 export async function POST(req: Request) {
   try {
@@ -82,7 +82,7 @@ export async function POST(req: Request) {
     // Send email
     const { data, error } = await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "alexanderbamise@gmail.com",
+      to: "premiumsmiledentalclinic1@gmail.com",
       subject: "New Form Submission",
       html,
     });
