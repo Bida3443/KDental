@@ -28,11 +28,9 @@ export function EmailComponent({
       <p>
         <strong>Phone:</strong> {phone || "N/A"}
       </p>
-      
       <p>
         <strong>Time:</strong> {time || "Not specified"}
       </p>
-      
       <p>
         <strong>Note:</strong> {notes}
       </p>

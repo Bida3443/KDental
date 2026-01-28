@@ -27,9 +27,9 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
 
-    const { name, phone, email, date, time, treatment, patients, plartform, notes } = body;
+    const { name, phone, email, date, time, treatment, patients, hearAbout, notes } = body;
 
-    if (!name || !phone || !email || !date || !time || !patients || !plartform || !treatment) {
+    if (!name || !phone || !email || !date || !time || !patients || !hearAbout || !treatment) {
       return new Response(
         JSON.stringify({
           success: false,
@@ -47,7 +47,7 @@ export async function POST(req: Request) {
         time={time}
         treatment={treatment}
         patients={patients}
-        plartform = {plartform}
+        hearAbout = {hearAbout}
         notes= {notes}
               />
     );

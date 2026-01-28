@@ -8,7 +8,7 @@ interface EmailTemplateProps {
   time: string;
   treatment: string;
   patients: string;
-  plartform: string;
+  hearAbout: string;
   notes: string;
 
 }
@@ -21,7 +21,7 @@ export function EmailComponent({
   time,
   treatment,
   patients,
-  plartform,
+  hearAbout,
   notes,
 }: EmailTemplateProps) {
   return (
@@ -46,10 +46,10 @@ export function EmailComponent({
         <strong>Treatment:</strong> {treatment}
       </p>
       <p>
-        <strong>Patients:</strong> {patients}
+        <strong>patients:</strong> {patients}
       </p>
       <p>
-        <strong>Plartform:</strong> {plartform}
+        <strong>hearAbout:</strong> {hearAbout}
       </p>
       <p>
         <strong>Note:</strong> {notes}

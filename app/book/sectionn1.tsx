@@ -40,7 +40,7 @@ export default function SectionnOne () {
   setIsLoading(true);
 
   try {
-    const res = await fetch("/api/appointment", {
+    const res = await fetch ("/api/appointment", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
